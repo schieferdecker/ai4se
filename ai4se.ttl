@@ -28,44 +28,54 @@
 ai4se:hasAIType rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf gufo:standsInQualifiedAttribution ;
                 rdfs:domain ai4se:ResearchPaper ;
-                rdfs:range ai4se:Type .
+                rdfs:range ai4se:Type ;
+                rdfs:comment "Represents the type of the AI solution being proposed, applied or developed in a research paper."@en ,
+                             "hasAIType" .
 
 
 ###  http://purl.org/ai4se/owl#hasAutomationLevel
 ai4se:hasAutomationLevel rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf gufo:standsInQualifiedAttribution ;
                          rdfs:domain ai4se:ResearchPaper ;
-                         rdfs:range ai4se:Level .
+                         rdfs:range ai4se:Level ;
+                         rdfs:comment "Represents the automation level of the AI solution being proposed, applied or developed in a research paper."@en ;
+                         rdfs:label "hasAutomationLevel" .
 
 
 ###  http://purl.org/ai4se/owl#hasSolutionPurpose
 ai4se:hasSolutionPurpose rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf gufo:standsInQualifiedAttribution ;
                          rdfs:domain ai4se:ResearchPaper ;
-                         rdfs:range ai4se:Purpose .
+                         rdfs:range ai4se:Purpose ;
+                         rdfs:comment "Represents the purpose of the AI solution being proposed, applied or developed in a research paper."@en ;
+                         rdfs:label "hasSolutionPurpose" .
 
 
 ###  http://purl.org/ai4se/owl#hasSolutionTarget
 ai4se:hasSolutionTarget rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf gufo:standsInQualifiedAttribution ;
                         rdfs:domain ai4se:ResearchPaper ;
-                        rdfs:range ai4se:Target .
+                        rdfs:range ai4se:Target ;
+                        rdfs:comment "Represents the target of the AI solution being proposed, applied or developed in a research paper."@en ;
+                        rdfs:label "hasSolutionTarget" .
 
 
-###  http://purl.org/ai4se/owl#isAboutTopic
-ai4se:isAboutTopic rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf gufo:inheresIn ;
-                   rdfs:domain ai4se:ResearchPaper ;
-                   rdfs:range ai4se:CSO:Topic ;
-                   rdfs:comment "Represents the focus of a research paper on a research topic."@en ;
-                   rdfs:label "isAboutTopic" .
+###  http://purl.org/ai4se/owl#isAboutResearchTopic
+ai4se:isAboutResearchTopic rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf gufo:historicallyDependsOn ;
+                           rdfs:domain ai4se:ModelDrivenSoftwareEngineering ,
+                                       ai4se:ResearchPaper ;
+                           rdfs:range ai4se:Model ,
+                                      ai4se:CSO:Topic ;
+                           rdfs:comment "Represents the research topics that a research paper contributes to."@en ;
+                           rdfs:label "isAboutResearchTopic" .
 
 
 ###  http://purl.org/ai4se/owl#isInResearchCollection
 ai4se:isInResearchCollection rdf:type owl:ObjectProperty ;
-                             rdfs:subPropertyOf gufo:isCollectionMemberOf ,
-                                                gufo:isSubCollectionOf ;
-                             rdf:type owl:TransitiveProperty ;
+                             rdfs:subPropertyOf gufo:historicallyDependsOn ;
+                             rdf:type owl:TransitiveProperty ,
+                                      owl:IrreflexiveProperty ;
                              rdfs:domain ai4se:ResearchPaper ,
                                          ai4se:ResearchPaperCollection ;
                              rdfs:range ai4se:ResearchPaperCollection ;
@@ -77,22 +87,130 @@ ai4se:isInResearchCollection rdf:type owl:ObjectProperty ;
 ###  http://purl.org/ai4se/owl#isProperPartOfProcess
 ai4se:isProperPartOfProcess rdf:type owl:ObjectProperty ;
                             rdfs:subPropertyOf gufo:isEventProperPartOf ;
-                            rdf:type owl:TransitiveProperty ;
                             rdfs:domain ai4se:PrMO:Activity ;
                             rdfs:range ai4se:PrMO:Process ;
                             rdfs:comment "Represents activities being part of processes."@en ;
                             rdfs:label "isPartOfProcess" .
 
 
+###  http://purl.org/ai4se/owl#isSEActivityWithModels
+ai4se:isSEActivityWithModels rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf gufo:mediates ;
+                             rdfs:domain ai4se:ModelDrivenSoftwareEngineering ;
+                             rdfs:range ai4se:Model ,
+                                        ai4se:SoftwareEngineering .
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+owl:topObjectProperty rdfs:domain ai4se:ResearchPaperCollection .
+
+
 #################################################################
 #    Classes
 #################################################################
 
+###  http://purl.org/ai4se/owl#AI-assisted_options
+ai4se:AI-assisted_options rdf:type owl:Class ;
+                          rdfs:subClassOf ai4se:Level .
+
+
+###  http://purl.org/ai4se/owl#AI-assisted_selection
+ai4se:AI-assisted_selection rdf:type owl:Class ;
+                            rdfs:subClassOf ai4se:Level .
+
+
+###  http://purl.org/ai4se/owl#AI-driven_full_automation
+ai4se:AI-driven_full_automation rdf:type owl:Class ;
+                                rdfs:subClassOf ai4se:Level .
+
+
+###  http://purl.org/ai4se/owl#AI-driven_partial_automation
+ai4se:AI-driven_partial_automation rdf:type owl:Class ;
+                                   rdfs:subClassOf ai4se:Level .
+
+
+###  http://purl.org/ai4se/owl#Agentic_AI
+ai4se:Agentic_AI rdf:type owl:Class ;
+                 rdfs:subClassOf ai4se:Type .
+
+
+###  http://purl.org/ai4se/owl#Architecture_and_Design
+ai4se:Architecture_and_Design rdf:type owl:Class ;
+                              rdfs:subClassOf ai4se:Develop .
+
+
+###  http://purl.org/ai4se/owl#Classical_machine_learning
+ai4se:Classical_machine_learning rdf:type owl:Class ;
+                                 rdfs:subClassOf ai4se:Type .
+
+
+###  http://purl.org/ai4se/owl#Coding
+ai4se:Coding rdf:type owl:Class ;
+             rdfs:subClassOf ai4se:Develop .
+
+
+###  http://purl.org/ai4se/owl#Deep_learning
+ai4se:Deep_learning rdf:type owl:Class ;
+                    rdfs:subClassOf ai4se:Type .
+
+
+###  http://purl.org/ai4se/owl#Deployment
+ai4se:Deployment rdf:type owl:Class ;
+                 rdfs:subClassOf ai4se:Operate .
+
+
+###  http://purl.org/ai4se/owl#Develop
+ai4se:Develop rdf:type owl:Class ;
+              rdfs:subClassOf ai4se:SoftwareEngineering ;
+              owl:disjointWith ai4se:Operate .
+
+
+###  http://purl.org/ai4se/owl#Execution
+ai4se:Execution rdf:type owl:Class ;
+                rdfs:subClassOf ai4se:Operate .
+
+
+###  http://purl.org/ai4se/owl#General_purpose_AI
+ai4se:General_purpose_AI rdf:type owl:Class ;
+                         rdfs:subClassOf ai4se:Type .
+
+
+###  http://purl.org/ai4se/owl#Generate
+ai4se:Generate rdf:type owl:Class ;
+               rdfs:subClassOf ai4se:Purpose .
+
+
+###  http://purl.org/ai4se/owl#Generative_AI
+ai4se:Generative_AI rdf:type owl:Class ;
+                    rdfs:subClassOf ai4se:Type .
+
+
+###  http://purl.org/ai4se/owl#Improve
+ai4se:Improve rdf:type owl:Class ;
+              rdfs:subClassOf ai4se:Purpose .
+
+
+###  http://purl.org/ai4se/owl#Improvement
+ai4se:Improvement rdf:type owl:Class ;
+                  rdfs:subClassOf ai4se:Process ;
+                  owl:disjointWith ai4se:Management .
+
+
 ###  http://purl.org/ai4se/owl#Level
 ai4se:Level rdf:type owl:Class ;
-            rdfs:subClassOf gufo:QualityValueAttributionSituation ;
+            rdfs:subClassOf gufo:Kind ;
             rdfs:label "Represents the level of automation provided / enabled by the proposed approach, method, and/or technique."@en ,
                        "Level of automation" .
+
+
+###  http://purl.org/ai4se/owl#Maintenance
+ai4se:Maintenance rdf:type owl:Class ;
+                  rdfs:subClassOf ai4se:Develop .
+
+
+###  http://purl.org/ai4se/owl#Management
+ai4se:Management rdf:type owl:Class ;
+                 rdfs:subClassOf ai4se:Process .
 
 
 ###  http://purl.org/ai4se/owl#Miscellaneous
@@ -109,11 +227,46 @@ https://www.computer.org/education/bodies-of-knowledge/software-engineering""" ;
                     rdfs:label "Misc" .
 
 
+###  http://purl.org/ai4se/owl#Model
+ai4se:Model rdf:type owl:Class ;
+            rdfs:subClassOf gufo:FunctionalComplex .
+
+
+###  http://purl.org/ai4se/owl#ModelDrivenSoftwareEngineering
+ai4se:ModelDrivenSoftwareEngineering rdf:type owl:Class ;
+                                     rdfs:subClassOf gufo:Relator .
+
+
+###  http://purl.org/ai4se/owl#Monitoring
+ai4se:Monitoring rdf:type owl:Class ;
+                 rdfs:subClassOf ai4se:Operate .
+
+
+###  http://purl.org/ai4se/owl#None
+ai4se:None rdf:type owl:Class ;
+           rdfs:subClassOf ai4se:Level .
+
+
+###  http://purl.org/ai4se/owl#Operate
+ai4se:Operate rdf:type owl:Class ;
+              rdfs:subClassOf ai4se:SoftwareEngineering .
+
+
+###  http://purl.org/ai4se/owl#Process
+ai4se:Process rdf:type owl:Class ;
+              rdfs:subClassOf ai4se:SoftwareEngineering .
+
+
 ###  http://purl.org/ai4se/owl#Purpose
 ai4se:Purpose rdf:type owl:Class ;
-              rdfs:subClassOf gufo:QualityValueAttributionSituation ;
+              rdfs:subClassOf gufo:Kind ;
               rdfs:comment "Represents the purpose of using an AI-based solution in a software development / operation processes or activities."@en ;
               rdfs:label "Solution purpose" .
+
+
+###  http://purl.org/ai4se/owl#Requirements
+ai4se:Requirements rdf:type owl:Class ;
+                   rdfs:subClassOf ai4se:Develop .
 
 
 ###  http://purl.org/ai4se/owl#ResearchPaper
@@ -130,18 +283,45 @@ ai4se:ResearchPaperCollection rdf:type owl:Class ;
                               rdfs:label "ResearchPaperCollection" .
 
 
+###  http://purl.org/ai4se/owl#SoftwareEngineering
+ai4se:SoftwareEngineering rdf:type owl:Class ;
+                          rdfs:subClassOf ai4se:Target ,
+                                          ai4se:PrMO:Activity ,
+                                          ai4se:PrMO:Process .
+
+
+###  http://purl.org/ai4se/owl#Statistical
+ai4se:Statistical rdf:type owl:Class ;
+                  rdfs:subClassOf ai4se:Type .
+
+
+###  http://purl.org/ai4se/owl#Symbolic
+ai4se:Symbolic rdf:type owl:Class ;
+               rdfs:subClassOf ai4se:Type .
+
+
 ###  http://purl.org/ai4se/owl#Target
 ai4se:Target rdf:type owl:Class ;
-             rdfs:subClassOf gufo:QualityValueAttributionSituation ;
+             rdfs:subClassOf gufo:EventType ;
              rdfs:comment "Represents the primary object, system, concept, or issue in a software development / operation process or activitiy being addressed."@en ;
              rdfs:label "Solution target" .
 
 
+###  http://purl.org/ai4se/owl#Testing
+ai4se:Testing rdf:type owl:Class ;
+              rdfs:subClassOf ai4se:Develop .
+
+
 ###  http://purl.org/ai4se/owl#Type
 ai4se:Type rdf:type owl:Class ;
-           rdfs:subClassOf gufo:QualityValueAttributionSituation ;
+           rdfs:subClassOf gufo:Kind ;
            rdfs:comment "Represents the type of AI being used in the presented solution."@en ;
            rdfs:label "AI Type" .
+
+
+###  http://purl.org/ai4se/owl#Understand
+ai4se:Understand rdf:type owl:Class ;
+                 rdfs:subClassOf ai4se:Purpose .
 
 
 ###  http://purl.org/ai4se/owl#CSO:Topic
@@ -164,7 +344,7 @@ ai4se:ODYSSEY:Phase rdf:type owl:Class ;
 ###  http://purl.org/ai4se/owl#PrMO:Activity
 ai4se:PrMO:Activity rdf:type owl:Class ;
                     rdfs:subClassOf ai4se:Miscellaneous ,
-                                    gufo:Event ;
+                                    gufo:EventType ;
                     rdfs:comment """Represents a set of tasks used to produce, operate or maintain software-based products or services as well as to achieve the objectives of the process it belongs to. The activity includes the procedures, standards, policies, and objectives to create and modify a set of work products. 
 
 Adapted to software-related activities from PrMO: an ontology of process-reference models."""@en ;
@@ -174,13 +354,64 @@ Adapted to software-related activities from PrMO: an ontology of process-referen
 
 ###  http://purl.org/ai4se/owl#PrMO:Process
 ai4se:PrMO:Process rdf:type owl:Class ;
-                   rdfs:subClassOf ai4se:Miscellaneous ,
-                                   ai4se:PrMO:Activity ;
+                   rdfs:subClassOf ai4se:Miscellaneous ;
                    rdfs:comment """Represents a coherent set of policies, organizational structures, technologies; procedures, purposes, objectives, and work products that are needed to design, develop, deploy and maintain a software product.
 
 Defined by PrMO: an ontology of process-reference models"""@en ;
                    rdfs:isDefinedBy "https://www.redalyc.org/articulo.oa?id=43032606003" ;
                    rdfs:label "PrMO:Process" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( ai4se:AI-assisted_options
+                ai4se:AI-assisted_selection
+                ai4se:AI-driven_full_automation
+                ai4se:AI-driven_partial_automation
+                ai4se:None
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( ai4se:Agentic_AI
+                ai4se:Classical_machine_learning
+                ai4se:Deep_learning
+                ai4se:General_purpose_AI
+                ai4se:Generative_AI
+                ai4se:Statistical
+                ai4se:Symbolic
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( ai4se:Architecture_and_Design
+                ai4se:Coding
+                ai4se:Maintenance
+                ai4se:Requirements
+                ai4se:Testing
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( ai4se:Deployment
+                ai4se:Execution
+                ai4se:Monitoring
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( ai4se:Generate
+                ai4se:Improve
+                ai4se:Understand
+              )
+] .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
