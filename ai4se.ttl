@@ -98,7 +98,7 @@ ai4se:isSEActivityWithModels rdf:type owl:ObjectProperty ;
                              rdfs:subPropertyOf gufo:mediates ;
                              rdfs:domain ai4se:ModelDrivenSoftwareEngineering ;
                              rdfs:range ai4se:Model ,
-                                        ai4se:SoftwareEngineering .
+                                        ai4se:Software_Engineering .
 
 
 ###  http://www.w3.org/2002/07/owl#topObjectProperty
@@ -136,7 +136,17 @@ ai4se:Agentic_AI rdf:type owl:Class ;
 
 ###  http://purl.org/ai4se/owl#Architecture_and_Design
 ai4se:Architecture_and_Design rdf:type owl:Class ;
-                              rdfs:subClassOf ai4se:Develop .
+                              rdfs:subClassOf ai4se:Develop ;
+                              rdfs:comment """Represents software architecture and design activities and processes. 
+
+A software architecture defines its fundamental organization, its components, their relationships, and the principles guiding its design and evolution. 
+ 
+According to ISO/IEC/IEEE 42010:2022: Software, systems and enterprise - Architecture description), a software architecture consists of the fundamental concepts or properties of an entity in its environment and governing principles for the realization and evolution of this entity and its related life cycle processes.
+
+Software design is the process of defining the architecture, components, interfaces, and other characteristics of a software or a component.
+
+According to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, software design is  the use of scientific principles, technical information, and imagination in the definition of a software system to perform pre-specified functions with maximum economy and efficiency."""@en ;
+                              rdfs:label "Software architecture and design" .
 
 
 ###  http://purl.org/ai4se/owl#Classical_machine_learning
@@ -146,7 +156,17 @@ ai4se:Classical_machine_learning rdf:type owl:Class ;
 
 ###  http://purl.org/ai4se/owl#Coding
 ai4se:Coding rdf:type owl:Class ;
-             rdfs:subClassOf ai4se:Develop .
+             rdfs:subClassOf ai4se:Develop ;
+             rdfs:comment """Represents coding activities and processes. 
+
+Coding (also known as programming) is the process of transforming the design of a software or a component into an executable computer program.
+
+According to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, coding is
+
+1. in software engineering, the process of expressing a computer program in a programming language
+
+2. transforming of logic and data from design specifications (design descriptions) into a programming language."""@en ;
+             rdfs:label "Software coding" .
 
 
 ###  http://purl.org/ai4se/owl#Deep_learning
@@ -156,18 +176,23 @@ ai4se:Deep_learning rdf:type owl:Class ;
 
 ###  http://purl.org/ai4se/owl#Deployment
 ai4se:Deployment rdf:type owl:Class ;
-                 rdfs:subClassOf ai4se:Operate .
+                 rdfs:subClassOf ai4se:Operate ;
+                 rdfs:comment """Represents software deployment activities and processes.
+
+Software deployment encompasses the processes and activities for placing a software or component into an operational environment.
+
+According to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, deployment is a phase of a project in which a system is put into operation and cutover issues are resolved."""@en ;
+                 rdfs:label "Software deployment" .
 
 
 ###  http://purl.org/ai4se/owl#Develop
 ai4se:Develop rdf:type owl:Class ;
-              rdfs:subClassOf ai4se:SoftwareEngineering ;
-              owl:disjointWith ai4se:Operate .
+              rdfs:subClassOf ai4se:Software_Engineering ;
+              owl:disjointWith ai4se:Operate ;
+              rdfs:label """Represents the software development activities.
 
-
-###  http://purl.org/ai4se/owl#Execution
-ai4se:Execution rdf:type owl:Class ;
-                rdfs:subClassOf ai4se:Operate .
+Software development is the set of activities that result in software products, including requirements analysis, design, coding, testing, and maintenance. It encompasses all the activities and processes involved in creating, implementing, and modifying software (artefacts), as well as ensuring that it satisfies stakeholder requirements throughout the software development life cycle."""@en ,
+                         "Develop" .
 
 
 ###  http://purl.org/ai4se/owl#General_purpose_AI
@@ -193,7 +218,19 @@ ai4se:Improve rdf:type owl:Class ;
 ###  http://purl.org/ai4se/owl#Improvement
 ai4se:Improvement rdf:type owl:Class ;
                   rdfs:subClassOf ai4se:Process ;
-                  owl:disjointWith ai4se:Management .
+                  owl:disjointWith ai4se:Management ;
+                  rdfs:comment """Represents software engineering process improvement activities and processes.
+
+Process improvement is undertaken to provide enhancements to the software life cycle processes and activities to improve their performance and / or outcomes.
+
+According to ISO/IEC/IEEE 12207:2017: Systems and software engineering - Software life cycle processes, process improvement consists of the following tasks:
+
+1) Prioritize and plan improvement opportunities.
+
+2) Implement improvement opportunities and inform relevant stakeholders.
+
+3) Lessons learned are captured and made available."""@en ;
+                  rdfs:label "Process improvement" .
 
 
 ###  http://purl.org/ai4se/owl#Level
@@ -205,12 +242,25 @@ ai4se:Level rdf:type owl:Class ;
 
 ###  http://purl.org/ai4se/owl#Maintenance
 ai4se:Maintenance rdf:type owl:Class ;
-                  rdfs:subClassOf ai4se:Develop .
+                  rdfs:subClassOf ai4se:Develop ;
+                  rdfs:comment """Represents software maintenance activities and processes. 
+
+Software maintenance is the process of modifying a software or component after delivery to correct faults, improve performance or other attributes, or adapt to a changed environment.
+
+According to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, software maintenance is 
+
+1. totality of activities required to provide cost-effective support to a software system 
+
+2. entitlement of additional rights (such as additional
+functionality, upgrade or support) for a previously granted software entitlement"""@en ;
+                  rdfs:label "Software maintenance" .
 
 
 ###  http://purl.org/ai4se/owl#Management
 ai4se:Management rdf:type owl:Class ;
-                 rdfs:subClassOf ai4se:Process .
+                 rdfs:subClassOf ai4se:Process ;
+                 rdfs:comment "Represents software management activities and processes."@en ;
+                 rdfs:label "Process management" .
 
 
 ###  http://purl.org/ai4se/owl#Miscellaneous
@@ -229,17 +279,27 @@ https://www.computer.org/education/bodies-of-knowledge/software-engineering""" ;
 
 ###  http://purl.org/ai4se/owl#Model
 ai4se:Model rdf:type owl:Class ;
-            rdfs:subClassOf gufo:FunctionalComplex .
+            rdfs:subClassOf gufo:FunctionalComplex ;
+            rdfs:comment """Represents an artifact defining (semi-)formally 
+
+1. properties of one or more artefacts used by software engineering activities or processes or
+
+2. properties of software engineering activities or processes."""@en .
 
 
 ###  http://purl.org/ai4se/owl#ModelDrivenSoftwareEngineering
 ai4se:ModelDrivenSoftwareEngineering rdf:type owl:Class ;
-                                     rdfs:subClassOf gufo:Relator .
+                                     rdfs:subClassOf gufo:Relator ;
+                                     rdfs:comment "Relates software activities and processes to models used for model-driven software engineering"@en .
 
 
 ###  http://purl.org/ai4se/owl#Monitoring
 ai4se:Monitoring rdf:type owl:Class ;
-                 rdfs:subClassOf ai4se:Operate .
+                 rdfs:subClassOf ai4se:Operate ;
+                 rdfs:comment """Represents software monitoring activities and processes.
+
+Software monitoring is systematically observing, checking, or keeping track of the operations or performance of a software or component."""@en ;
+                 rdfs:label "Software monitoring" .
 
 
 ###  http://purl.org/ai4se/owl#None
@@ -249,12 +309,27 @@ ai4se:None rdf:type owl:Class ;
 
 ###  http://purl.org/ai4se/owl#Operate
 ai4se:Operate rdf:type owl:Class ;
-              rdfs:subClassOf ai4se:SoftwareEngineering .
+              rdfs:subClassOf ai4se:Software_Engineering .
+
+
+###  http://purl.org/ai4se/owl#Operation
+ai4se:Operation rdf:type owl:Class ;
+                rdfs:subClassOf ai4se:Operate ;
+                rdfs:comment """Represents software operation activities and processes.
+
+Software operation refers to
+
+1. The use and execution of software in its production environment to perform its intended functions.
+
+2. Running a software to deliver services or perform tasks for users or other systems."""@en ;
+                rdfs:label "Software operation" .
 
 
 ###  http://purl.org/ai4se/owl#Process
 ai4se:Process rdf:type owl:Class ;
-              rdfs:subClassOf ai4se:SoftwareEngineering .
+              rdfs:subClassOf ai4se:Software_Engineering ;
+              rdfs:label "Represents processes for software engineering along the software lifecycle of software development and operation."@en ,
+                         "Processes" .
 
 
 ###  http://purl.org/ai4se/owl#Purpose
@@ -264,15 +339,31 @@ ai4se:Purpose rdf:type owl:Class ;
               rdfs:label "Solution purpose" .
 
 
-###  http://purl.org/ai4se/owl#Requirements
-ai4se:Requirements rdf:type owl:Class ;
-                   rdfs:subClassOf ai4se:Develop .
+###  http://purl.org/ai4se/owl#Requirements_engineering
+ai4se:Requirements_engineering rdf:type owl:Class ;
+                               rdfs:subClassOf ai4se:Develop ;
+                               rdfs:comment """Represents requirements engineering activities and processes. 
+
+A software requirement is a condition or capability that must be met by a software or component.
+
+According to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, software requirement is
+
+1. software capability needed by a user to solve a problem or to achieve an objective
+
+2. software capability that must be met or possessed by a system or system component to satisfy a contract, standard, specification, or other formally imposed document
+
+According to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, software requirements engineering is
+
+1. science and discipline concerned with analyzing and documenting software requirements 
+
+2. software requirements elicitation, analysis, specification, verification, and management"""@en ;
+                               rdfs:label "Requirements" .
 
 
 ###  http://purl.org/ai4se/owl#ResearchPaper
 ai4se:ResearchPaper rdf:type owl:Class ;
                     rdfs:subClassOf gufo:FunctionalComplex ;
-                    rdfs:comment "An artifact documenting research findings like new insights, methods, techniques, etc."@en ;
+                    rdfs:comment "Represents an artifact documenting research findings like new insights, methods, techniques, etc."@en ;
                     rdfs:label "ResearchPaper" .
 
 
@@ -283,11 +374,20 @@ ai4se:ResearchPaperCollection rdf:type owl:Class ;
                               rdfs:label "ResearchPaperCollection" .
 
 
-###  http://purl.org/ai4se/owl#SoftwareEngineering
-ai4se:SoftwareEngineering rdf:type owl:Class ;
-                          rdfs:subClassOf ai4se:Target ,
-                                          ai4se:PrMO:Activity ,
-                                          ai4se:PrMO:Process .
+###  http://purl.org/ai4se/owl#Software_Engineering
+ai4se:Software_Engineering rdf:type owl:Class ;
+                           rdfs:subClassOf ai4se:Target ,
+                                           ai4se:PrMO:Activity ,
+                                           ai4se:PrMO:Process ;
+                           rdfs:comment """Represents software engineering (SE) activities and processes. 
+
+According to  ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, software engineering is:
+
+1. systematic application of scientific and technological knowledge, methods, and experience to the design, implementation, testing, and documentation of software.
+
+2. application of a systematic, disciplined, quantifiable approach to the development, operation, and maintenance of software; that is, the application of engineering to software."""@en ;
+                           rdfs:isDefinedBy "https://www.computer.org/education/bodies-of-knowledge/software-engineering" ;
+                           rdfs:label "Software Engineering" .
 
 
 ###  http://purl.org/ai4se/owl#Statistical
@@ -309,7 +409,17 @@ ai4se:Target rdf:type owl:Class ;
 
 ###  http://purl.org/ai4se/owl#Testing
 ai4se:Testing rdf:type owl:Class ;
-              rdfs:subClassOf ai4se:Develop .
+              rdfs:subClassOf ai4se:Develop ;
+              rdfs:comment """Represents software testing activities and processes.
+
+Software testing encompasses the processes and activities used to evaluate the quality of a software or a component and of related artefacts.
+
+According to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, software testing is
+
+1. activity in which a system or component is executed under specified conditions, the results are observed or recorded, and an evaluation is made of some aspect of the system or component
+
+2. dynamic verification that a program provides expected behaviors on a finite set of test cases, suitably selected from the usually infinite executions domain."""@en ;
+              rdfs:label "Software testing" .
 
 
 ###  http://purl.org/ai4se/owl#Type
@@ -392,7 +502,7 @@ Defined by PrMO: an ontology of process-reference models"""@en ;
   owl:members ( ai4se:Architecture_and_Design
                 ai4se:Coding
                 ai4se:Maintenance
-                ai4se:Requirements
+                ai4se:Requirements_engineering
                 ai4se:Testing
               )
 ] .
@@ -400,8 +510,8 @@ Defined by PrMO: an ontology of process-reference models"""@en ;
 
 [ rdf:type owl:AllDisjointClasses ;
   owl:members ( ai4se:Deployment
-                ai4se:Execution
                 ai4se:Monitoring
+                ai4se:Operation
               )
 ] .
 
