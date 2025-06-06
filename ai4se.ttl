@@ -111,27 +111,37 @@ owl:topObjectProperty rdfs:domain ai4se:ResearchPaperCollection .
 
 ###  http://purl.org/ai4se/owl#AI-assisted_options
 ai4se:AI-assisted_options rdf:type owl:Class ;
-                          rdfs:subClassOf ai4se:Level .
+                          rdfs:subClassOf ai4se:Level ;
+                          rdfs:comment "Represents the case in which choices, recommendations, or decision-support outputs for the target SE processes or activities are generated or enhanced by an AI system, while retaining human control over the final choice, recommendation or decision, which may differ from the AI outputs."@en ;
+                          rdfs:label "AI-assisted options" .
 
 
 ###  http://purl.org/ai4se/owl#AI-assisted_selection
 ai4se:AI-assisted_selection rdf:type owl:Class ;
-                            rdfs:subClassOf ai4se:Level .
+                            rdfs:subClassOf ai4se:Level ;
+                            rdfs:comment "Represents the case in which choices, recommendations, or decision-support outputs for the target SE processes or activities are generated or enhanced by an AI system, where the final choices, recommendations or decisions require human confirmation and do not differ from the AI outputs."@en ;
+                            rdfs:label "AI-assisted selection" .
 
 
 ###  http://purl.org/ai4se/owl#AI-driven_full_automation
 ai4se:AI-driven_full_automation rdf:type owl:Class ;
-                                rdfs:subClassOf ai4se:Level .
+                                rdfs:subClassOf ai4se:Level ;
+                                rdfs:comment "Represents the case in which AI is used to automate all tasks or decision-making components within the target SE processes or activities, without requiring human intervention."@en ;
+                                rdfs:label "AI-driven full automation" .
 
 
 ###  http://purl.org/ai4se/owl#AI-driven_partial_automation
 ai4se:AI-driven_partial_automation rdf:type owl:Class ;
-                                   rdfs:subClassOf ai4se:Level .
+                                   rdfs:subClassOf ai4se:Level ;
+                                   rdfs:comment "Represents the case in which AI is used to automate specific tasks or decision-making components within the target SE processes or activities, while other parts of the process remain under human control or require human intervention."@en ;
+                                   rdfs:label "AI-driven partial automation" .
 
 
 ###  http://purl.org/ai4se/owl#Agentic_AI
 ai4se:Agentic_AI rdf:type owl:Class ;
-                 rdfs:subClassOf ai4se:Type .
+                 rdfs:subClassOf ai4se:Type ;
+                 rdfs:comment "Represents AI systems that rely on autonomous agents using AI techniques to plan, adapt, and execute multi-step objectives with minimal human control."@en ;
+                 rdfs:label "Agentic AI" .
 
 
 ###  http://purl.org/ai4se/owl#Architecture_and_Design
@@ -145,13 +155,19 @@ According to ISO/IEC/IEEE 42010:2022: Software, systems and enterprise - Archite
 
 Software design is the process of defining the architecture, components, interfaces, and other characteristics of a software or a component.
 
-According to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, software design is  the use of scientific principles, technical information, and imagination in the definition of a software system to perform pre-specified functions with maximum economy and efficiency."""@en ;
+According to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, software design is  
+
+1. the use of scientific principles, technical information, and imagination in the definition of a software system to perform pre-specified functions with maximum economy and efficiency."""@en ;
                               rdfs:label "Software architecture and design" .
 
 
 ###  http://purl.org/ai4se/owl#Classical_machine_learning
 ai4se:Classical_machine_learning rdf:type owl:Class ;
-                                 rdfs:subClassOf ai4se:Type .
+                                 rdfs:subClassOf ai4se:Subsymbolic ;
+                                 rdfs:comment """Represents subsymbolic AI systems that rely on statistical and algorithmic learning techniques - such as decision trees, support vector machines, linear regression, and clustering - to learn patterns from structured data and make predictions or classifications. These models typically operate on explicitly defined features and do not involve deep neural networks.
+
+This class of AI is used in contrast to deep learning AI."""@en ;
+                                 rdfs:label "Classical machine learning" .
 
 
 ###  http://purl.org/ai4se/owl#Coding
@@ -171,7 +187,13 @@ According to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, 
 
 ###  http://purl.org/ai4se/owl#Deep_learning
 ai4se:Deep_learning rdf:type owl:Class ;
-                    rdfs:subClassOf ai4se:Type .
+                    rdfs:subClassOf ai4se:Subsymbolic ;
+                    rdfs:comment """Represents subsymbolic AI systems that rely on deep artificial neural networks to automatically learn features and perform tasks such as classification or prediction, especially from large and complex datasets. 
+
+According to ISO/IEC 22989:2022 Information technology - Artificial intelligence - Artificial intelligence concepts and terminology, deep learning (deep neural network learning) is
+
+- AI approach to creating rich hierarchical representations through the training of neural networks with many hidden layers."""@en ;
+                    rdfs:label "Deep learning AI" .
 
 
 ###  http://purl.org/ai4se/owl#Deployment
@@ -181,7 +203,9 @@ ai4se:Deployment rdf:type owl:Class ;
 
 Software deployment encompasses the processes and activities for placing a software or component into an operational environment.
 
-According to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, deployment is a phase of a project in which a system is put into operation and cutover issues are resolved."""@en ;
+According to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, deployment is 
+
+1. a phase of a project in which a system is put into operation and cutover issues are resolved."""@en ;
                  rdfs:label "Software deployment" .
 
 
@@ -189,30 +213,45 @@ According to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, 
 ai4se:Develop rdf:type owl:Class ;
               rdfs:subClassOf ai4se:Software_Engineering ;
               owl:disjointWith ai4se:Operate ;
-              rdfs:label """Represents the software development activities.
+              rdfs:label """Represents software development activities and processes.
 
 Software development is the set of activities that result in software products, including requirements analysis, design, coding, testing, and maintenance. It encompasses all the activities and processes involved in creating, implementing, and modifying software (artefacts), as well as ensuring that it satisfies stakeholder requirements throughout the software development life cycle."""@en ,
                          "Develop" .
 
 
-###  http://purl.org/ai4se/owl#General_purpose_AI
-ai4se:General_purpose_AI rdf:type owl:Class ;
-                         rdfs:subClassOf ai4se:Type .
+###  http://purl.org/ai4se/owl#General_AI
+ai4se:General_AI rdf:type owl:Class ;
+                 rdfs:subClassOf ai4se:Type ;
+                 rdfs:comment """Represents AI systems capable of performing a broad set of distinct tasks with satisfactory performance.
+
+According to ISO/IEC 22989:2022 Information technology - Artificial intelligence - Artificial intelligence concepts and terminology, general AI (AGI, artificial general intelligence)
+
+- type of AI system that addresses a broad range of tasks with a satisfactory level of performance 
+
+Note 1: Compared to narrow AI.
+Note 2: AGI is often used in a stronger sense, meaning systems that not only can perform a wide variety of tasks, but all tasks that a human can perform.""" ;
+                 rdfs:label "General AI" .
 
 
 ###  http://purl.org/ai4se/owl#Generate
 ai4se:Generate rdf:type owl:Class ;
-               rdfs:subClassOf ai4se:Purpose .
+               rdfs:subClassOf ai4se:Purpose ;
+               rdfs:comment "The purpose of using AI is to derive / create (parts of) artefacts used in software engineering."@en ;
+               rdfs:label "Generate" .
 
 
 ###  http://purl.org/ai4se/owl#Generative_AI
 ai4se:Generative_AI rdf:type owl:Class ;
-                    rdfs:subClassOf ai4se:Type .
+                    rdfs:subClassOf ai4se:Type ;
+                    rdfs:comment "Represents AI systems that use learned or derived knowledge to produce original outputs, such as synthetic text, media, or other content types. It often uses subsymbolic AI like Convolutional Neural Networks (CNNs), Recurrent Neural Networks (RNNs), or Transformer-based models, but also symbolic AI."@en ;
+                    rdfs:label "Generative AI" .
 
 
 ###  http://purl.org/ai4se/owl#Improve
 ai4se:Improve rdf:type owl:Class ;
-              rdfs:subClassOf ai4se:Purpose .
+              rdfs:subClassOf ai4se:Purpose ;
+              rdfs:comment "The purpose of using AI is to improve (parts of) artefacts used in software engineering."@en ;
+              rdfs:label "Improve" .
 
 
 ###  http://purl.org/ai4se/owl#Improvement
@@ -236,8 +275,18 @@ According to ISO/IEC/IEEE 12207:2017: Systems and software engineering - Softwar
 ###  http://purl.org/ai4se/owl#Level
 ai4se:Level rdf:type owl:Class ;
             rdfs:subClassOf gufo:Kind ;
-            rdfs:label "Represents the level of automation provided / enabled by the proposed approach, method, and/or technique."@en ,
-                       "Level of automation" .
+            rdfs:label """Represents the level of automation provided / enabled by the AI system being used.
+
+According to ISO/IEC 22989:2022 Information technology - Artificial intelligence - Artificial intelligence concepts and terminology, artificial intelligence (AI) is
+
+- <discipline> research and development of mechanisms and applications of AI systems.
+
+and
+
+artificial intelligence system (AI system) is
+
+- engineered system that generates outputs such as content, forecasts, recommendations or decisions for a given set of human-defined objectives."""@en ,
+                       "Level of AI automation" .
 
 
 ###  http://purl.org/ai4se/owl#Maintenance
@@ -259,7 +308,13 @@ functionality, upgrade or support) for a previously granted software entitlement
 ###  http://purl.org/ai4se/owl#Management
 ai4se:Management rdf:type owl:Class ;
                  rdfs:subClassOf ai4se:Process ;
-                 rdfs:comment "Represents software management activities and processes."@en ;
+                 rdfs:comment """Represents software management activities and processes.
+
+Software management consists of processes that plan, monitor and control the development and maintenance of software throughout its lifecycle. This ensures that software-related activities are conducted systematically and can be quantified.
+
+According to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, management processes are
+
+1. activities that are undertaken in order to ensure that the software engineering processes are performed in a manner consistent with the organization's policies, goals, and standards."""@en ;
                  rdfs:label "Process management" .
 
 
@@ -280,17 +335,23 @@ https://www.computer.org/education/bodies-of-knowledge/software-engineering""" ;
 ###  http://purl.org/ai4se/owl#Model
 ai4se:Model rdf:type owl:Class ;
             rdfs:subClassOf gufo:FunctionalComplex ;
-            rdfs:comment """Represents an artifact defining (semi-)formally 
+            rdfs:comment """Represents artifacts defining (semi-)formally (1) properties of one or more artefacts used by software engineering activities or processes or (2) properties of software engineering activities or processes.
 
-1. properties of one or more artefacts used by software engineering activities or processes or
+According to ISO/IEC 22989:2022 Information technology - Artificial intelligence - Artificial intelligence concepts and terminology, model is
 
-2. properties of software engineering activities or processes."""@en .
+- physical, mathematical or otherwise logical representation of a system, entity, phenomenon, process or data.
+
+Note: For the AI4SE ontology, only mathematical or logical representations are relevant."""@en ;
+            rdfs:label "Model" .
 
 
 ###  http://purl.org/ai4se/owl#ModelDrivenSoftwareEngineering
 ai4se:ModelDrivenSoftwareEngineering rdf:type owl:Class ;
                                      rdfs:subClassOf gufo:Relator ;
-                                     rdfs:comment "Relates software activities and processes to models used for model-driven software engineering"@en .
+                                     rdfs:comment """Relates software activities and processes to models used for model-driven software engineering.
+
+Model-driven software engineering (MDSE) refers to software engineering methodologies that focus on creating and exploiting (domain-specific) models. These are conceptual models that describe various aspects of software, its components and/or environment, and the processes and/or activities used to develop and operate it. Rather than just focusing on programming and code, MDSE emphasises the use of models as the primary artefacts in software engineering processes."""@en ;
+                                     rdfs:label "Model-Driven Software Engineering" .
 
 
 ###  http://purl.org/ai4se/owl#Monitoring
@@ -304,12 +365,16 @@ Software monitoring is systematically observing, checking, or keeping track of t
 
 ###  http://purl.org/ai4se/owl#None
 ai4se:None rdf:type owl:Class ;
-           rdfs:subClassOf ai4se:Level .
+           rdfs:subClassOf ai4se:Level ;
+           rdfs:comment "Represents the case in which the target SE processes or activities are performed without the assistance of AI."@en ;
+           rdfs:label "No AI-supported automation" .
 
 
 ###  http://purl.org/ai4se/owl#Operate
 ai4se:Operate rdf:type owl:Class ;
-              rdfs:subClassOf ai4se:Software_Engineering .
+              rdfs:subClassOf ai4se:Software_Engineering ;
+              rdfs:comment "Represents software operation activities and processs."@en ;
+              rdfs:label "Operate" .
 
 
 ###  http://purl.org/ai4se/owl#Operation
@@ -329,13 +394,13 @@ Software operation refers to
 ai4se:Process rdf:type owl:Class ;
               rdfs:subClassOf ai4se:Software_Engineering ;
               rdfs:label "Represents processes for software engineering along the software lifecycle of software development and operation."@en ,
-                         "Processes" .
+                         "Software Engineering Processes" .
 
 
 ###  http://purl.org/ai4se/owl#Purpose
 ai4se:Purpose rdf:type owl:Class ;
               rdfs:subClassOf gufo:Kind ;
-              rdfs:comment "Represents the purpose of using an AI-based solution in a software development / operation processes or activities."@en ;
+              rdfs:comment "Represents the purpose of using the AI system in a software development / operation processes or activities."@en ;
               rdfs:label "Solution purpose" .
 
 
@@ -357,7 +422,7 @@ According to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, 
 1. science and discipline concerned with analyzing and documenting software requirements 
 
 2. software requirements elicitation, analysis, specification, verification, and management"""@en ;
-                               rdfs:label "Requirements" .
+                               rdfs:label "Requirements engineering" .
 
 
 ###  http://purl.org/ai4se/owl#ResearchPaper
@@ -381,7 +446,7 @@ ai4se:Software_Engineering rdf:type owl:Class ;
                                            ai4se:PrMO:Process ;
                            rdfs:comment """Represents software engineering (SE) activities and processes. 
 
-According to  ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, software engineering is:
+According to  ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, software engineering is
 
 1. systematic application of scientific and technological knowledge, methods, and experience to the design, implementation, testing, and documentation of software.
 
@@ -392,18 +457,37 @@ According to  ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary,
 
 ###  http://purl.org/ai4se/owl#Statistical
 ai4se:Statistical rdf:type owl:Class ;
-                  rdfs:subClassOf ai4se:Type .
+                  rdfs:subClassOf ai4se:Subsymbolic ;
+                  rdfs:comment "Represents subsymbolic AI systems that rely on data and statistical inference to identify patterns and make predictions."@en ;
+                  rdfs:label "Statistical AI" .
+
+
+###  http://purl.org/ai4se/owl#Subsymbolic
+ai4se:Subsymbolic rdf:type owl:Class ;
+                  rdfs:subClassOf ai4se:Type ;
+                  rdfs:comment """Represents AI systems that use numerical models to represent knowledge and computations, such as numerical optimisation and statistical learning, in order to model and solve problems.
+
+According to ISO/IEC 22989:2022 Information technology - Artificial intelligence - Artificial intelligence concepts and terminology, subsymbolic AI is
+
+- AI based on techniques and models that use an implicit encoding of information, that can be derived from experience or raw data."""@en ;
+                  rdfs:label "Subsymbolic AI" .
 
 
 ###  http://purl.org/ai4se/owl#Symbolic
 ai4se:Symbolic rdf:type owl:Class ;
-               rdfs:subClassOf ai4se:Type .
+               rdfs:subClassOf ai4se:Type ;
+               rdfs:comment """Represents AI systems that use approaches relying on the explicit definition of symbols and rules representing knowledge and performing logical reasoning.
+
+According to ISO/IEC 22989:2022 Information technology - Artificial intelligence - Artificial intelligence concepts and terminology, symbolic AI is
+
+- AI based on techniques and models that manipulate symbols and structures according to explicitly defined rules to obtain inferences."""@en ;
+               rdfs:label "Symbolic AI" .
 
 
 ###  http://purl.org/ai4se/owl#Target
 ai4se:Target rdf:type owl:Class ;
              rdfs:subClassOf gufo:EventType ;
-             rdfs:comment "Represents the primary object, system, concept, or issue in a software development / operation process or activitiy being addressed."@en ;
+             rdfs:comment "Represents the primary concept, issue, component, software, or process in a software engineering process or activitiy being addressed."@en ;
              rdfs:label "Solution target" .
 
 
@@ -425,13 +509,25 @@ According to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, 
 ###  http://purl.org/ai4se/owl#Type
 ai4se:Type rdf:type owl:Class ;
            rdfs:subClassOf gufo:Kind ;
-           rdfs:comment "Represents the type of AI being used in the presented solution."@en ;
-           rdfs:label "AI Type" .
+           rdfs:comment """Represents the type of the artificial intelligence (AI) system being used.
+
+According to ISO/IEC 22989:2022 Information technology - Artificial intelligence - Artificial intelligence concepts and terminology, artificial intelligence (AI) is
+
+- <discipline> research and development of mechanisms and applications of AI systems.
+
+and
+
+artificial intelligence system (AI system) is
+
+- engineered system that generates outputs such as content, forecasts, recommendations or decisions for a given set of human-defined objectives."""@en ;
+           rdfs:label "Type of AI system" .
 
 
 ###  http://purl.org/ai4se/owl#Understand
 ai4se:Understand rdf:type owl:Class ;
-                 rdfs:subClassOf ai4se:Purpose .
+                 rdfs:subClassOf ai4se:Purpose ;
+                 rdfs:comment "The purpose of using AI is to gain insight."@en ;
+                 rdfs:label "Understand" .
 
 
 ###  http://purl.org/ai4se/owl#CSO:Topic
@@ -490,7 +586,7 @@ Defined by PrMO: an ontology of process-reference models"""@en ;
   owl:members ( ai4se:Agentic_AI
                 ai4se:Classical_machine_learning
                 ai4se:Deep_learning
-                ai4se:General_purpose_AI
+                ai4se:General_AI
                 ai4se:Generative_AI
                 ai4se:Statistical
                 ai4se:Symbolic
