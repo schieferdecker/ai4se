@@ -27,16 +27,24 @@
 ###  http://purl.org/ai4se/owl#hasAutomationLevel
 ai4se:hasAutomationLevel rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf gufo:inheresIn ;
-                         rdfs:domain <http://purl.org/ai4se/papers#Research_contribution> ;
+                         rdfs:domain ai4se:Research_contribution ;
                          rdfs:range ai4se:AIAutomationLevel ;
                          rdfs:comment "Represents the automation level of the AI solution being proposed, applied or developed in a research paper."@en ;
                          rdfs:label "hasAutomationLevel" .
 
 
+###  http://purl.org/ai4se/owl#hasAutomationLevelValue
+ai4se:hasAutomationLevelValue rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf gufo:hasReifiedQualityValue ;
+                              rdf:type owl:FunctionalProperty ;
+                              rdfs:domain ai4se:AIAutomationLevel ;
+                              rdfs:range ai4se:Automation_level_value .
+
+
 ###  http://purl.org/ai4se/owl#hasSolutionPurpose
 ai4se:hasSolutionPurpose rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf gufo:inheresIn ;
-                         rdfs:domain <http://purl.org/ai4se/papers#Research_contribution> ;
+                         rdfs:domain ai4se:Research_contribution ;
                          rdfs:range ai4se:SolutionPurpose ;
                          rdfs:comment "Represents the purpose of the AI solution being proposed, applied or developed in a research paper."@en ;
                          rdfs:label "hasSolutionPurpose" .
@@ -72,6 +80,13 @@ ai4se:isProperPartOfProcess rdf:type owl:ObjectProperty ;
                             rdfs:label "isPartOfProcess" .
 
 
+###  http://purl.org/ai4se/owl#mediatesContributionResearchTopic
+ai4se:mediatesContributionResearchTopic rdf:type owl:ObjectProperty ;
+                                        rdfs:subPropertyOf gufo:mediates ;
+                                        rdfs:domain ai4se:Research_contribution ;
+                                        rdfs:range ai4se:CSO:Topic .
+
+
 ###  http://purl.org/ai4se/owl#mediatesMDSEModel
 ai4se:mediatesMDSEModel rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf gufo:mediates ;
@@ -79,55 +94,40 @@ ai4se:mediatesMDSEModel rdf:type owl:ObjectProperty ;
                         rdfs:range ai4se:Model .
 
 
-###  http://purl.org/ai4se/papers#hasAutomationLevelValue
-<http://purl.org/ai4se/papers#hasAutomationLevelValue> rdf:type owl:ObjectProperty ;
-                                                       rdfs:subPropertyOf gufo:hasReifiedQualityValue ;
-                                                       rdf:type owl:FunctionalProperty ;
-                                                       rdfs:domain ai4se:AIAutomationLevel ;
-                                                       rdfs:range <http://purl.org/ai4se/papers#Automation_level_value> .
+###  http://purl.org/ai4se/owl#mediatesMDSETarget
+ai4se:mediatesMDSETarget rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf gufo:mediates ;
+                         rdfs:domain ai4se:Model-Driven_Software_Engineering ;
+                         rdfs:range ai4se:Target .
 
 
-###  http://purl.org/ai4se/papers#mediatesContributionResearchTopic
-<http://purl.org/ai4se/papers#mediatesContributionResearchTopic> rdf:type owl:ObjectProperty ;
-                                                                 rdfs:subPropertyOf gufo:mediates ;
-                                                                 rdfs:domain <http://purl.org/ai4se/papers#Research_contribution> ;
-                                                                 rdfs:range ai4se:CSO:Topic .
+###  http://purl.org/ai4se/owl#mediatesTarget
+ai4se:mediatesTarget rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf gufo:manifestedIn ;
+                     rdf:type owl:FunctionalProperty ;
+                     rdfs:domain ai4se:Research_contribution ;
+                     rdfs:range ai4se:Target .
 
 
-###  http://purl.org/ai4se/papers#mediatesMDSETarget
-<http://purl.org/ai4se/papers#mediatesMDSETarget> rdf:type owl:ObjectProperty ;
-                                                  rdfs:subPropertyOf gufo:mediates ;
-                                                  rdfs:domain ai4se:Model-Driven_Software_Engineering ;
-                                                  rdfs:range ai4se:Target .
+###  http://purl.org/ai4se/owl#mediatesTopicResearchPaper
+ai4se:mediatesTopicResearchPaper rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf gufo:mediates ;
+                                 rdfs:domain ai4se:Research_topic ;
+                                 rdfs:range ai4se:Research_paper .
 
 
-###  http://purl.org/ai4se/papers#mediatesTarget
-<http://purl.org/ai4se/papers#mediatesTarget> rdf:type owl:ObjectProperty ;
-                                              rdfs:subPropertyOf gufo:manifestedIn ;
-                                              rdf:type owl:FunctionalProperty ;
-                                              rdfs:domain <http://purl.org/ai4se/papers#Research_contribution> ;
-                                              rdfs:range ai4se:Target .
+###  http://purl.org/ai4se/owl#mediatesTopicResearchTopic
+ai4se:mediatesTopicResearchTopic rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf gufo:mediates ;
+                                 rdfs:domain ai4se:Research_topic ;
+                                 rdfs:range ai4se:CSO:Topic .
 
 
-###  http://purl.org/ai4se/papers#mediatesTopicResearchPaper
-<http://purl.org/ai4se/papers#mediatesTopicResearchPaper> rdf:type owl:ObjectProperty ;
-                                                          rdfs:subPropertyOf gufo:mediates ;
-                                                          rdfs:domain <http://purl.org/ai4se/papers#Research_topic> ;
-                                                          rdfs:range ai4se:Research_paper .
-
-
-###  http://purl.org/ai4se/papers#mediatesTopicResearchTopic
-<http://purl.org/ai4se/papers#mediatesTopicResearchTopic> rdf:type owl:ObjectProperty ;
-                                                          rdfs:subPropertyOf gufo:mediates ;
-                                                          rdfs:domain <http://purl.org/ai4se/papers#Research_topic> ;
-                                                          rdfs:range ai4se:CSO:Topic .
-
-
-###  http://purl.org/ai4se/papers#usesAIType
-<http://purl.org/ai4se/papers#usesAIType> rdf:type owl:ObjectProperty ;
-                                          rdfs:subPropertyOf gufo:mediates ;
-                                          rdfs:domain <http://purl.org/ai4se/papers#Research_contribution> ;
-                                          rdfs:range ai4se:Type .
+###  http://purl.org/ai4se/owl#usesAIType
+ai4se:usesAIType rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf gufo:mediates ;
+                 rdfs:domain ai4se:Research_contribution ;
+                 rdfs:range ai4se:Type .
 
 
 ###  http://www.w3.org/2002/07/owl#topObjectProperty
@@ -141,7 +141,7 @@ owl:topObjectProperty rdfs:domain ai4se:Research_paper_collection .
 ###  http://purl.org/ai4se/owl#AIAutomationLevel
 ai4se:AIAutomationLevel rdf:type owl:Class ;
                         rdfs:subClassOf gufo:Quality ;
-                        rdfs:label """Represents the level of automation provided / enabled by the AI system being used.
+                        rdfs:comment """Represents the level of automation provided / enabled by the AI system being used.
 
 According to ISO/IEC 22989:2022 Information technology - Artificial intelligence - Artificial intelligence concepts and terminology, artificial intelligence (AI) is
 
@@ -151,8 +151,23 @@ and
 
 artificial intelligence system (AI system) is
 
-- engineered system that generates outputs such as content, forecasts, recommendations or decisions for a given set of human-defined objectives."""@en ,
-                                   "Level of AI automation" .
+- engineered system that generates outputs such as content, forecasts, recommendations or decisions for a given set of human-defined objectives."""@en ;
+                        rdfs:label "Level of AI automation" .
+
+
+###  http://purl.org/ai4se/owl#Automation_level_value
+ai4se:Automation_level_value rdf:type owl:Class ;
+                             owl:equivalentClass [ rdf:type owl:Class ;
+                                                   owl:oneOf ( ai4se:AI-assisted_options
+                                                               ai4se:AI-assisted_selection
+                                                               ai4se:AI-driven_full_automation
+                                                               ai4se:AI-driven_partial_automation
+                                                               ai4se:No_AI_support
+                                                             )
+                                                 ] ;
+                             rdfs:subClassOf gufo:QualityValue ;
+                             rdfs:comment "Represent the automation levels achieved by an AI system in a research contribution."@en ;
+                             rdfs:label "Automation level value" .
 
 
 ###  http://purl.org/ai4se/owl#Miscellaneous
@@ -191,6 +206,13 @@ Model-driven software engineering (MDSE) refers to software engineering methodol
                                         rdfs:label "Model-Driven Software Engineering" .
 
 
+###  http://purl.org/ai4se/owl#Research_contribution
+ai4se:Research_contribution rdf:type owl:Class ;
+                            rdfs:subClassOf gufo:Relator ;
+                            rdfs:comment "Represents the specific research contribution(s) made by a specific research paper."@en ;
+                            rdfs:label "Research contribution" .
+
+
 ###  http://purl.org/ai4se/owl#Research_paper
 ai4se:Research_paper rdf:type owl:Class ;
                      rdfs:subClassOf gufo:FunctionalComplex ;
@@ -205,11 +227,25 @@ ai4se:Research_paper_collection rdf:type owl:Class ;
                                 rdfs:label "Research paper collection" .
 
 
+###  http://purl.org/ai4se/owl#Research_topic
+ai4se:Research_topic rdf:type owl:Class ;
+                     rdfs:subClassOf gufo:Relator ;
+                     rdfs:comment "Represents the research topic of a research paper or of a research contribution."@en ;
+                     rdfs:label "Research topic" .
+
+
 ###  http://purl.org/ai4se/owl#SolutionPurpose
 ai4se:SolutionPurpose rdf:type owl:Class ;
                       rdfs:subClassOf gufo:Quality ;
                       rdfs:comment "Represents the purpose of using the AI system in a software development / operation processes or activities."@en ;
                       rdfs:label "Solution purpose" .
+
+
+###  http://purl.org/ai4se/owl#Solution_purpose_value
+ai4se:Solution_purpose_value rdf:type owl:Class ;
+                             rdfs:subClassOf gufo:QualityValue ;
+                             rdfs:comment "Represents the purpose of an AI system in a research contribution."@en ;
+                             rdfs:label "Solution purpose value" .
 
 
 ###  http://purl.org/ai4se/owl#Target
@@ -240,9 +276,9 @@ artificial intelligence system (AI system) is
 ai4se:CSO:Topic rdf:type owl:Class ;
                 rdfs:subClassOf ai4se:Miscellaneous ,
                                 gufo:Category ;
+                rdfs:comment "Represents the research topics in Computer Science as defined by the Computer Science Ontology CSO."@en ;
                 rdfs:isDefinedBy "https://cso.kmi.open.ac.uk/" ;
-                rdfs:label "Represents the research topics in Computer Science as defined by the Computer Science Ontology CSO."@en ,
-                           "CSO:Topic" .
+                rdfs:label "CSO:Topic" .
 
 
 ###  http://purl.org/ai4se/owl#ODYSSEY:Phase
@@ -274,70 +310,34 @@ Defined by PrMO: an ontology of process-reference models"""@en ;
                    rdfs:label "PrMO:Process" .
 
 
-###  http://purl.org/ai4se/papers#Automation_level_value
-<http://purl.org/ai4se/papers#Automation_level_value> rdf:type owl:Class ;
-                                                      owl:equivalentClass [ rdf:type owl:Class ;
-                                                                            owl:oneOf ( ai4se:AI-assisted_options
-                                                                                        ai4se:AI-assisted_selection
-                                                                                        ai4se:AI-driven_full_automation
-                                                                                        ai4se:AI-driven_partial_automation
-                                                                                        ai4se:No_AI_support
-                                                                                      )
-                                                                          ] ;
-                                                      rdfs:subClassOf gufo:QualityValue ;
-                                                      rdfs:comment "Represent the automation levels achieved by an AI system in a research contribution."@en ;
-                                                      rdfs:label "Automation level value" .
-
-
-###  http://purl.org/ai4se/papers#Research_contribution
-<http://purl.org/ai4se/papers#Research_contribution> rdf:type owl:Class ;
-                                                     rdfs:subClassOf gufo:Relator ;
-                                                     rdfs:comment "Represents the specific research contribution(s) made by a specific research paper."@en ;
-                                                     rdfs:label "Research contribution" .
-
-
-###  http://purl.org/ai4se/papers#Research_topic
-<http://purl.org/ai4se/papers#Research_topic> rdf:type owl:Class ;
-                                              rdfs:subClassOf gufo:Relator ;
-                                              rdfs:comment "Represents the research topic of a research paper or of a research contribution."@en ;
-                                              rdfs:label "Research topic" .
-
-
-###  http://purl.org/ai4se/papers#Solution_purpose_value
-<http://purl.org/ai4se/papers#Solution_purpose_value> rdf:type owl:Class ;
-                                                      rdfs:subClassOf gufo:QualityValue ;
-                                                      rdfs:comment "Represents the purpose of an AI system in a research contribution."@en ;
-                                                      rdfs:label "Solution purpose value" .
-
-
 #################################################################
 #    Individuals
 #################################################################
 
 ###  http://purl.org/ai4se/owl#AI-assisted_options
 ai4se:AI-assisted_options rdf:type owl:NamedIndividual ,
-                                   <http://purl.org/ai4se/papers#Automation_level_value> ;
+                                   ai4se:Automation_level_value ;
                           rdfs:comment "Represents the case in which choices, recommendations, or decision-support outputs for the target SE processes or activities are generated or enhanced by an AI system, while retaining human control over the final choice, recommendation or decision, which may differ from the AI outputs."@en ;
                           rdfs:label "AI-assisted options" .
 
 
 ###  http://purl.org/ai4se/owl#AI-assisted_selection
 ai4se:AI-assisted_selection rdf:type owl:NamedIndividual ,
-                                     <http://purl.org/ai4se/papers#Automation_level_value> ;
+                                     ai4se:Automation_level_value ;
                             rdfs:comment "Represents the case in which choices, recommendations, or decision-support outputs for the target SE processes or activities are generated or enhanced by an AI system, where the final choices, recommendations or decisions require human confirmation and do not differ from the AI outputs."@en ;
                             rdfs:label "AI-assisted selection" .
 
 
 ###  http://purl.org/ai4se/owl#AI-driven_full_automation
 ai4se:AI-driven_full_automation rdf:type owl:NamedIndividual ,
-                                         <http://purl.org/ai4se/papers#Automation_level_value> ;
+                                         ai4se:Automation_level_value ;
                                 rdfs:comment "Represents the case in which AI is used to automate all tasks or decision-making components within the target SE processes or activities, without requiring human intervention."@en ;
                                 rdfs:label "AI-driven full automation" .
 
 
 ###  http://purl.org/ai4se/owl#AI-driven_partial_automation
 ai4se:AI-driven_partial_automation rdf:type owl:NamedIndividual ,
-                                            <http://purl.org/ai4se/papers#Automation_level_value> ;
+                                            ai4se:Automation_level_value ;
                                    rdfs:comment "Represents the case in which AI is used to automate specific tasks or decision-making components within the target SE processes or activities, while other parts of the process remain under human control or require human intervention."@en ;
                                    rdfs:label "AI-driven partial automation" .
 
@@ -417,10 +417,10 @@ According to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, 
 ###  http://purl.org/ai4se/owl#Develop
 ai4se:Develop rdf:type owl:NamedIndividual ,
                        ai4se:Target ;
-              rdfs:label """Represents software development activities and processes.
+              rdfs:comment """Represents software development activities and processes.
 
-Software development is the set of activities that result in software products, including requirements analysis, design, coding, testing, and maintenance. It encompasses all the activities and processes involved in creating, implementing, and modifying software (artefacts), as well as ensuring that it satisfies stakeholder requirements throughout the software development life cycle."""@en ,
-                         "Develop" .
+Software development is the set of activities that result in software products, including requirements analysis, design, coding, testing, and maintenance. It encompasses all the activities and processes involved in creating, implementing, and modifying software (artefacts), as well as ensuring that it satisfies stakeholder requirements throughout the software development life cycle."""@en ;
+              rdfs:label "Develop" .
 
 
 ###  http://purl.org/ai4se/owl#General_AI
@@ -439,7 +439,9 @@ Note 2: AGI is often used in a stronger sense, meaning systems that not only can
 
 ###  http://purl.org/ai4se/owl#Generate
 ai4se:Generate rdf:type owl:NamedIndividual ,
-                        <http://purl.org/ai4se/papers#Solution_purpose_value> .
+                        ai4se:Solution_purpose_value ;
+               rdfs:comment "The purpose of using AI is to generate (parts of) artefacts used in software engineering."@en ;
+               rdfs:label "Generate" .
 
 
 ###  http://purl.org/ai4se/owl#Generative_AI
@@ -451,14 +453,26 @@ ai4se:Generative_AI rdf:type owl:NamedIndividual ,
 
 ###  http://purl.org/ai4se/owl#Improve
 ai4se:Improve rdf:type owl:NamedIndividual ,
-                       <http://purl.org/ai4se/papers#Solution_purpose_value> ;
+                       ai4se:Solution_purpose_value ;
               rdfs:comment "The purpose of using AI is to improve (parts of) artefacts used in software engineering."@en ;
               rdfs:label "Improve" .
 
 
 ###  http://purl.org/ai4se/owl#Improvement
 ai4se:Improvement rdf:type owl:NamedIndividual ,
-                           ai4se:Target .
+                           ai4se:Target ;
+                  rdfs:comment """Represents software engineering process improvement activities and processes.
+
+Process improvement is undertaken to provide enhancements to the software life cycle processes and activities to improve their performance and / or outcomes.
+
+According to ISO/IEC/IEEE 12207:2017: Systems and software engineering - Software life cycle processes, process improvement consists of the following tasks:
+
+1) Prioritize and plan improvement opportunities.
+
+2) Implement improvement opportunities and inform relevant stakeholders.
+
+3) Lessons learned are captured and made available."""@en ;
+                  rdfs:label "Process improvement" .
 
 
 ###  http://purl.org/ai4se/owl#Maintenance
@@ -479,7 +493,15 @@ functionality, upgrade or support) for a previously granted software entitlement
 
 ###  http://purl.org/ai4se/owl#Management
 ai4se:Management rdf:type owl:NamedIndividual ,
-                          ai4se:Target .
+                          ai4se:Target ;
+                 rdfs:comment """Represents software management activities and processes.
+
+Software management consists of processes that plan, monitor and control the development and maintenance of software throughout its lifecycle. This ensures that software-related activities are conducted systematically and can be quantified.
+
+According to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, management processes are
+
+1. activities that are undertaken in order to ensure that the software engineering processes are performed in a manner consistent with the organization's policies, goals, and standards."""@en ;
+                 rdfs:label "Process management" .
 
 
 ###  http://purl.org/ai4se/owl#Monitoring
@@ -493,7 +515,7 @@ Software monitoring is systematically observing, checking, or keeping track of t
 
 ###  http://purl.org/ai4se/owl#No_AI_support
 ai4se:No_AI_support rdf:type owl:NamedIndividual ,
-                             <http://purl.org/ai4se/papers#Automation_level_value> ;
+                             ai4se:Automation_level_value ;
                     rdfs:comment "Represents the case in which the target SE processes or activities are performed without the assistance of AI."@en ;
                     rdfs:label "No AI-supported automation" .
 
@@ -550,7 +572,16 @@ According to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, 
 ai4se:Software_Engineering rdf:type owl:NamedIndividual ,
                                     ai4se:Target ,
                                     ai4se:PrMO:Activity ,
-                                    ai4se:PrMO:Process .
+                                    ai4se:PrMO:Process ;
+                           rdfs:comment """Represents software engineering (SE) activities and processes. 
+
+According to  ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, software engineering is
+
+1. systematic application of scientific and technological knowledge, methods, and experience to the design, implementation, testing, and documentation of software.
+
+2. application of a systematic, disciplined, quantifiable approach to the development, operation, and maintenance of software; that is, the application of engineering to software."""@en ;
+                           rdfs:isDefinedBy "https://www.computer.org/education/bodies-of-knowledge/software-engineering" ;
+                           rdfs:label "Software Engineering" .
 
 
 ###  http://purl.org/ai4se/owl#Statistical
@@ -599,24 +630,28 @@ According to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, 
 
 ###  http://purl.org/ai4se/owl#Understand
 ai4se:Understand rdf:type owl:NamedIndividual ,
-                          <http://purl.org/ai4se/papers#Solution_purpose_value> ;
+                          ai4se:Solution_purpose_value ;
                  rdfs:comment "The purpose of using AI is to gain insight."@en ;
                  rdfs:label "Understand" .
 
 
 ###  http://purl.org/ai4se/papers#lin_traceability_2021
 <http://purl.org/ai4se/papers#lin_traceability_2021> rdf:type owl:NamedIndividual ,
-                                                              ai4se:Research_paper .
+                                                              ai4se:Research_paper ;
+                                                     rdfs:isDefinedBy "10.1109/ICSE43902.2021.00040" ;
+                                                     rdfs:label "lin_traceability_2021" .
 
 
 ###  http://purl.org/ai4se/papers#lin_traceability_2021_contrib
 <http://purl.org/ai4se/papers#lin_traceability_2021_contrib> rdf:type owl:NamedIndividual ,
-                                                                      <http://purl.org/ai4se/papers#Research_contribution> ;
-                                                             <http://purl.org/ai4se/papers#mediatesTarget> ai4se:Develop ;
+                                                                      ai4se:Research_contribution ;
+                                                             ai4se:mediatesTarget ai4se:Develop ;
                                                              gufo:hasQualityValue "AI-driven_partial_automation" ,
                                                                                   "Deep_learning" ,
                                                                                   "Generate" ,
-                                                                                  "Improve" .
+                                                                                  "Improve" ;
+                                                             rdfs:comment "T-BERT generates trace links between source code and natural language artefacts. It represents a significant advancement in automated software traceability, offering improved accuracy, efficiency, and practicality."@en ;
+                                                             rdfs:label "lin_traceability_2021_contrib" .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
