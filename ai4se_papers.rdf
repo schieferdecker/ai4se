@@ -1,0 +1,747 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/ai4se/papers#"
+     xml:base="http://purl.org/ai4se/papers"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:gufo="http://purl.org/nemo/gufo#"
+     xmlns:owl1="http://purl.org/ai4se/owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:ai4se_papers="http://purl.org/ai4se/papers#">
+    <owl:Ontology rdf:about="http://purl.org/ai4se/papers#">
+        <owl:versionIRI rdf:resource="http://purl.org/ai4se/papers#/1.0"/>
+        <owl:imports rdf:resource="http://purl.org/ai4se/owl#/1.0.3"/>
+        <dc:creator>Schieferdecker, Ina K.</dc:creator>
+        <dc:title xml:lang="en">ai4se_papers: An AI for SE paper classification</dc:title>
+        <terms:bibliographicCitation xml:lang="en">Schieferdecker, I.K.: &quot;ai4se: A taxonomy of research papers on the support of software engineering (SE) through the use of artificial intelligence (AI) methods and techniques&quot;, 2025, http://purl.org/ai4se/doc</terms:bibliographicCitation>
+        <terms:license>https://creativecommons.org/licenses/by/4.0/legalcode.en</terms:license>
+        <vann:preferredNamespacePrefix xml:lang="en">ai4se</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ai4se/papers/</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="en">ai4se_papers is a classification of research paper along the ai4se taxonomy 
+
+ai4se is a taxonomy for research papers on the use of artificial intelligence (AI) methods and techniques to support software engineering (SE).  It relates papers to their topics and contributions. These contributions are categorised by the purpose of the solution aimed for, the SE activity or process targeted, the type of AI used and the level of automation supported.</rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/ai4se/owl#isAboutResearchTopic -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ai4se/owl#isAboutResearchTopic"/>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#hasContribution -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ai4se/papers#hasContribution"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/ai4se/owl#AI-assisted_selection -->
+
+    <owl:Class rdf:about="http://purl.org/ai4se/owl#AI-assisted_selection"/>
+    
+
+
+    <!-- http://purl.org/ai4se/owl#AI-driven_partial_automation -->
+
+    <owl:Class rdf:about="http://purl.org/ai4se/owl#AI-driven_partial_automation"/>
+    
+
+
+    <!-- http://purl.org/ai4se/owl#Architecture_and_design -->
+
+    <owl:Class rdf:about="http://purl.org/ai4se/owl#Architecture_and_design"/>
+    
+
+
+    <!-- http://purl.org/ai4se/owl#Classical_machine_learning -->
+
+    <owl:Class rdf:about="http://purl.org/ai4se/owl#Classical_machine_learning"/>
+    
+
+
+    <!-- http://purl.org/ai4se/owl#Coding -->
+
+    <owl:Class rdf:about="http://purl.org/ai4se/owl#Coding"/>
+    
+
+
+    <!-- http://purl.org/ai4se/owl#Deep_learning -->
+
+    <owl:Class rdf:about="http://purl.org/ai4se/owl#Deep_learning"/>
+    
+
+
+    <!-- http://purl.org/ai4se/owl#Deployment -->
+
+    <owl:Class rdf:about="http://purl.org/ai4se/owl#Deployment"/>
+    
+
+
+    <!-- http://purl.org/ai4se/owl#Develop -->
+
+    <owl:Class rdf:about="http://purl.org/ai4se/owl#Develop"/>
+    
+
+
+    <!-- http://purl.org/ai4se/owl#Generate -->
+
+    <owl:Class rdf:about="http://purl.org/ai4se/owl#Generate"/>
+    
+
+
+    <!-- http://purl.org/ai4se/owl#Generative_AI -->
+
+    <owl:Class rdf:about="http://purl.org/ai4se/owl#Generative_AI"/>
+    
+
+
+    <!-- http://purl.org/ai4se/owl#Improve -->
+
+    <owl:Class rdf:about="http://purl.org/ai4se/owl#Improve"/>
+    
+
+
+    <!-- http://purl.org/ai4se/owl#Management -->
+
+    <owl:Class rdf:about="http://purl.org/ai4se/owl#Management"/>
+    
+
+
+    <!-- http://purl.org/ai4se/owl#Requirements -->
+
+    <owl:Class rdf:about="http://purl.org/ai4se/owl#Requirements"/>
+    
+
+
+    <!-- http://purl.org/ai4se/owl#Symbolic -->
+
+    <owl:Class rdf:about="http://purl.org/ai4se/owl#Symbolic"/>
+    
+
+
+    <!-- http://purl.org/ai4se/owl#Understand -->
+
+    <owl:Class rdf:about="http://purl.org/ai4se/owl#Understand"/>
+    
+
+
+    <!-- http://purl.org/ai4se/owl#CSO:Topic -->
+
+    <owl:Class rdf:about="http://purl.org/ai4se/owl#CSO:Topic"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/ai4se/papers#bader_getafix_2019 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#bader_getafix_2019">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_paper"/>
+        <owl1:isAboutResearchTopic rdf:resource="http://purl.org/ai4se/papers#CSO:Static_analysis"/>
+        <hasContribution rdf:resource="http://purl.org/ai4se/papers#contrib_bader_getafix_2019"/>
+        <rdfs:label>bader_getafix_2019</rdfs:label>
+        <rdfs:seeAlso>https://doi.org/10.1145/3360585</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#bhat_adex_2019 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#bhat_adex_2019">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_paper"/>
+        <owl1:isAboutResearchTopic rdf:resource="http://purl.org/ai4se/papers#CSO:Traceability_management"/>
+        <hasContribution rdf:resource="http://purl.org/ai4se/papers#contrib_bhat_adex_2019"/>
+        <rdfs:label>bhat_adex_2019</rdfs:label>
+        <rdfs:seeAlso>https://doi.org/10.1109/icsa-c.2019.00035</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#bird_taking_2023 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#bird_taking_2023">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_paper"/>
+        <owl1:isAboutResearchTopic rdf:resource="http://purl.org/ai4se/papers#CSO:Coding_technique"/>
+        <hasContribution rdf:resource="http://purl.org/ai4se/papers#contrib_bird_taking_2023"/>
+        <rdfs:label>bird_taking_2023</rdfs:label>
+        <rdfs:seeAlso>https://doi.org/10.1145/3589996</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#bouzenia_repairagent_2024 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#bouzenia_repairagent_2024">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_paper"/>
+        <owl1:isAboutResearchTopic rdf:resource="http://purl.org/ai4se/papers#CSO:Static_analysis"/>
+        <hasContribution rdf:resource="http://purl.org/ai4se/papers#contrib_bouzenia_repairagent_2024"/>
+        <rdfs:label>bouzenia_repairagent_2024</rdfs:label>
+        <rdfs:seeAlso>https://doi.org/10.1109/ICSE55347.2025.00157</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#ceran_prediction_2023 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#ceran_prediction_2023">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_paper"/>
+        <owl1:isAboutResearchTopic rdf:resource="http://purl.org/ai4se/papers#CSO:Quality_of_softwares"/>
+        <hasContribution rdf:resource="http://purl.org/ai4se/papers#contrib_ceran_prediction_2023"/>
+        <rdfs:label>ceran_prediction_2023</rdfs:label>
+        <rdfs:seeAlso>https://doi.org/10.1016/j.matpr.2022.11.229</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#contrib_bader_getafix_2019 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#contrib_bader_getafix_2019">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#AI-assisted_selection"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Classical_machine_learning"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Coding"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Improve"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_contribution"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Statistical"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Testing"/>
+        <rdfs:comment xml:lang="en">Getafix is an automated bug-fixing tool that learns from past, human-written fixes to suggest human-like fixes for static analysis warnings.</rdfs:comment>
+        <rdfs:label>bader_getafix_2019_contrib</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#contrib_bhat_adex_2019 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#contrib_bhat_adex_2019">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#AI-assisted_selection"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Architecture_and_design"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Classical_machine_learning"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Deployment"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Improve"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_contribution"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Symbolic"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Understand"/>
+        <rdfs:comment xml:lang="en">ADeX is a tool designed to automate  the curation of architectural design decisions in software development. It helps automate the management of architectural decisions, reducing documentation effort while improving decision accuracy.</rdfs:comment>
+        <rdfs:label>bhat_adex_2019_contrib</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#contrib_bird_taking_2023 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#contrib_bird_taking_2023">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#AI-assisted_options"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Coding"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Generate"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Generative_AI"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_contribution"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Understand"/>
+        <rdfs:comment xml:lang="en">Explores the early experiences of developers using the AI-augmented coding assistant GitHub Copilot. It may may expand to debugging, code review, and software maintenance, requiring better trust and provenance tracking.</rdfs:comment>
+        <rdfs:label>bird_taking_2023_contrib</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#contrib_bouzenia_repairagent_2024 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#contrib_bouzenia_repairagent_2024">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#AI-driven_partial_automation"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Agentic_AI"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Coding"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Improve"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_contribution"/>
+        <rdfs:comment xml:lang="en">Presents RepairAgent for automated program repair that allows to autonomously plan and execute actions, such as gathering information, searching for code snippets, and validating fixes, by interacting with a set of specifically designed tools. </rdfs:comment>
+        <rdfs:label>bouzenia_repairagent_2024_contrib</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#contrib_ceran_prediction_2023 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#contrib_ceran_prediction_2023">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#AI-assisted_options"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Classical_machine_learning"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Develop"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Management"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_contribution"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Understand"/>
+        <rdfs:comment xml:lang="en">Explores machine learning-based ensemble methods to predict software quality more accurately than previous approaches.</rdfs:comment>
+        <rdfs:label>ceran_prediction_2023_contrib</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#contrib_drain_generating_2021 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#contrib_drain_generating_2021">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#AI-driven_partial_automation"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Coding"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Generative_AI"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Improve"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Maintenance"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_contribution"/>
+        <rdfs:comment xml:lang="en">Introduces DeepDebug or automated bug detection and fixing in Java: It generates non-deletion fixes that modify instead of just deleting code.</rdfs:comment>
+        <rdfs:label>drain_generating_2021_contrib</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#contrib_guo_graphcodebert_2020 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#contrib_guo_graphcodebert_2020">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#AI-assisted_options"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Coding"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Generative_AI"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Maintenance"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_contribution"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Understand"/>
+        <rdfs:comment xml:lang="en">GraphCodeBERT improves code understanding by incorporating dataflow graphs into the BERT transformer architecture. Data flow graphs represent dependencies between code variables and improve semantic understanding over treating code as a simple sequence of tokens. </rdfs:comment>
+        <rdfs:label>guo_graphcodebert_2020_contrib</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#contrib_gupta_intelligent_2018 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#contrib_gupta_intelligent_2018">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#AI-assisted_options"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Coding"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Deep_learning"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Improve"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_contribution"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Testing"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Understand"/>
+        <rdfs:comment xml:lang="en">DeepCodeReviewer is an automatic code analysis system that learns from  historical peer reviews to identify and suggest relevant reviews for code snippets.</rdfs:comment>
+        <rdfs:label>gupta_intelligent_2018_contrib</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#contrib_korner_transferring_2014 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#contrib_korner_transferring_2014">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#AI-assisted_selection"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Improve"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Requirements"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_contribution"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Symbolic"/>
+        <rdfs:comment xml:lang="en">NLP approach for improving requirements engineering in the automotive industry: It identifies flaws, such as ambiguous words, incomplete process descriptions, or incorrect quantifiers.</rdfs:comment>
+        <rdfs:label>korner_transferring_2014_contrib</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#contrib_lenz_linking_2013 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#contrib_lenz_linking_2013">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#AI-assisted_options"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Classical_machine_learning"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Generate"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Improve"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_contribution"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Testing"/>
+        <rdfs:comment xml:lang="en">Approach links different types of testing information to help automate the generation of equivalence classes for testing. The linking supports tasks such as test reduction, prioritisation and selection.</rdfs:comment>
+        <rdfs:label>lenz_linking_2013_contrib</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#contrib_lin_traceability_2021 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#contrib_lin_traceability_2021">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#AI-driven_partial_automation"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Deep_learning"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Develop"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Generate"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_contribution"/>
+        <rdfs:comment xml:lang="en">T-BERT generates trace links between source code and natural language artefacts. It represents a significant advancement in automated software traceability, offering improved accuracy, efficiency, and practicality.</rdfs:comment>
+        <rdfs:label>lin_traceability_2021_contrib</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#contrib_perini_machine_2012 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#contrib_perini_machine_2012">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#AI-assisted_selection"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Classical_machine_learning"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Deployment"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Improve"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Management"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Requirements"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_contribution"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Symbolic"/>
+        <rdfs:comment xml:lang="en">CBRank is a method for prioritising software requirements. It uses stakeholder input and requirement attributes to generate an optimal ranking and enables adaptive elicitation by refining the prioritisation based on real-time feedback.</rdfs:comment>
+        <rdfs:label>perini_machine_2012_contrib</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#contrib_spieker_reinforcement_2017 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#contrib_spieker_reinforcement_2017">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#AI-assisted_selection"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Deep_learning"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Improve"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Maintenance"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_contribution"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Testing"/>
+        <rdfs:comment xml:lang="en">Introduces Retecs for automatic test case prioritisation and selection in continuous integration. It uses test case meta-data to adapt to changes in the environment and prioritise error-prone test cases.</rdfs:comment>
+        <rdfs:label>spieker_reinforcement_2017_contrib</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#contrib_svyatkovskiy_intellicode_2020 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#contrib_svyatkovskiy_intellicode_2020">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#AI-driven_partial_automation"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Architecture_and_design"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Classical_machine_learning"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Deployment"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Generate"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_contribution"/>
+        <rdfs:comment xml:lang="en">IntelliCode Compose is a code completion tool that uses a generative transformer model to predict sequences of code tokens, including entire lines of code. It has been trained on a massive dataset of 1.2 billion lines of code across multiple programming languages.</rdfs:comment>
+        <rdfs:label>svyatkovskiy_intellicode_2020_contrib</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#contrib_tatineni_integrating_2024 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#contrib_tatineni_integrating_2024">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#AI-driven_partial_automation"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Classical_machine_learning"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Improve"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Improvement"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Maintenance"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Monitoring"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_contribution"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Understand"/>
+        <rdfs:comment xml:lang="en">This book discusses the application of AI beside others for infrastructure monitoring and anomaly detection, predictive maintenance, and build pipeline optimization.</rdfs:comment>
+        <rdfs:label>tatineni_integrating_2024_contrib</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#contrib_tufano_generating_2022 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#contrib_tufano_generating_2022">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#AI-assisted_selection"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Coding"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Generative_AI"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_contribution"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Testing"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Understand"/>
+        <rdfs:comment xml:lang="en">The presented approach improves code review automation with deep learning by working with pre-trained models on raw source code and English text.</rdfs:comment>
+        <rdfs:label>tufano_generating_2022_contrib</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#contrib_zhao_clustering_bayesian_2015 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#contrib_zhao_clustering_bayesian_2015">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#AI-assisted_options"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Improve"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Maintenance"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_contribution"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Statistical"/>
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Testing"/>
+        <rdfs:comment xml:lang="en">ADeX is a tool designed to automate  the curation of architectural design decisions in software development. It helps automate the management of architectural decisions, reducing documentation effort while improving decision accuracy.</rdfs:comment>
+        <rdfs:label>zhao_clustering_bayesian_2015_contrib</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#drain_generating_2021 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#drain_generating_2021">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_paper"/>
+        <owl1:isAboutResearchTopic rdf:resource="http://purl.org/ai4se/papers#CSO:Static_analysis"/>
+        <hasContribution rdf:resource="http://purl.org/ai4se/papers#contrib_drain_generating_2021"/>
+        <rdfs:label>drain_generating_2021</rdfs:label>
+        <rdfs:seeAlso>https://doi.org/10.1109/10.1145/3460945.3464951</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#guo_graphcodebert_2020 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#guo_graphcodebert_2020">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_paper"/>
+        <owl1:isAboutResearchTopic rdf:resource="http://purl.org/ai4se/papers#CSO:Transformer"/>
+        <hasContribution rdf:resource="http://purl.org/ai4se/papers#contrib_guo_graphcodebert_2020"/>
+        <rdfs:label>guo_graphcodebert_2020</rdfs:label>
+        <rdfs:seeAlso>https://doi.org/10.48550/arXiv.2009.08366</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#gupta_intelligent_2018 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#gupta_intelligent_2018">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_paper"/>
+        <owl1:isAboutResearchTopic rdf:resource="http://purl.org/ai4se/papers#CSO:Static_analysis"/>
+        <hasContribution rdf:resource="http://purl.org/ai4se/papers#contrib_gupta_intelligent_2018"/>
+        <rdfs:label>gupta_intelligent_2018</rdfs:label>
+        <rdfs:seeAlso>https://www.kdd.org/kdd2018/files/deep-learning-day/DLDay18_paper_40.pdf</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#korner_transferring_2014 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#korner_transferring_2014">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_paper"/>
+        <owl1:isAboutResearchTopic rdf:resource="http://purl.org/ai4se/papers#CSO:Requirements_engineering"/>
+        <hasContribution rdf:resource="http://purl.org/ai4se/papers#contrib_korner_transferring_2014"/>
+        <rdfs:label>korner_transferring_2014</rdfs:label>
+        <rdfs:seeAlso>https://doi.org/10.1109/AIRE.2014.6894851</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#lenz_linking_2013 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#lenz_linking_2013">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_paper"/>
+        <owl1:isAboutResearchTopic rdf:resource="http://purl.org/ai4se/papers#CSO:Testing_and_debugging"/>
+        <hasContribution rdf:resource="http://purl.org/ai4se/papers#contrib_lenz_linking_2013"/>
+        <rdfs:label>lenz_linking_2013</rdfs:label>
+        <rdfs:seeAlso>https://doi.org/10.1016/j.engappai.2013.01.008</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#lin_traceability_2021 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#lin_traceability_2021">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_paper"/>
+        <owl1:isAboutResearchTopic rdf:resource="http://purl.org/ai4se/papers#CSO:Traceability_management"/>
+        <hasContribution rdf:resource="http://purl.org/ai4se/papers#contrib_lin_traceability_2021"/>
+        <rdfs:label>lin_traceability_2021</rdfs:label>
+        <rdfs:seeAlso>https://doi.org/10.1109/ICSE43902.2021.00040</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#perini_machine_2012 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#perini_machine_2012">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_paper"/>
+        <owl1:isAboutResearchTopic rdf:resource="http://purl.org/ai4se/papers#CSO:Requirements_engineering"/>
+        <hasContribution rdf:resource="http://purl.org/ai4se/papers#contrib_perini_machine_2012"/>
+        <rdfs:label>perini_machine_2012</rdfs:label>
+        <rdfs:seeAlso>https://doi.org/10.1109/TSE.2012.52</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#spieker_reinforcement_2017 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#spieker_reinforcement_2017">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_paper"/>
+        <owl1:isAboutResearchTopic rdf:resource="http://purl.org/ai4se/papers#CSO:Testing_and_debugging"/>
+        <hasContribution rdf:resource="http://purl.org/ai4se/papers#contrib_spieker_reinforcement_2017"/>
+        <rdfs:label>spieker_reinforcement_2017</rdfs:label>
+        <rdfs:seeAlso>https://doi.org/10.1145/3092703.3092709</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#svyatkovskiy_intellicode_2020 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#svyatkovskiy_intellicode_2020">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_paper"/>
+        <owl1:isAboutResearchTopic rdf:resource="http://purl.org/ai4se/papers#CSO:Traceability_management"/>
+        <hasContribution rdf:resource="http://purl.org/ai4se/papers#contrib_svyatkovskiy_intellicode_2020"/>
+        <rdfs:label>svyatkovskiy_intellicode_2020</rdfs:label>
+        <rdfs:seeAlso>https://doi.org/10.1145/3368089.3417058</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#tatineni_integrating_2024 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#tatineni_integrating_2024">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_paper"/>
+        <owl1:isAboutResearchTopic rdf:resource="http://purl.org/ai4se/papers#CSO:DevOps"/>
+        <hasContribution rdf:resource="http://purl.org/ai4se/papers#contrib_tatineni_integrating_2024"/>
+        <rdfs:label>tatineni_integrating_2024</rdfs:label>
+        <rdfs:seeAlso>ISBN	8197138214, 9788197138218</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#tufano_generating_2022 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#tufano_generating_2022">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_paper"/>
+        <owl1:isAboutResearchTopic rdf:resource="http://purl.org/ai4se/papers#CSO:Testing_and_debugging"/>
+        <hasContribution rdf:resource="http://purl.org/ai4se/papers#contrib_tufano_generating_2022"/>
+        <rdfs:label>tufano_generating_2022</rdfs:label>
+        <rdfs:seeAlso>https://doi.org/10.1145/3524481.3527220</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#zhao_clustering_bayesian_2015 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#zhao_clustering_bayesian_2015">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#Research_paper"/>
+        <owl1:isAboutResearchTopic rdf:resource="http://purl.org/ai4se/papers#CSO:Testing_and_debugging"/>
+        <hasContribution rdf:resource="http://purl.org/ai4se/papers#contrib_zhao_clustering_bayesian_2015"/>
+        <rdfs:label>zhao_clustering_bayesian_2015</rdfs:label>
+        <rdfs:seeAlso>10.1109/COMPSAC.2015.154</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#CSO:Coding_technique -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#CSO:Coding_technique">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#CSO:Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#CSO:DevOps -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#CSO:DevOps">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#CSO:Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#CSO:Quality_of_softwares -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#CSO:Quality_of_softwares">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#CSO:Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#CSO:Requirements_engineering -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#CSO:Requirements_engineering">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#CSO:Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#CSO:Software_traceability -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#CSO:Software_traceability">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#CSO:Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#CSO:Static_analysis -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#CSO:Static_analysis">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#CSO:Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#CSO:Testing_and_debugging -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#CSO:Testing_and_debugging">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#CSO:Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#CSO:Traceability_management -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#CSO:Traceability_management">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#CSO:Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/papers#CSO:Transformer -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/papers#CSO:Transformer">
+        <rdf:type rdf:resource="http://purl.org/ai4se/owl#CSO:Topic"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
