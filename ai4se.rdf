@@ -1,0 +1,1790 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/ai4se/ontology#"
+     xml:base="http://purl.org/ai4se/ontology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:gufo="http://purl.org/nemo/gufo#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:ai4se="http://purl.org/ai4se/ontology#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://purl.org/ai4se/ontology#">
+        <owl:versionIRI rdf:resource="http://purl.org/ai4se/ontology#/1.0.0"/>
+        <owl:imports rdf:resource="http://purl.org/nemo/gufo#/1.0.0"/>
+        <dc:creator>Schieferdecker, Ina K.</dc:creator>
+        <dc:title xml:lang="en">ai4se: A taxonomy of research papers on the support of software engineering (SE) through the use of artificial intelligence (AI) methods and techniques.</dc:title>
+        <terms:bibliographicCitation xml:lang="en">Schieferdecker, I.K.: &quot;ai4se: A taxonomy of research papers on the support of software engineering (SE) through the use of artificial intelligence (AI) methods and techniques&quot;, 2025, http://purl.org/ai4se/doc</terms:bibliographicCitation>
+        <terms:license>https://creativecommons.org/licenses/by/4.0/legalcode.en</terms:license>
+        <vann:preferredNamespacePrefix xml:lang="en">ai4se</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ai4se/ontology/</vann:preferredNamespaceUri>
+        <rdfs:comment>An ontology of research papers generated from a BibTeX file.</rdfs:comment>
+        <rdfs:comment xml:lang="en">tbd</rdfs:comment>
+        <rdfs:label>AI for SE Ontology</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ai4se/ontology#belongsTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/nemo/gufo#AbstractIndividualType"/>
+        <rdfs:range rdf:resource="http://purl.org/nemo/gufo#AbstractIndividualType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#belongsToAIType -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ai4se/ontology#belongsToAIType">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ai4se/ontology#belongsTo"/>
+        <rdfs:domain rdf:resource="http://purl.org/ai4se/ontology#AIType"/>
+        <rdfs:range rdf:resource="http://purl.org/ai4se/ontology#AIType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#belongsToSEActivity -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ai4se/ontology#belongsToSEActivity">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ai4se/ontology#belongsTo"/>
+        <rdfs:domain rdf:resource="http://purl.org/ai4se/ontology#Target"/>
+        <rdfs:range rdf:resource="http://purl.org/ai4se/ontology#Target"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#hasLevel -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ai4se/ontology#hasLevel">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#hasAssociatedQualityValueType"/>
+        <owl:inverseOf rdf:resource="http://purl.org/ai4se/ontology#levelEnabledBy"/>
+        <rdfs:domain rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <rdfs:range rdf:resource="http://purl.org/ai4se/ontology#AutomationLevel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#hasPurpose -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ai4se/ontology#hasPurpose">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#hasAssociatedQualityValueType"/>
+        <owl:inverseOf rdf:resource="http://purl.org/ai4se/ontology#purposeAdressedBy"/>
+        <rdfs:domain rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <rdfs:range rdf:resource="http://purl.org/ai4se/ontology#SolutionPurpose"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#hasTarget -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ai4se/ontology#hasTarget">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#hasAssociatedQualityValueType"/>
+        <owl:inverseOf rdf:resource="http://purl.org/ai4se/ontology#targetFocussedBy"/>
+        <rdfs:domain rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <rdfs:range rdf:resource="http://purl.org/ai4se/ontology#Target"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ai4se/ontology#hasType">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#hasAssociatedQualityValueType"/>
+        <owl:inverseOf rdf:resource="http://purl.org/ai4se/ontology#typeUsedBy"/>
+        <rdfs:domain rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <rdfs:range rdf:resource="http://purl.org/ai4se/ontology#AIType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#implementedIn -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ai4se/ontology#implementedIn">
+        <rdfs:domain rdf:resource="http://purl.org/nemo/gufo#AbstractIndividualType"/>
+        <rdfs:range rdf:resource="http://purl.org/nemo/gufo#EndurantType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#isAboutResearchTopic -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ai4se/ontology#isAboutResearchTopic">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#hasAssociatedQualityValueType"/>
+        <owl:inverseOf rdf:resource="http://purl.org/ai4se/ontology#topicAddressedBy"/>
+        <rdfs:domain rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <rdfs:range rdf:resource="http://purl.org/ai4se/ontology#CSO:Topic"/>
+        <rdfs:comment xml:lang="en">Represents the research topics that a research paper contributes to.</rdfs:comment>
+        <rdfs:label>isAboutResearchTopic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#isProperPartOfProcess -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ai4se/ontology#isProperPartOfProcess">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#isEventProperPartOf"/>
+        <rdfs:comment xml:lang="en">Represents activities being part of processes.</rdfs:comment>
+        <rdfs:label>isPartOfProcess</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#isSEActivityWithModels -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ai4se/ontology#isSEActivityWithModels">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/nemo/gufo#mediates"/>
+        <rdfs:range rdf:resource="http://purl.org/ai4se/ontology#Model"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#levelEnabledBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ai4se/ontology#levelEnabledBy">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ai4se/ontology#implementedIn"/>
+        <rdfs:domain rdf:resource="http://purl.org/ai4se/ontology#AutomationLevel"/>
+        <rdfs:range rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#purposeAdressedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ai4se/ontology#purposeAdressedBy">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ai4se/ontology#implementedIn"/>
+        <rdfs:domain rdf:resource="http://purl.org/ai4se/ontology#SolutionPurpose"/>
+        <rdfs:range rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#targetFocussedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ai4se/ontology#targetFocussedBy">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ai4se/ontology#implementedIn"/>
+        <rdfs:domain rdf:resource="http://purl.org/ai4se/ontology#Target"/>
+        <rdfs:range rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#topicAddressedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ai4se/ontology#topicAddressedBy">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ai4se/ontology#implementedIn"/>
+        <rdfs:domain rdf:resource="http://purl.org/ai4se/ontology#CSO:Topic"/>
+        <rdfs:range rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#typeUsedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ai4se/ontology#typeUsedBy">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ai4se/ontology#implementedIn"/>
+        <rdfs:domain rdf:resource="http://purl.org/ai4se/ontology#AIType"/>
+        <rdfs:range rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#AIType -->
+
+    <owl:Class rdf:about="http://purl.org/ai4se/ontology#AIType">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#AbstractIndividualType"/>
+        <rdfs:comment xml:lang="en">Represents the type of the artificial intelligence (AI) system being used.
+
+According to ISO/IEC 22989:2022 Information technology - Artificial intelligence - Artificial intelligence concepts and terminology, artificial intelligence (AI) is
+
+- &lt;discipline&gt; research and development of mechanisms and applications of AI systems.
+
+and
+
+artificial intelligence system (AI system) is
+
+- engineered system that generates outputs such as content, forecasts, recommendations or decisions for a given set of human-defined objectives.</rdfs:comment>
+        <rdfs:label>Type of AI system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#AutomationLevel -->
+
+    <owl:Class rdf:about="http://purl.org/ai4se/ontology#AutomationLevel">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#AbstractIndividualType"/>
+        <rdfs:label>Level of AI automation</rdfs:label>
+        <rdfs:label xml:lang="en">Represents the level of automation provided / enabled by the AI system being used.
+
+According to ISO/IEC 22989:2022 Information technology - Artificial intelligence - Artificial intelligence concepts and terminology, artificial intelligence (AI) is
+
+- &lt;discipline&gt; research and development of mechanisms and applications of AI systems.
+
+and
+
+artificial intelligence system (AI system) is
+
+- engineered system that generates outputs such as content, forecasts, recommendations or decisions for a given set of human-defined objectives.</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#Model -->
+
+    <owl:Class rdf:about="http://purl.org/ai4se/ontology#Model">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Mixin"/>
+        <rdfs:comment xml:lang="en">Represents artifacts defining (semi-)formally (1) properties of one or more artefacts used by software engineering activities or processes or (2) properties of software engineering activities or processes.
+
+According to ISO/IEC 22989:2022 Information technology - Artificial intelligence - Artificial intelligence concepts and terminology, model is
+
+- physical, mathematical or otherwise logical representation of a system, entity, phenomenon, process or data.
+
+Note: For the AI4SE ontology, only mathematical or logical representations are relevant.</rdfs:comment>
+        <rdfs:label>Model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#ResearchPaper -->
+
+    <owl:Class rdf:about="http://purl.org/ai4se/ontology#ResearchPaper">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#Mixin"/>
+        <rdfs:comment xml:lang="en">Represents an artifact documenting research findings like new insights, methods, techniques, etc.</rdfs:comment>
+        <rdfs:label>ResearchPaper</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#SolutionPurpose -->
+
+    <owl:Class rdf:about="http://purl.org/ai4se/ontology#SolutionPurpose">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#AbstractIndividualType"/>
+        <rdfs:comment xml:lang="en">Represents the purpose of using the AI system in a software development / operation processes or activities.</rdfs:comment>
+        <rdfs:label>Solution purpose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#Target -->
+
+    <owl:Class rdf:about="http://purl.org/ai4se/ontology#Target">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#AbstractIndividualType"/>
+        <rdfs:comment xml:lang="en">Represents the primary concept, issue, component, software, or process in a software engineering process or activitiy being addressed.</rdfs:comment>
+        <rdfs:label>Solution target</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#CSO:Topic -->
+
+    <owl:Class rdf:about="http://purl.org/ai4se/ontology#CSO:Topic">
+        <rdfs:subClassOf rdf:resource="http://purl.org/nemo/gufo#AbstractIndividualType"/>
+        <rdfs:isDefinedBy>https://cso.kmi.open.ac.uk/</rdfs:isDefinedBy>
+        <rdfs:label>CSO:Topic</rdfs:label>
+        <rdfs:label xml:lang="en">Represents the research topics in Computer Science as defined by the Computer Science Ontology CSO.</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#AI-assisted_options -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#AI-assisted_options">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#AutomationLevel"/>
+        <rdfs:comment xml:lang="en">Represents the case in which choices, recommendations, or decision-support outputs for the target SE processes or activities are generated or enhanced by an AI system, while retaining human control over the final choice, recommendation or decision, which may differ from the AI outputs.</rdfs:comment>
+        <rdfs:label>AI-assisted options</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#AI-assisted_selection -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#AI-assisted_selection">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#AutomationLevel"/>
+        <rdfs:comment xml:lang="en">Represents the case in which choices, recommendations, or decision-support outputs for the target SE processes or activities are generated or enhanced by an AI system, where the final choices, recommendations or decisions require human confirmation and do not differ from the AI outputs.</rdfs:comment>
+        <rdfs:label>AI-assisted selection</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#AI-driven_full_automation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#AI-driven_full_automation">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#AutomationLevel"/>
+        <rdfs:comment xml:lang="en">Represents the case in which AI is used to automate all tasks or decision-making components within the target SE processes or activities, without requiring human intervention.</rdfs:comment>
+        <rdfs:label>AI-driven full automation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#AI-driven_partial_automation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#AI-driven_partial_automation">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#AutomationLevel"/>
+        <rdfs:comment xml:lang="en">Represents the case in which AI is used to automate specific tasks or decision-making components within the target SE processes or activities, while other parts of the process remain under human control or require human intervention.</rdfs:comment>
+        <rdfs:label>AI-driven partial automation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#Agentic_AI -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#Agentic_AI">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#AIType"/>
+        <rdfs:comment xml:lang="en">Represents AI systems that rely on autonomous agents using AI techniques to plan, adapt, and execute multi-step objectives with minimal human control.</rdfs:comment>
+        <rdfs:label>Agentic AI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#Architecture_and_Design -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#Architecture_and_Design">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#Target"/>
+        <belongsToSEActivity rdf:resource="http://purl.org/ai4se/ontology#Develop"/>
+        <rdfs:comment xml:lang="en">Represents software architecture and design activities and processes. 
+
+A software architecture defines its fundamental organization, its components, their relationships, and the principles guiding its design and evolution. 
+ 
+According to ISO/IEC/IEEE 42010:2022: Software, systems and enterprise - Architecture description), a software architecture consists of the fundamental concepts or properties of an entity in its environment and governing principles for the realization and evolution of this entity and its related life cycle processes.
+
+Software design is the process of defining the architecture, components, interfaces, and other characteristics of a software or a component.
+
+According to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, software design is  
+
+1. the use of scientific principles, technical information, and imagination in the definition of a software system to perform pre-specified functions with maximum economy and efficiency.</rdfs:comment>
+        <rdfs:label>Software architecture and design</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#Classical_machine_learning -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#Classical_machine_learning">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#AIType"/>
+        <belongsToAIType rdf:resource="http://purl.org/ai4se/ontology#Subsymbolic"/>
+        <rdfs:comment xml:lang="en">Represents subsymbolic AI systems that rely on statistical and algorithmic learning techniques - such as decision trees, support vector machines, linear regression, and clustering - to learn patterns from structured data and make predictions or classifications. These models typically operate on explicitly defined features and do not involve deep neural networks.
+
+This class of AI is used in contrast to deep learning AI.</rdfs:comment>
+        <rdfs:label>Classical machine learning</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#Coding -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#Coding">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#Target"/>
+        <belongsToSEActivity rdf:resource="http://purl.org/ai4se/ontology#Develop"/>
+        <rdfs:comment xml:lang="en">Represents coding activities and processes. 
+
+Coding (also known as programming) is the process of transforming the design of a software or a component into an executable computer program.
+
+According to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, coding is
+
+1. in software engineering, the process of expressing a computer program in a programming language
+
+2. transforming of logic and data from design specifications (design descriptions) into a programming language.</rdfs:comment>
+        <rdfs:label>Software coding</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#Deep_learning -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#Deep_learning">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#AIType"/>
+        <belongsToAIType rdf:resource="http://purl.org/ai4se/ontology#Subsymbolic"/>
+        <rdfs:comment xml:lang="en">Represents subsymbolic AI systems that rely on deep artificial neural networks to automatically learn features and perform tasks such as classification or prediction, especially from large and complex datasets. 
+
+According to ISO/IEC 22989:2022 Information technology - Artificial intelligence - Artificial intelligence concepts and terminology, deep learning (deep neural network learning) is
+
+- AI approach to creating rich hierarchical representations through the training of neural networks with many hidden layers.</rdfs:comment>
+        <rdfs:label>Deep learning AI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#Deployment -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#Deployment">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#Target"/>
+        <belongsToSEActivity rdf:resource="http://purl.org/ai4se/ontology#Operate"/>
+        <rdfs:comment xml:lang="en">Represents software deployment activities and processes.
+
+Software deployment encompasses the processes and activities for placing a software or component into an operational environment.
+
+According to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, deployment is 
+
+1. a phase of a project in which a system is put into operation and cutover issues are resolved.</rdfs:comment>
+        <rdfs:label>Software deployment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#Develop -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#Develop">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#Target"/>
+        <belongsToSEActivity rdf:resource="http://purl.org/ai4se/ontology#Software_Engineering"/>
+        <rdfs:label>Develop</rdfs:label>
+        <rdfs:label xml:lang="en">Represents software development activities and processes.
+
+Software development is the set of activities that result in software products, including requirements analysis, design, coding, testing, and maintenance. It encompasses all the activities and processes involved in creating, implementing, and modifying software (artefacts), as well as ensuring that it satisfies stakeholder requirements throughout the software development life cycle.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#General_AI -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#General_AI">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#AIType"/>
+        <rdfs:comment xml:lang="en">Represents AI systems capable of performing a broad set of distinct tasks with satisfactory performance.
+
+According to ISO/IEC 22989:2022 Information technology - Artificial intelligence - Artificial intelligence concepts and terminology, general AI (AGI, artificial general intelligence)
+
+- type of AI system that addresses a broad range of tasks with a satisfactory level of performance 
+
+Note 1: Compared to narrow AI.
+Note 2: AGI is often used in a stronger sense, meaning systems that not only can perform a wide variety of tasks, but all tasks that a human can perform.</rdfs:comment>
+        <rdfs:label>General AI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#Generate -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#Generate">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#SolutionPurpose"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#Generative_AI -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#Generative_AI">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#AIType"/>
+        <rdfs:comment xml:lang="en">Represents AI systems that use learned or derived knowledge to produce original outputs, such as synthetic text, media, or other content types. It often uses subsymbolic AI like Convolutional Neural Networks (CNNs), Recurrent Neural Networks (RNNs), or Transformer-based models, but also symbolic AI.</rdfs:comment>
+        <rdfs:label>Generative AI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#Improve -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#Improve">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#SolutionPurpose"/>
+        <rdfs:comment xml:lang="en">The purpose of using AI is to improve (parts of) artefacts used in software engineering.</rdfs:comment>
+        <rdfs:label>Improve</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#Improvement -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#Improvement">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#Target"/>
+        <belongsToSEActivity rdf:resource="http://purl.org/ai4se/ontology#Process"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#Maintenance -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#Maintenance">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#Target"/>
+        <belongsToSEActivity rdf:resource="http://purl.org/ai4se/ontology#Develop"/>
+        <rdfs:comment xml:lang="en">Represents software maintenance activities and processes. 
+
+Software maintenance is the process of modifying a software or component after delivery to correct faults, improve performance or other attributes, or adapt to a changed environment.
+
+According to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, software maintenance is 
+
+1. totality of activities required to provide cost-effective support to a software system 
+
+2. entitlement of additional rights (such as additional
+functionality, upgrade or support) for a previously granted software entitlement</rdfs:comment>
+        <rdfs:label>Software maintenance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#Management -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#Management">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#Target"/>
+        <belongsToSEActivity rdf:resource="http://purl.org/ai4se/ontology#Process"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#Monitoring -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#Monitoring">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#Target"/>
+        <belongsToSEActivity rdf:resource="http://purl.org/ai4se/ontology#Operate"/>
+        <rdfs:comment xml:lang="en">Represents software monitoring activities and processes.
+
+Software monitoring is systematically observing, checking, or keeping track of the operations or performance of a software or component.</rdfs:comment>
+        <rdfs:label>Software monitoring</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#No_AI_support -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#No_AI_support">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#AutomationLevel"/>
+        <rdfs:comment xml:lang="en">Represents the case in which the target SE processes or activities are performed without the assistance of AI.</rdfs:comment>
+        <rdfs:label>No AI-supported automation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#Operate -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#Operate">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#Target"/>
+        <belongsToSEActivity rdf:resource="http://purl.org/ai4se/ontology#Software_Engineering"/>
+        <rdfs:comment xml:lang="en">Represents software operation activities and processs.</rdfs:comment>
+        <rdfs:label>Operate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#Operation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#Operation">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#Target"/>
+        <belongsToSEActivity rdf:resource="http://purl.org/ai4se/ontology#Operate"/>
+        <rdfs:comment xml:lang="en">Represents software operation activities and processes.
+
+Software operation refers to
+
+1. The use and execution of software in its production environment to perform its intended functions.
+
+2. Running a software to deliver services or perform tasks for users or other systems.</rdfs:comment>
+        <rdfs:label>Software operation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#Process -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#Process">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#Target"/>
+        <belongsToSEActivity rdf:resource="http://purl.org/ai4se/ontology#Software_Engineering"/>
+        <rdfs:label xml:lang="en">Represents processes for software engineering along the software lifecycle of software development and operation.</rdfs:label>
+        <rdfs:label>Software Engineering Processes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#Requirements -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#Requirements">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#Target"/>
+        <belongsToSEActivity rdf:resource="http://purl.org/ai4se/ontology#Develop"/>
+        <rdfs:comment xml:lang="en">Represents requirements engineering activities and processes. 
+
+A software requirement is a condition or capability that must be met by a software or component.
+
+According to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, software requirement is
+
+1. software capability needed by a user to solve a problem or to achieve an objective
+
+2. software capability that must be met or possessed by a system or system component to satisfy a contract, standard, specification, or other formally imposed document
+
+According to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, software requirements engineering is
+
+1. science and discipline concerned with analyzing and documenting software requirements 
+
+2. software requirements elicitation, analysis, specification, verification, and management</rdfs:comment>
+        <rdfs:label>Requirements engineering</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#Software_Engineering -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#Software_Engineering">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#Target"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#Statistical -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#Statistical">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#AIType"/>
+        <belongsToAIType rdf:resource="http://purl.org/ai4se/ontology#Subsymbolic"/>
+        <rdfs:comment xml:lang="en">Represents subsymbolic AI systems that rely on data and statistical inference to identify patterns and make predictions.</rdfs:comment>
+        <rdfs:label>Statistical AI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#Subsymbolic -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#Subsymbolic">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#AIType"/>
+        <rdfs:comment xml:lang="en">Represents AI systems that use numerical models to represent knowledge and computations, such as numerical optimisation and statistical learning, in order to model and solve problems.
+
+According to ISO/IEC 22989:2022 Information technology - Artificial intelligence - Artificial intelligence concepts and terminology, subsymbolic AI is
+
+- AI based on techniques and models that use an implicit encoding of information, that can be derived from experience or raw data.</rdfs:comment>
+        <rdfs:label>Subsymbolic AI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#Symbolic -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#Symbolic">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#AIType"/>
+        <rdfs:comment xml:lang="en">Represents AI systems that use approaches relying on the explicit definition of symbols and rules representing knowledge and performing logical reasoning.
+
+According to ISO/IEC 22989:2022 Information technology - Artificial intelligence - Artificial intelligence concepts and terminology, symbolic AI is
+
+- AI based on techniques and models that manipulate symbols and structures according to explicitly defined rules to obtain inferences.</rdfs:comment>
+        <rdfs:label>Symbolic AI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#Testing -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#Testing">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#Target"/>
+        <belongsToSEActivity rdf:resource="http://purl.org/ai4se/ontology#Develop"/>
+        <rdfs:comment xml:lang="en">Represents software testing activities and processes.
+
+Software testing encompasses the processes and activities used to evaluate the quality of a software or a component and of related artefacts.
+
+According to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, software testing is
+
+1. activity in which a system or component is executed under specified conditions, the results are observed or recorded, and an evaluation is made of some aspect of the system or component
+
+2. dynamic verification that a program provides expected behaviors on a finite set of test cases, suitably selected from the usually infinite executions domain.</rdfs:comment>
+        <rdfs:label>Software testing</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#Understand -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#Understand">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#SolutionPurpose"/>
+        <rdfs:comment xml:lang="en">The purpose of using AI is to gain insight.</rdfs:comment>
+        <rdfs:label>Understand</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#acher_generative_2023 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#acher_generative_2023">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-assisted_selection"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Generate"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Understand"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Architecture_and_Design"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Coding"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Classical_machine_learning"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Deep_learning"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Model_driven_engineering"/>
+        <rdfs:comment>@inproceedings{acher_generative_2023,
+ address = {New York, NY, USA},
+ author = {Acher, Mathieu and Martinez, Jabier},
+ booktitle = {Proceedings of the 27th {ACM} {International} {Systems} and {Software} {Product} {Line} {Conference} - {Volume} {B}},
+ doi = {10.1145/3579028.3609016},
+ isbn = {979-8-4007-0092-7},
+ month = {August},
+ pages = {57--66},
+ publisher = {Association for Computing Machinery},
+ series = {{SPLC} &apos;23},
+ shorttitle = {Generative {AI} for {Reengineering} {Variants} into {Software} {Product} {Lines}},
+ title = {Generative {AI} for {Reengineering} {Variants} into {Software} {Product} {Lines}: {An} {Experience} {Report}},
+ url = {https://doi.org/10.1145/3579028.3609016},
+ urldate = {2025-07-06},
+ volume = {B},
+ year = {2023}
+}
+</rdfs:comment>
+        <rdfs:label>acher_generative_2023</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1145/3579028.3609016"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#adhikari_simima_2024 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#adhikari_simima_2024">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-assisted_options"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Improve"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Architecture_and_Design"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Classical_machine_learning"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Model_driven_engineering"/>
+        <rdfs:comment>@article{adhikari_simima_2024,
+ author = {Adhikari, Bhisma and Rapos, Eric J. and Stephan, Matthew},
+ doi = {10.1007/s10270-023-01093-6},
+ issn = {1619-1374},
+ journal = {Software and Systems Modeling},
+ keywords = {Model Building and Simulation, Model Theory, Computer Modelling, Model Invertebrates, Model plants, Symbolic AI},
+ language = {en},
+ month = {February},
+ number = {1},
+ pages = {29--56},
+ shorttitle = {{SimIMA}},
+ title = {{SimIMA}: a virtual {Simulink} intelligent modeling assistant},
+ url = {https://doi.org/10.1007/s10270-023-01093-6},
+ urldate = {2025-06-03},
+ volume = {23},
+ year = {2024}
+}
+</rdfs:comment>
+        <rdfs:label>adhikari_simima_2024</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1007/s10270-023-01093-6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#babur_models_2018 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#babur_models_2018">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#No_AI_support"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Understand"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Develop"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Classical_machine_learning"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Model_driven_engineering"/>
+        <rdfs:comment>@inproceedings{babur_models_2018,
+ address = {Cham},
+ author = {Babur, Önder and Cleophas, Loek and van den Brand, Mark and Tekinerdogan, Bedir and Aksit, Mehmet},
+ booktitle = {Software {Technologies}: {Applications} and {Foundations}},
+ doi = {10.1007/978-3-319-74730-9_10},
+ editor = {Seidl, Martina and Zschaler, Steffen},
+ isbn = {978-3-319-74730-9},
+ keywords = {Data mining, Machine learning, Model analytics, Model-Driven Engineering, Scalability},
+ language = {en},
+ pages = {129--135},
+ publisher = {Springer International Publishing},
+ title = {Models, {More} {Models}, and {Then} a {Lot} {More}},
+ year = {2018}
+}
+</rdfs:comment>
+        <rdfs:label>babur_models_2018</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1007/978-3-319-74730-9_10"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#babur_statistical_2016 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#babur_statistical_2016">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-assisted_options"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Understand"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Architecture_and_Design"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Maintenance"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Classical_machine_learning"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Statistical"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Model_driven_engineering"/>
+        <rdfs:comment>@inproceedings{babur_statistical_2016,
+ author = {Babur, Önder},
+ booktitle = {Proceedings of the 31st {IEEE}/{ACM} {International} {Conference} on {Automated} {Software} {Engineering}},
+ doi = {10.1145/2970276.2975938},
+ pages = {888--891},
+ title = {Statistical analysis of large sets of models},
+ year = {2016}
+}
+</rdfs:comment>
+        <rdfs:label>babur_statistical_2016</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1145/2970276.2975938"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#bader_getafix_2019 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#bader_getafix_2019">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-assisted_selection"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Generate"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Improve"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Coding"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Testing"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Classical_machine_learning"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Statistical"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Testing_and_debugging"/>
+        <rdfs:comment>@article{bader_getafix_2019,
+ author = {Bader, Johannes and Scott, Andrew and Pradel, Michael and Chandra, Satish},
+ doi = {10.1145/3360585},
+ journal = {Proceedings of the ACM on Programming Languages},
+ note = {Publisher: ACM New York, NY, USA},
+ number = {OOPSLA},
+ pages = {1--27},
+ title = {Getafix: {Learning} to fix bugs automatically},
+ volume = {3},
+ year = {2019}
+}
+</rdfs:comment>
+        <rdfs:label>bader_getafix_2019</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1145/3360585"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#baki_multi-step_2016 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#baki_multi-step_2016">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-driven_partial_automation"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Generate"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Understand"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Architecture_and_Design"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Classical_machine_learning"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Statistical"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Symbolic"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Model_driven_engineering"/>
+        <rdfs:comment>@article{baki_multi-step_2016,
+ author = {Baki, Islem and Sahraoui, Houari},
+ doi = {10.1145/2904904},
+ journal = {ACM Transactions on Software Engineering and Methodology (TOSEM)},
+ note = {Publisher: ACM New York, NY, USA},
+ number = {3},
+ pages = {1--37},
+ title = {Multi-step learning and adaptive search for learning complex model transformations from examples},
+ volume = {25},
+ year = {2016}
+}
+</rdfs:comment>
+        <rdfs:label>baki_multi-step_2016</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1145/2904904"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#bhat_adex_2019 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#bhat_adex_2019">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-driven_partial_automation"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Improve"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Understand"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Architecture_and_Design"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Deployment"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Classical_machine_learning"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Symbolic"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Traceability_management"/>
+        <rdfs:comment>@inproceedings{bhat_adex_2019,
+ author = {Bhat, Manoj and Tinnes, Christof and Shumaiev, Klym and Biesdorf, Andreas and Hohenstein, Uwe and Matthes, Florian},
+ booktitle = {2019 {IEEE} {International} {Conference} on {Software} {Architecture} {Companion} ({ICSA}-{C})},
+ doi = {10.1109/ICSA-C.2019.00035},
+ pages = {158--161},
+ publisher = {IEEE},
+ title = {Adex: {A} tool for automatic curation of design decision knowledge for architectural decision recommendations},
+ year = {2019}
+}
+</rdfs:comment>
+        <rdfs:label>bhat_adex_2019</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1109/ICSA-C.2019.00035"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#bird_taking_2023 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#bird_taking_2023">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-driven_partial_automation"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Generate"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Understand"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Coding"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Generative_AI"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Coding_technique"/>
+        <rdfs:comment>@article{bird_taking_2023,
+ author = {Bird, Christian and Ford, Denae and Zimmermann, Thomas and Forsgren, Nicole and Kalliamvakou, Eirini and Lowdermilk, Travis and Gazit, Idan},
+ doi = {10.1145/3589996},
+ issn = {0001-0782, 1557-7317},
+ journal = {Communications of the ACM},
+ language = {en},
+ month = {June},
+ number = {6},
+ pages = {56--62},
+ title = {Taking {Flight} with {Copilot}},
+ url = {https://dl.acm.org/doi/10.1145/3589996},
+ urldate = {2025-05-31},
+ volume = {66},
+ year = {2023}
+}
+</rdfs:comment>
+        <rdfs:label>bird_taking_2023</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://dl.acm.org/doi/10.1145/3589996"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#bouzenia_repairagent_2024 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#bouzenia_repairagent_2024">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-driven_partial_automation"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Improve"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Coding"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Deployment"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Agentic_AI"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Static_analysis"/>
+        <rdfs:comment>@article{bouzenia_repairagent_2024,
+ author = {Bouzenia, Islem and Devanbu, Premkumar and Pradel, Michael},
+ doi = {10.48550/arXiv.2403.17134},
+ journal = {arXiv preprint arXiv:2403.17134},
+ title = {Repairagent: {An} autonomous, llm-based agent for program repair},
+ year = {2024}
+}
+</rdfs:comment>
+        <rdfs:label>bouzenia_repairagent_2024</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.48550/arXiv.2403.17134"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#ceran_prediction_2023 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#ceran_prediction_2023">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-driven_partial_automation"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Understand"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Develop"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Operate"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Classical_machine_learning"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Software_quality"/>
+        <rdfs:comment>@article{ceran_prediction_2023,
+ author = {Ceran, A Ayberk and Ar, Yilmaz and Tanrıöver, Ö Özgür and Ceran, Sinem Seyrek},
+ doi = {10.1016/j.matpr.2022.11.229},
+ journal = {Materials Today: Proceedings},
+ note = {Publisher: Elsevier},
+ pages = {18--25},
+ title = {Prediction of software quality with {Machine} {Learning}-{Based} ensemble methods},
+ volume = {81},
+ year = {2023}
+}
+</rdfs:comment>
+        <rdfs:label>ceran_prediction_2023</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1016/j.matpr.2022.11.229"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#chen_incorporating_2023 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#chen_incorporating_2023">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-driven_partial_automation"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Generate"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Architecture_and_Design"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Requirements"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Generative_AI"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Testing_and_debugging"/>
+        <rdfs:comment>@article{chen_incorporating_2023,
+ author = {{Chen}},
+ doi = {null},
+ journal = {Journal of Information Systems Education},
+ title = {Incorporating {AI} and {LLMs} into {Software} {Engineering} {Capstone} {Projects}: {A} {Comprehensive} {Analysis}},
+ year = {2023}
+}
+</rdfs:comment>
+        <rdfs:label>chen_incorporating_2023</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://doi.org/null"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#drain_generating_2021 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#drain_generating_2021">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-driven_partial_automation"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Generate"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Understand"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Coding"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Maintenance"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Generative_AI"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Static_analysis"/>
+        <rdfs:comment>@inproceedings{drain_generating_2021,
+ author = {Drain, Dawn and Wu, Chen and Svyatkovskiy, Alexey and Sundaresan, Neel},
+ booktitle = {Proceedings of the 5th {ACM} {SIGPLAN} {International} {Symposium} on {Machine} {Programming}},
+ doi = {10.1145/3460945.3464951},
+ pages = {1--8},
+ title = {Generating bug-fixes using pretrained transformers},
+ year = {2021}
+}
+</rdfs:comment>
+        <rdfs:label>drain_generating_2021</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1145/3460945.3464951"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#eramo_architecture_2024 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#eramo_architecture_2024">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-assisted_selection"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Understand"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Architecture_and_Design"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Maintenance"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Deep_learning"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Model_driven_engineering"/>
+        <rdfs:comment>@article{eramo_architecture_2024,
+ author = {Eramo, Romina and Said, Bilal and Oriol, Marc and Bruneliere, Hugo and Morales, Sergio},
+ doi = {10.1016/j.jss.2024.112180},
+ issn = {01641212},
+ journal = {Journal of Systems and Software},
+ language = {en},
+ month = {November},
+ pages = {112180},
+ title = {An architecture for model-based and intelligent automation in {DevOps}},
+ url = {https://linkinghub.elsevier.com/retrieve/pii/S0164121224002255},
+ urldate = {2025-06-02},
+ volume = {217},
+ year = {2024}
+}
+</rdfs:comment>
+        <rdfs:label>eramo_architecture_2024</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://linkinghub.elsevier.com/retrieve/pii/S0164121224002255"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#guo_graphcodebert_2020 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#guo_graphcodebert_2020">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-assisted_options"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Understand"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Coding"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Maintenance"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Testing"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Subsymbolic"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Deep_learning"/>
+        <rdfs:comment>@article{guo_graphcodebert_2020,
+ author = {Guo, Daya and Ren, Shuo and Lu, Shuai and Feng, Zhangyin and Tang, Duyu and Liu, Shujie and Zhou, Long and Duan, Nan and Svyatkovskiy, Alexey and Fu, Shengyu and {others}},
+ doi = {10.48550/arXiv.2009.08366},
+ journal = {arXiv preprint arXiv:2009.08366},
+ title = {Graphcodebert: {Pre}-training code representations with data flow},
+ year = {2020}
+}
+</rdfs:comment>
+        <rdfs:label>guo_graphcodebert_2020</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.48550/arXiv.2009.08366"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#gupta_intelligent_2018 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#gupta_intelligent_2018">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-assisted_selection"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Improve"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Understand"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Coding"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Deployment"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Subsymbolic"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Static_analysis"/>
+        <rdfs:comment>@inproceedings{gupta_intelligent_2018,
+ author = {Gupta, Anshul and Sundaresan, Neel},
+ booktitle = {Proceedings of the 24th {ACM} {SIGKDD} {International} {Conference} on {Knowledge} {Discovery} and {Data} {Mining} ({KDD}’18) {Deep} {Learning} {Day}},
+ title = {Intelligent code reviews using deep learning},
+ year = {2018},
+ url = {https://www.kdd.org/kdd2018/files/deep-learning-day/DLDay18_paper_40.pdf}
+}
+</rdfs:comment>
+        <rdfs:label>gupta_intelligent_2018</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.kdd.org/kdd2018/files/deep-learning-day/DLDay18_paper_40.pdf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#hartmann_next_2017 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#hartmann_next_2017">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#No_AI_support"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Improve"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Architecture_and_Design"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Statistical"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Model_driven_engineering"/>
+        <rdfs:comment>@inproceedings{hartmann_next_2017,
+ address = {Austin, Texas},
+ author = {Hartmann, Thomas and Moawad, Assaad and Fouquet, Francois and Traon, Yves Le},
+ booktitle = {Proceedings of the {ACM}/{IEEE} 20th {International} {Conference} on {Model} {Driven} {Engineering} {Languages} and {Systems}},
+ doi = {10.1109/MODELS.2017.32},
+ file = {Submitted Version:C\:\\Users\\inasc.DESKTOP-DH4LT2D\\Zotero\\storage\\KW7CIHNX\\Hartmann et al. - 2017 - The next evolution of MDE a seamless integration of machine learning into domain modeling.pdf:application/pdf},
+ isbn = {978-1-5386-3492-9},
+ month = {September},
+ pages = {180},
+ publisher = {IEEE Press},
+ series = {{MODELS} &apos;17},
+ shorttitle = {The next evolution of {MDE}},
+ title = {The next evolution of {MDE}: a seamless integration of machine learning into domain modeling},
+ url = {https://doi.org/10.1109/MODELS.2017.32},
+ urldate = {2025-07-06},
+ year = {2017}
+}
+</rdfs:comment>
+        <rdfs:label>hartmann_next_2017</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1109/MODELS.2017.32"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#khalilipour_machine_2022 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#khalilipour_machine_2022">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#No_AI_support"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Understand"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Architecture_and_Design"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Statistical"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Model_driven_engineering"/>
+        <rdfs:comment>@incollection{khalilipour_machine_2022,
+ address = {Cham},
+ author = {Khalilipour, Alireza and Bozyigit, Fatma and Utku, Can and Challenger, Moharram},
+ booktitle = {New {Trends} in {Database} and {Information} {Systems}},
+ doi = {10.1007/978-3-031-15743-1_39},
+ editor = {Chiusano, Silvia and Cerquitelli, Tania and Wrembel, Robert and Nørvåg, Kjetil and Catania, Barbara and Vargas-Solar, Genoveva and Zumpano, Ester},
+ isbn = {978-3-031-15742-4 978-3-031-15743-1},
+ language = {en},
+ note = {Series Title: Communications in Computer and Information Science},
+ pages = {425--436},
+ publisher = {Springer International Publishing},
+ title = {Machine {Learning}-{Based} {Model} {Categorization} {Using} {Textual} and {Structural} {Features}},
+ url = {https://link.springer.com/10.1007/978-3-031-15743-1_39},
+ urldate = {2025-06-03},
+ volume = {1652},
+ year = {2022}
+}
+</rdfs:comment>
+        <rdfs:label>khalilipour_machine_2022</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://link.springer.com/10.1007/978-3-031-15743-1_39"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#korner_transferring_2014 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#korner_transferring_2014">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-assisted_selection"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Improve"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Requirements"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Symbolic"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Requirements_engineering"/>
+        <rdfs:comment>@inproceedings{korner_transferring_2014,
+ author = {Körner, Sven J and Landhäußer, Mathias and Tichy, Walter F},
+ booktitle = {2014 {IEEE} 1st {International} {Workshop} on {Artificial} {Intelligence} for {Requirements} {Engineering} ({AIRE})},
+ doi = {10.1109/AIRE.2014.6894851},
+ pages = {13--18},
+ publisher = {IEEE},
+ title = {Transferring research into the real world: {How} to improve {RE} with {AI} in the automotive industry},
+ year = {2014}
+}
+</rdfs:comment>
+        <rdfs:label>korner_transferring_2014</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1109/AIRE.2014.6894851"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#kulkarni_toward_2023 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#kulkarni_toward_2023">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-driven_partial_automation"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Generate"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Architecture_and_Design"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Requirements"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Classical_machine_learning"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Symbolic"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Model_driven_engineering"/>
+        <rdfs:comment>@inproceedings{kulkarni_toward_2023,
+ address = {Västerås, Sweden},
+ author = {Kulkarni, Vinay and Reddy, Sreedhar and Barat, Souvik and Dutta, Jaya},
+ booktitle = {2023 {ACM}/{IEEE} 26th {International} {Conference} on {Model} {Driven} {Engineering} {Languages} and {Systems} ({MODELS})},
+ copyright = {https://doi.org/10.15223/policy-029},
+ doi = {10.1109/MODELS58315.2023.00039},
+ isbn = {979-8-3503-2480-8},
+ month = {October},
+ pages = {184--193},
+ publisher = {IEEE},
+ title = {Toward a {Symbiotic} {Approach} {Leveraging} {Generative} {AI} for {Model} {Driven} {Engineering}},
+ url = {https://ieeexplore.ieee.org/document/10343767/},
+ urldate = {2025-06-02},
+ year = {2023}
+}
+</rdfs:comment>
+        <rdfs:label>kulkarni_toward_2023</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ieeexplore.ieee.org/document/10343767/"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#lenz_linking_2013 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#lenz_linking_2013">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-assisted_selection"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Generate"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Improve"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Understand"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Testing"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Classical_machine_learning"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Statistical"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Testing_and_debugging"/>
+        <rdfs:comment>@article{lenz_linking_2013,
+ author = {Lenz, Alexandre Rafael and Pozo, Aurora and Vergilio, Silvia Regina},
+ doi = {10.1016/j.engappai.2013.01.008},
+ journal = {Engineering Applications of Artificial Intelligence},
+ note = {Publisher: Elsevier},
+ number = {5-6},
+ pages = {1631--1640},
+ title = {Linking software testing results with a machine learning approach},
+ volume = {26},
+ year = {2013}
+}
+</rdfs:comment>
+        <rdfs:label>lenz_linking_2013</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1016/j.engappai.2013.01.008"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#lin_soen-101_2024 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#lin_soen-101_2024">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-driven_partial_automation"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Generate"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Coding"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Improvement"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Maintenance"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Management"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Testing"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Agentic_AI"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Generative_AI"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Model_driven_engineering"/>
+        <rdfs:comment>@misc{lin_soen-101_2024,
+ annote = {Other
+ICSE 2025},
+ author = {Lin, Feng and Kim, Dong Jae and Tse-Husn and {Chen}},
+ copyright = {Creative Commons Attribution 4.0 International},
+ doi = {10.48550/ARXIV.2403.15852},
+ keywords = {FOS: Computer and information sciences, Software Engineering (cs.SE), Artificial Intelligence (cs.AI)},
+ note = {Version Number: 2},
+ publisher = {arXiv},
+ shorttitle = {{SOEN}-101},
+ title = {{SOEN}-101: {Code} {Generation} by {Emulating} {Software} {Process} {Models} {Using} {Large} {Language} {Model} {Agents}},
+ url = {https://arxiv.org/abs/2403.15852},
+ urldate = {2025-06-02},
+ year = {2024}
+}
+</rdfs:comment>
+        <rdfs:label>lin_soen-101_2024</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://arxiv.org/abs/2403.15852"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#lin_traceability_2021 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#lin_traceability_2021">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-driven_partial_automation"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Generate"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Develop"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Deep_learning"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Software_traceability"/>
+        <rdfs:comment>@inproceedings{lin_traceability_2021,
+ author = {Lin, Jinfeng and Liu, Yalin and Zeng, Qingkai and Jiang, Meng and Cleland-Huang, Jane},
+ booktitle = {2021 {IEEE}/{ACM} 43rd {International} {Conference} on {Software} {Engineering} ({ICSE})},
+ doi = {10.1109/ICSE43902.2021.00040},
+ pages = {324--335},
+ publisher = {IEEE},
+ title = {Traceability transformed: {Generating} more accurate links with pre-trained bert models},
+ year = {2021}
+}
+</rdfs:comment>
+        <rdfs:label>lin_traceability_2021</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1109/ICSE43902.2021.00040"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#mangaroliya_classification_2020 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#mangaroliya_classification_2020">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-assisted_selection"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Improve"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Understand"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Architecture_and_Design"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Classical_machine_learning"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Model_driven_engineering"/>
+        <rdfs:comment>@article{mangaroliya_classification_2020,
+ author = {Mangaroliya, Kaushil and Patel, Het},
+ doi = {10.48550/arXiv.2011.07313},
+ journal = {arXiv preprint arXiv:2011.07313},
+ title = {Classification of reverse-engineered class diagram and forward-engineered class diagram using machine learning},
+ year = {2020}
+}
+</rdfs:comment>
+        <rdfs:label>mangaroliya_classification_2020</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.48550/arXiv.2011.07313"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#null -->
+
+    <owl:Thing rdf:about="http://purl.org/ai4se/ontology#null">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#perini_machine_2012 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#perini_machine_2012">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-assisted_selection"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Improve"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Deployment"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Management"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Requirements"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Classical_machine_learning"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Symbolic"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Requirements_engineering"/>
+        <rdfs:comment>@article{perini_machine_2012,
+ author = {Perini, Anna and Susi, Angelo and Avesani, Paolo},
+ doi = {10.1109/TSE.2012.52},
+ journal = {IEEE Transactions on Software Engineering},
+ note = {Publisher: IEEE},
+ number = {4},
+ pages = {445--461},
+ title = {A machine learning approach to software requirements prioritization},
+ volume = {39},
+ year = {2012}
+}
+</rdfs:comment>
+        <rdfs:label>perini_machine_2012</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1109/TSE.2012.52"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#saini_automated_2022 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#saini_automated_2022">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-assisted_options"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Generate"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Improve"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Architecture_and_Design"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Classical_machine_learning"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Model_driven_engineering"/>
+        <rdfs:comment>@article{saini_automated_2022,
+ author = {Saini, Rijul and Mussbacher, Gunter and Guo, Jin L. C. and Kienzle, Jörg},
+ doi = {10.1007/s10270-021-00942-6},
+ issn = {1619-1366, 1619-1374},
+ journal = {Software and Systems Modeling},
+ language = {en},
+ month = {June},
+ number = {3},
+ pages = {1015--1045},
+ title = {Automated, interactive, and traceable domain modelling empowered by artificial intelligence},
+ url = {https://link.springer.com/10.1007/s10270-021-00942-6},
+ urldate = {2025-06-03},
+ volume = {21},
+ year = {2022}
+}
+</rdfs:comment>
+        <rdfs:label>saini_automated_2022</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://link.springer.com/10.1007/s10270-021-00942-6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#samplePaper -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#samplePaper">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-driven_partial_automation"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Improve"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Understand"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Deployment"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Agentic_AI"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Deep_learning"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:DevOps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#spieker_reinforcement_2017 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#spieker_reinforcement_2017">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-driven_partial_automation"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Improve"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Maintenance"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Testing"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Classical_machine_learning"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Deep_learning"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Testing_and_debugging"/>
+        <rdfs:comment>@inproceedings{spieker_reinforcement_2017,
+ author = {Spieker, Helge and Gotlieb, Arnaud and Marijan, Dusica and Mossige, Morten},
+ booktitle = {Proceedings of the 26th {ACM} {SIGSOFT} international symposium on software testing and analysis},
+ doi = {10.1145/3092703.3092709},
+ pages = {12--22},
+ title = {Reinforcement learning for automatic test case prioritization and selection in continuous integration},
+ year = {2017}
+}
+</rdfs:comment>
+        <rdfs:label>spieker_reinforcement_2017</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1145/3092703.3092709"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#svyatkovskiy_intellicode_2020 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#svyatkovskiy_intellicode_2020">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-driven_partial_automation"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Generate"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Improve"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Coding"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Deep_learning"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Generative_AI"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Statistical"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Traceability_management"/>
+        <rdfs:comment>@inproceedings{svyatkovskiy_intellicode_2020,
+ author = {Svyatkovskiy, Alexey and Deng, Shao Kun and Fu, Shengyu and Sundaresan, Neel},
+ booktitle = {Proceedings of the 28th {ACM} joint meeting on {European} software engineering conference and symposium on the foundations of software engineering},
+ doi = {10.1145/3368089.3417058},
+ pages = {1433--1443},
+ title = {Intellicode compose: {Code} generation using transformer},
+ year = {2020}
+}
+</rdfs:comment>
+        <rdfs:label>svyatkovskiy_intellicode_2020</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1145/3368089.3417058"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#tamizharasi_novel_2024 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#tamizharasi_novel_2024">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-assisted_selection"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Generate"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Testing"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Classical_machine_learning"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Model_driven_engineering"/>
+        <rdfs:comment>@article{tamizharasi_novel_2024,
+ author = {Tamizharasi, A and Ezhumalai, P},
+ doi = {10.1007/s10836-024-06121-x},
+ journal = {Journal of Electronic Testing},
+ note = {Publisher: Springer},
+ pages = {1--24},
+ title = {A {Novel} {Framework} {For} {Optimal} {Test} {Case} {Generation} and {Prioritization} {Using} {Ent}-{LSOA} {And} {IMTRNN} {Techniques}},
+ year = {2024}
+}
+</rdfs:comment>
+        <rdfs:label>tamizharasi_novel_2024</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1007/s10836-024-06121-x"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#tatineni_integrating_2024 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#tatineni_integrating_2024">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-driven_partial_automation"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Improve"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Understand"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Coding"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Deployment"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Improvement"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Testing"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Classical_machine_learning"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Statistical"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:DevOps"/>
+        <rdfs:comment>@book{tatineni_integrating_2024,
+ author = {Tatineni, Sumanth},
+ publisher = {Libertatem Media Private Limited},
+ title = {Integrating {Artificial} {Intelligence} with {DevOps}: {Advanced} {Techniques}, {Predictive} {Analytics}, and {Automation} for {Real}-{Time} {Optimization} and {Security} in {Modern} {Software} {Development}},
+ year = {2024}
+}
+</rdfs:comment>
+        <rdfs:label>tatineni_integrating_2024</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#tufano_generating_2022 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#tufano_generating_2022">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-assisted_options"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Understand"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Coding"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Testing"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Generative_AI"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Testing_and_debugging"/>
+        <rdfs:comment>@inproceedings{tufano_generating_2022,
+ address = {Pittsburgh Pennsylvania},
+ author = {Tufano, Michele and Drain, Dawn and Svyatkovskiy, Alexey and Sundaresan, Neel},
+ booktitle = {Proceedings of the 3rd {ACM}/{IEEE} {International} {Conference} on {Automation} of {Software} {Test}},
+ doi = {10.1145/3524481.3527220},
+  isbn = {978-1-4503-9286-0},
+ language = {en},
+ month = {May},
+ pages = {54--64},
+ publisher = {ACM},
+ title = {Generating accurate assert statements for unit test cases using pretrained transformers},
+ url = {https://dl.acm.org/doi/10.1145/3524481.3527220},
+ urldate = {2025-06-03},
+ year = {2022}
+}
+</rdfs:comment>
+        <rdfs:label>tufano_generating_2022</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://dl.acm.org/doi/10.1145/3524481.3527220"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#xue_automating_2023 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#xue_automating_2023">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-assisted_options"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Generate"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Coding"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Symbolic"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Model_driven_engineering"/>
+        <rdfs:comment>@inproceedings{xue_automating_2023,
+ address = {Melbourne, Australia},
+ author = {Xue, Qiaomu},
+ booktitle = {2023 {IEEE}/{ACM} 45th {International} {Conference} on {Software} {Engineering}: {Companion} {Proceedings} ({ICSE}-{Companion})},
+ copyright = {https://doi.org/10.15223/policy-029},
+ doi = {10.1109/ICSE-Companion58688.2023.00060},
+ isbn = {979-8-3503-2263-7},
+ month = {May},
+ pages = {221--223},
+ publisher = {IEEE},
+ title = {Automating {Code} {Generation} for {MDE} using {Machine} {Learning}},
+ url = {https://ieeexplore.ieee.org/document/10172526/},
+ urldate = {2025-06-03},
+ year = {2023}
+}
+</rdfs:comment>
+        <rdfs:label>xue_automating_2023</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ieeexplore.ieee.org/document/10172526/"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#yoo_deep_2022 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#yoo_deep_2022">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-assisted_options"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Generate"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Architecture_and_Design"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Deep_learning"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Model_driven_engineering"/>
+        <rdfs:comment>@article{yoo_deep_2022,
+ author = {Yoo, Yeongmin and Park, Chang-Kyu and Lee, Jongsoo},
+ doi = {10.1007/s00158-022-03290-1},
+ issn = {1615-147X, 1615-1488},
+ journal = {Structural and Multidisciplinary Optimization},
+ language = {en},
+ month = {July},
+ number = {7},
+ pages = {189},
+ shorttitle = {Deep learning-based efficient metamodeling via domain knowledge-integrated designable data augmentation with transfer learning},
+ title = {Deep learning-based efficient metamodeling via domain knowledge-integrated designable data augmentation with transfer learning: application to vehicle crash safety},
+ url = {https://link.springer.com/10.1007/s00158-022-03290-1},
+ urldate = {2025-06-03},
+ volume = {65},
+ year = {2022}
+}
+</rdfs:comment>
+        <rdfs:label>yoo_deep_2022</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://link.springer.com/10.1007/s00158-022-03290-1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#zhao_clustering-bayesian_2015 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#zhao_clustering-bayesian_2015">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#ResearchPaper"/>
+        <hasLevel rdf:resource="http://purl.org/ai4se/ontology#AI-assisted_selection"/>
+        <hasPurpose rdf:resource="http://purl.org/ai4se/ontology#Improve"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Maintenance"/>
+        <hasTarget rdf:resource="http://purl.org/ai4se/ontology#Testing"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Classical_machine_learning"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Statistical"/>
+        <hasType rdf:resource="http://purl.org/ai4se/ontology#Symbolic"/>
+        <isAboutResearchTopic rdf:resource="http://purl.org/ai4se/ontology#CSO:Testing_and_debugging"/>
+        <rdfs:comment>@inproceedings{zhao_clustering-bayesian_2015,
+ author = {Zhao, Xiaobin and Wang, Zan and Fan, Xiangyu and Wang, Zhenhua},
+ booktitle = {2015 {IEEE} 39th {Annual} {Computer} {Software} and {Applications} {Conference}},
+ doi = {10.1109/COMPSAC.2015.154},
+ pages = {542--547},
+ publisher = {IEEE},
+ title = {A clustering-{Bayesian} network based approach for test case prioritization},
+ volume = {3},
+ year = {2015}
+}
+</rdfs:comment>
+        <rdfs:label>zhao_clustering-bayesian_2015</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1109/COMPSAC.2015.154"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#CSO:Coding_technique -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#CSO:Coding_technique">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#CSO:Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#CSO:Deep_learning -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#CSO:Deep_learning">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#CSO:Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#CSO:DevOps -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#CSO:DevOps">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#CSO:Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#CSO:Model_driven_engineering -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#CSO:Model_driven_engineering">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#CSO:Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#CSO:Requirements_engineering -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#CSO:Requirements_engineering">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#CSO:Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#CSO:Software_engineering -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#CSO:Software_engineering">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#CSO:Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#CSO:Software_quality -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#CSO:Software_quality">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#CSO:Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#CSO:Software_traceability -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#CSO:Software_traceability">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#CSO:Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#CSO:Static_analysis -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#CSO:Static_analysis">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#CSO:Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#CSO:Testing_and_debugging -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#CSO:Testing_and_debugging">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#CSO:Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ai4se/ontology#CSO:Traceability_management -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ai4se/ontology#CSO:Traceability_management">
+        <rdf:type rdf:resource="http://purl.org/ai4se/ontology#CSO:Topic"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
