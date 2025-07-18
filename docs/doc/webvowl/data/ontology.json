@@ -1,0 +1,4295 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://purl.org/ai4se/ontology", "http://www.w3.org/2001/XMLSchema", "http://purl.org/nemo/gufo", "http://www.w3.org/2006/time" ],
+    "title" : {
+      "en" : "ai4se: A taxonomy of research papers on the support of software engineering (SE) through the use of artificial intelligence (AI) methods and techniques."
+    },
+    "iri" : "http://purl.org/ai4se/ontology#",
+    "version" : "2",
+    "author" : [ "Schieferdecker, Ina K." ],
+    "labels" : {
+      "undefined" : "AI for SE Ontology"
+    },
+    "comments" : {
+      "en" : "tbd",
+      "undefined" : "An ontology of research papers generated from a BibTeX file."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/legalcode.en",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Schieferdecker, Ina K.",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "en",
+        "value" : "ai4se",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "2",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "Schieferdecker, I.K.: \"ai4se: A taxonomy of research papers on the support of software engineering (SE) through the use of artificial intelligence (AI) methods and techniques\", 2025, http://purl.org/ai4se/doc",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://purl.org/ai4se/ontology/",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "ai4se: A taxonomy of research papers on the support of software engineering (SE) through the use of artificial intelligence (AI) methods and techniques.",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:disjointUnionOf"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:disjointUnionOf"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:disjointUnionOf"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:disjointUnionOf"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:disjointUnionOf"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "118",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "117",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "128",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:disjointUnionOf"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "116",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:disjointUnionOf"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "120",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "21",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "141",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "52",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "119",
+    "type" : "owl:Class"
+  }, {
+    "id" : "152",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:disjointUnionOf"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:disjointUnionOf"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://purl.org/nemo/gufo#Sortal",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sortal",
+      "en" : "Sortal"
+    },
+    "subClasses" : [ "2", "3", "4", "5" ],
+    "comment" : {
+      "en" : "A gufo:EndurantType which carries (or supplies) a principle of identity for its instances  (see Guizzardi, 2005, chapter 4)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#Role",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Role",
+      "en" : "Role"
+    },
+    "comment" : {
+      "en" : "A gufo:EndurantType that both sortal and anti-rigid. It is defined by relational instantiation conditions. Roles are relationally dependent types, capturing relational properties shared by instances of a given kind.\n\nFor example, \"Student\" may be considered a gufo:Role as a subclass of the gufo:Kind \"Person\", instantiated by all persons enrolled in a school. \""
+    },
+    "attributes" : [ "external" ],
+    "id" : "3",
+    "superClasses" : [ "0", "6" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#TemporaryRelationshipSituation",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TemporaryRelationshipSituation",
+      "en" : "TemporaryRelationshipSituation"
+    },
+    "comment" : {
+      "en" : "A gufo:Situation in which a gufo:Endurant temporarily stands in a relation with another gufo:Endurant (or other endurants in the case of n-ary relationships). \n\nReification of a gufo:TemporaryRelationshipSituation allows qualification of the relationship with the period in time in which it applies. \n\nExamples include: the situation in which Einstein works at the Swiss Patent Office in Bern; the situation in which Elon Musk studies at the University of Pennsylvania; the situation in which John Lennon is married to Yoko Ono; and the situation in which Facebook has a lower market value than Amazon.\n\nFor material relationships, prefer the use of gufo:Relator.\n\nThis is a reification of the relationship (in a solution that is similar to the qualified relation pattern  http://patterns.dataincubator.org/book/qualified-relation.html)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "7",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#Event",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#participatedIn",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Event",
+      "en" : "Event"
+    },
+    "subClasses" : [ "11" ],
+    "comment" : {
+      "en" : "A gufo:ConcreteIndividual that 'occurs' or 'happens' in time. They may be instantaneous or long-running. Events are those \"things that happen to or are performed by\" (Casati and Varzi, 2015) endurants. \n\nExamples include actions and processes, such as a business meeting, a communicative act, a soccer match, a goal kick, the clicking of a mouse button; as well as natural occurrences such as an earthquake, the fall of the meteor that caused the extinction of the dinosaurs.\n\nAlso termed \"happening\", \"occurrence\", \"perdurant\" or \"occurrent\" in the philosophical literature.\n\nCasati, R. & Varzi, A. (2015). Events. In E.N. Zalta (Ed.), The Stanford Encyclopedia of Philosophy (Winter 2015 ed.). 19 Metaphysics Research Lab, Stanford University. https://plato.stanford.edu/archives/win2015/entries/events/"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#Endurant",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "disjointUnion" : [ "13", "19" ],
+    "label" : {
+      "IRI-based" : "Endurant",
+      "en" : "Endurant"
+    },
+    "subClasses" : [ "13", "19" ],
+    "comment" : {
+      "en" : "A gufo:ConcreteIndividual that endures in time and may change qualitatively while keeping its identity. \n\nExamples include: ordinary objects of everyday experience, such as a person, a house, and a car; reified relationships, such as a marriage, a rental contract, and a person's love for another; and existentially-dependent aspects of objects, such as a car's weight, a person's language skills, and a house's color. \n\nAlso termed \"continuant\" in the philosophical literature."
+    },
+    "attributes" : [ "external", "disjointUnion" ],
+    "id" : "18",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#PhaseMixin",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PhaseMixin",
+      "en" : "PhaseMixin"
+    },
+    "comment" : {
+      "en" : "A gufo:EndurantType that is both non-sortal and anti-rigid. It is defined by instrinsic but contingent instantiation conditions. Phase mixins are relationally independent types that capture instrinsic properties shared by instances of different kinds.\n\nFor example, \"LivingAnimal\" may be considered a gufo:PhaseMixin as a superclass of the phases \"LivingPerson\" (specializing the gufo:Kind \"Person\") and \"LivingDog\" (specializing the gufo:Kind \"Dog\")."
+    },
+    "attributes" : [ "external" ],
+    "id" : "42",
+    "superClasses" : [ "6", "69" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#NonRigidType",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "disjointUnion" : [ "59", "6" ],
+    "label" : {
+      "IRI-based" : "NonRigidType",
+      "en" : "NonRigidType"
+    },
+    "subClasses" : [ "59", "6" ],
+    "comment" : {
+      "en" : "A gufo:EndurantType that does not apply necessarily to at least one of its instances (see Guizzardi, 2005, chapter 4).\n\nExamples include anti-rigid types, such as the role \"Student\" and the phase \"Child\", and semi-rigid types, such as the mixin \"MusicalArtist\" (which necessarily characterizes bands, but contingently characterizes people) and the mixin \"FemaleAnimal\" (which is necessarily characterizes female dogs, but contigently characterizes clownfish)."
+    },
+    "attributes" : [ "external", "disjointUnion" ],
+    "id" : "31",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#QualityValue",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#hasReifiedQualityValue",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "QualityValue",
+      "en" : "QualityValue"
+    },
+    "comment" : {
+      "en" : "A gufo:AbstractIndividual that can be associated with a gufo:Quality reflecting the perception or conception of the quality in a certain value space. \n\nInstances of gufo:QualityValue include the rational number 2.5 when used to conceive of the acidity of a portion of wine (in a pH scale), the tuple <38.8897,-77.0089> when used to conceive of the location of a building (in a space formed by latitude and longitude), or the triplet <0,0,0> when used to conceive of the color of a physical object (in a trimensional space formed by red, green and blue color components).  \n\nCorresponds to \"Quale\" in Guizzardi (2005). \n\nUse this class only for quality values (qualia) that are to be reified in the A-box and associated with a gufo:ConcreteIndividual through the object property gufo:hasReifiedQualityValue. Otherwise, use the gufo:hasQualityValue data property and a literal to determine the quality value."
+    },
+    "attributes" : [ "external" ],
+    "id" : "70",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#AbstractIndividualType",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AbstractIndividualType",
+      "en" : "AbstractIndividualType"
+    },
+    "subClasses" : [ "47", "77", "78", "79", "66" ],
+    "comment" : {
+      "en" : "A gufo:Type whose instances are abstract individuals.\n\nInstances of gufo:AbstractIndividualType are subclasses of gufo:AbstractIndividual.\n\nExamples include the types \"NaturalNumber\", \"Set\", \"Proposition\"."
+    },
+    "attributes" : [ "external" ],
+    "id" : "75",
+    "superClasses" : [ "76" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#MaterialRelationshipType",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#isDerivedFrom",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MaterialRelationshipType",
+      "en" : "MaterialRelationshipType"
+    },
+    "comment" : {
+      "en" : "A gufo:RelationshipType derived from extrinsic aspects of the related entities.\n\nFor example, \"marriedWith\", \"employedBy\", \"enrolledIn\", \"admires\". \n\nFor a gufo:MaterialRelationshipType it is recommended to identify the type of extrinsic aspect from which the material relationship type is derived (see gufo:isDerivedFrom). For example \"marriedWith\" can be derived from the \"Marriage\" relator type, \"employedBy\" can be derived from the \"Employment\" relator type.\n\nEncompasses \"Material Relation\" in Guizzardi (2005) and corresponds to \"Material Relation\" in Fonseca et al. (2019)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "82",
+    "superClasses" : [ "83" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#TemporaryInstantiationSituation",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TemporaryInstantiationSituation",
+      "en" : "TemporaryInstantiationSituation"
+    },
+    "comment" : {
+      "en" : "A gufo:Situation in which a gufo:Endurant temporarily instantiates a gufo:NonRigidType.\n\nA gufo:TemporaryInstantiationSituation can account for the time period in which a particular instantiation holds.\n\nExamples include: the situation in which Obama instantiates the role of president, which began in 20/01/2009 and lasted until 20/01/2017; the situation in which Coatria instantiates the role of EU Member, which began in 01/07/2013 (and is still on-going); and the situation in which Steve Jobs instantiates the child phase, which began in 24/02/1955 and lasted until 24/02/1965.\n\nThis solution is inspired in the qualified relation pattern (http://patterns.dataincubator.org/book/qualified-relation.html)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "29",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#AbstractIndividual",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AbstractIndividual",
+      "en" : "AbstractIndividual"
+    },
+    "subClasses" : [ "70", "88" ],
+    "comment" : {
+      "en" : "A gufo:Individual that does not exist in space-time in the same way as a gufo:ConcreteIndividual does. A gufo:AbstractIndividual has no spatiotemporal qualities in its own right. Hence, it does not make sense to ask how much space it now occupies (Gideon, 2018) and when it was created or destroyed.\n\nExamples include the number ten, the null set, and the proposition that 'Obama was the president of the United States'.\n\nRosen, Gideon, \"Abstract Objects\", The Stanford Encyclopedia of Philosophy (Winter 2018 Edition), Edward N. Zalta (ed.), <https://plato.stanford.edu/archives/win2018/entries/abstract-objects/>"
+    },
+    "attributes" : [ "external" ],
+    "id" : "27",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#ExtrinsicAspect",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "disjointUnion" : [ "91", "92" ],
+    "label" : {
+      "IRI-based" : "ExtrinsicAspect",
+      "en" : "ExtrinsicAspect"
+    },
+    "subClasses" : [ "91", "92" ],
+    "comment" : {
+      "en" : "A gufo:Aspect that depends on one or more concrete individuals.\n\nExtrinsic (or \"relational\") aspects are reified relationships, e.g., John and Mary's marriage, Mary's employment contract at Nasa, or parts of those relationships, e.g., John's obligations towards Mary in the scope of the marriage, Mary's reciprocal claims, Mary's obligations towards John, John's reciprocal claims. Extrinsic aspects can also be reified one-sided relationships, e.g., John's admiration for Obama (which depends on Obama but does not characterize him).\n\nCorresponds to \"Extrinsic Moment\" in Fonseca et al (2019). Encompasses \"Externally Depedent Mode\", \"Qua Individual\" and \"Relator\" in Guizzardi (2005)."
+    },
+    "attributes" : [ "external", "disjointUnion" ],
+    "id" : "90",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://purl.org/ai4se/ontology#AIType",
+    "baseIri" : "http://purl.org/ai4se/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AIType",
+      "undefined" : "Type of AI system"
+    },
+    "individuals" : [ {
+      "iri" : "http://purl.org/ai4se/ontology#Subsymbolic",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "comment" : {
+        "en" : "Represents AI systems that use numerical models to represent knowledge and computations, such as numerical optimisation and statistical learning, in order to model and solve problems.\n\nAccording to ISO/IEC 22989:2022 Information technology - Artificial intelligence - Artificial intelligence concepts and terminology, subsymbolic AI is\n\n- AI based on techniques and models that use an implicit encoding of information, that can be derived from experience or raw data."
+      },
+      "labels" : {
+        "IRI-based" : "Subsymbolic",
+        "undefined" : "Subsymbolic AI"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#Symbolic",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "comment" : {
+        "en" : "Represents AI systems that use approaches relying on the explicit definition of symbols and rules representing knowledge and performing logical reasoning.\n\nAccording to ISO/IEC 22989:2022 Information technology - Artificial intelligence - Artificial intelligence concepts and terminology, symbolic AI is\n\n- AI based on techniques and models that manipulate symbols and structures according to explicitly defined rules to obtain inferences."
+      },
+      "labels" : {
+        "IRI-based" : "Symbolic",
+        "undefined" : "Symbolic AI"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#Statistical",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "comment" : {
+        "en" : "Represents subsymbolic AI systems that rely on data and statistical inference to identify patterns and make predictions."
+      },
+      "labels" : {
+        "IRI-based" : "Statistical",
+        "undefined" : "Statistical AI"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#Generative_AI",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "comment" : {
+        "en" : "Represents AI systems that use learned or derived knowledge to produce original outputs, such as synthetic text, media, or other content types. It often uses subsymbolic AI like Convolutional Neural Networks (CNNs), Recurrent Neural Networks (RNNs), or Transformer-based models, but also symbolic AI."
+      },
+      "labels" : {
+        "IRI-based" : "Generative_AI",
+        "undefined" : "Generative AI"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#Classical_machine_learning",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "comment" : {
+        "en" : "Represents subsymbolic AI systems that rely on statistical and algorithmic learning techniques - such as decision trees, support vector machines, linear regression, and clustering - to learn patterns from structured data and make predictions or classifications. These models typically operate on explicitly defined features and do not involve deep neural networks.\n\nThis class of AI is used in contrast to deep learning AI."
+      },
+      "labels" : {
+        "IRI-based" : "Classical_machine_learning",
+        "undefined" : "Classical machine learning"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#Agentic_AI",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "comment" : {
+        "en" : "Represents AI systems that rely on autonomous agents using AI techniques to plan, adapt, and execute multi-step objectives with minimal human control."
+      },
+      "labels" : {
+        "IRI-based" : "Agentic_AI",
+        "undefined" : "Agentic AI"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#Deep_learning",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "comment" : {
+        "en" : "Represents subsymbolic AI systems that rely on deep artificial neural networks to automatically learn features and perform tasks such as classification or prediction, especially from large and complex datasets. \n\nAccording to ISO/IEC 22989:2022 Information technology - Artificial intelligence - Artificial intelligence concepts and terminology, deep learning (deep neural network learning) is\n\n- AI approach to creating rich hierarchical representations through the training of neural networks with many hidden layers."
+      },
+      "labels" : {
+        "IRI-based" : "Deep_learning",
+        "undefined" : "Deep learning AI"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#General_AI",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "comment" : {
+        "en" : "Represents AI systems capable of performing a broad set of distinct tasks with satisfactory performance.\n\nAccording to ISO/IEC 22989:2022 Information technology - Artificial intelligence - Artificial intelligence concepts and terminology, general AI (AGI, artificial general intelligence)\n\n- type of AI system that addresses a broad range of tasks with a satisfactory level of performance \n\nNote 1: Compared to narrow AI.\nNote 2: AGI is often used in a stronger sense, meaning systems that not only can perform a wide variety of tasks, but all tasks that a human can perform."
+      },
+      "labels" : {
+        "IRI-based" : "General_AI",
+        "undefined" : "General AI"
+      }
+    } ],
+    "comment" : {
+      "en" : "Represents the type of the artificial intelligence (AI) system being used.\n\nAccording to ISO/IEC 22989:2022 Information technology - Artificial intelligence - Artificial intelligence concepts and terminology, artificial intelligence (AI) is\n\n- <discipline> research and development of mechanisms and applications of AI systems.\n\nand\n\nartificial intelligence system (AI system) is\n\n- engineered system that generates outputs such as content, forecasts, recommendations or decisions for a given set of human-defined objectives."
+    },
+    "id" : "78",
+    "superClasses" : [ "75" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#Object",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Object",
+      "en" : "Object"
+    },
+    "subClasses" : [ "101", "94", "102" ],
+    "comment" : {
+      "en" : "A gufo:Endurant that does not depend on another endurant for its existence (excluding its essential parts and aspects). \n\nExamples of objects include ordinary physical entities, such as a dog, a house, a tomato, a car, Alan Turing, but also socially-defined entities such as The Rolling Stones, the European Union, the Brazilian 1988 Constitution.\n\nGuizzardi (2005) also included the more abstract notion of \"Substantial\", which generalizes both objects and amounts of matter. That notion was left out from this implementation, together with the notion of amount of matter. Support for the representation of maximally-self-connected amounts of matter is given by gufo:Quantity."
+    },
+    "attributes" : [ "external" ],
+    "id" : "19",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#Aspect",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "disjointUnion" : [ "37", "90" ],
+    "label" : {
+      "IRI-based" : "Aspect",
+      "en" : "Aspect"
+    },
+    "subClasses" : [ "37", "90" ],
+    "comment" : {
+      "en" : "A gufo:Endurant that depends on at least one other concrete individual for its existence. A gufo:Aspect is a characteristic or trait of a concrete individual that is itself conceived as an individual. \n\nExamples include: intrinsic physical aspects, such as the Moon's mass, Lassie's fur color; mental dispositions, such as Bob's math skills, his belief that the number one is odd; as well as relational aspects, such as John's love for Mary and the marriage between John and Mary. \n\nThe specific sort of existential dependence connecting aspects to their bearers is called inherence.\n\nCorresponds to \"Moment\" in Guizzardi (2005). \n\nAlso termed \"property instance\", \"particularized property\", \"individual accident\", or \"(variable) trope\" in the philosophical literature."
+    },
+    "attributes" : [ "external", "disjointUnion" ],
+    "id" : "13",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#SubKind",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubKind",
+      "en" : "SubKind"
+    },
+    "comment" : {
+      "en" : "A gufo:EndurantType that is both sortal and rigid. It specializes a gufo:Kind carrying the principle of identity supplied by that kind. Every gufo:SubKind should directly or indirectly specialize a gufo:Kind.\n\nFor example, the gufo:Kind \"Lion\" may be specialized into the \"Lionness\" and \"Male Lion\" subkinds, while the gufo:Kind \"Computer\" may be specialized into the \"Laptop\" and \"Desktop\" subkinds."
+    },
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "0", "61" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#NonSortal",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NonSortal",
+      "en" : "NonSortal"
+    },
+    "subClasses" : [ "58", "109", "42", "45" ],
+    "comment" : {
+      "en" : "A gufo:EndurantType that applies to individuals of different kinds (see Guizzardi, 2005, chapter 4).\n\nNon-sortals do not provide a uniform principle of identity for their instances; instead, they just classify things that share common properties but which obey different principles of identity.\n\nAlso termed \"dispersive\" types in the philosophical literature."
+    },
+    "attributes" : [ "external" ],
+    "id" : "69",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/ai4se/ontology#SolutionPurpose",
+    "baseIri" : "http://purl.org/ai4se/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SolutionPurpose",
+      "undefined" : "Solution purpose"
+    },
+    "individuals" : [ {
+      "iri" : "http://purl.org/ai4se/ontology#Generate",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "labels" : {
+        "IRI-based" : "Generate"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#Improve",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "comment" : {
+        "en" : "The purpose of using AI is to improve (parts of) artefacts used in software engineering."
+      },
+      "labels" : {
+        "IRI-based" : "Improve",
+        "undefined" : "Improve"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#Understand",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "comment" : {
+        "en" : "The purpose of using AI is to gain insight."
+      },
+      "labels" : {
+        "IRI-based" : "Understand",
+        "undefined" : "Understand"
+      }
+    } ],
+    "comment" : {
+      "en" : "Represents the purpose of using the AI system in a software development / operation processes or activities."
+    },
+    "id" : "47",
+    "superClasses" : [ "75" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#Relator",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#mediates",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Relator",
+      "en" : "Relator"
+    },
+    "comment" : {
+      "en" : "A gufo:ExtrinsicAspect that connects (involves, mediates) two or more concrete individuals. Relators are reified relationships composed of reciprocal extrinsic modes.\n\nExamples of relators include John and Mary's marriage (composed of John's obligations towards Mary in the scope of the marriage, Mary's reciprocal claims, Mary's obligations towards John, John's reciprocal claims), Mary's employment contract at Nasa, a covalent bond between two atoms."
+    },
+    "attributes" : [ "external" ],
+    "id" : "91",
+    "superClasses" : [ "90" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#RoleMixin",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RoleMixin",
+      "en" : "RoleMixin"
+    },
+    "comment" : {
+      "en" : "A gufo:EndurantType that is both non-sortal and anti-rigid. It is defined by relational instantiation conditions. Role mixins are relationally dependent types, capturing relational properties shared by instances of different kinds.\n\nFor example, \"Customer\" may be considered a gufo:RoleMixin as a superclass of the roles \"CorporateCustomer\" (specializing the gufo:Kind \"BusinessOrganization\") and \"PersonalCustomer\" (specializing the gufo:Kind \"Person\")."
+    },
+    "attributes" : [ "external" ],
+    "id" : "45",
+    "superClasses" : [ "6", "69" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#ComparativeRelationshipType",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#isDerivedFrom",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ComparativeRelationshipType",
+      "en" : "ComparativeRelationshipType"
+    },
+    "comment" : {
+      "en" : "A gufo:RelationshipType derived from intrinsic aspects of the related entities.\n\nFor example, \"heavierThan\", \"olderThan\". \n\nFor a gufo:ComparativeRelationshipType it is recommended to identify the types of intrinsic aspects from which it is derived (see gufo:isDerivedFrom). For example \"heavierThan\" is derived from the \"Weight\" quality type.\n\nNote that, in the case of relationships that may change in different circumstances or times, the use of a qualified relation pattern enables indicating the period of time in which the relationship holds. See gufo:TemporaryRelationshipSituation.\n\nCorresponds to \"comparative formal relation\" in Guizzardi (2005) and \"Comparative Relation\" in Fonseca et al. (2019)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "114",
+    "superClasses" : [ "83" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#Collection",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "disjointUnion" : [ "116", "117" ],
+    "label" : {
+      "IRI-based" : "Collection",
+      "en" : "Collection"
+    },
+    "subClasses" : [ "116", "117" ],
+    "comment" : {
+      "en" : "A complex gufo:Object whose parts (the members of the collection) have a uniform structure (i.e., members are conceived as playing the same role in the collection). Collections may have a fixed or variable membership, which can be asserted using gufo:FixedCollection and gufo:VariableCollection respectively.\n\nExamples include a deck of cards, a pile of bricks, a forest (conceived as a collection of trees), and a group of people.\n\nCollections in many cases constitute a functional complex. For example, a pile of bricks may constitute a wall, a group of people may constitute a football team.\n\nA gufo:Collection may be decomposed into \"smaller\" collections. For instance, a group of people may be decomposed into a group of English speakers and a group of Italian speakers. Sub collections may or may not share members among them."
+    },
+    "attributes" : [ "external", "disjointUnion" ],
+    "id" : "94",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://purl.org/ai4se/ontology#AutomationLevel",
+    "baseIri" : "http://purl.org/ai4se/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AutomationLevel",
+      "en" : "Represents the level of automation provided / enabled by the AI system being used.\n\nAccording to ISO/IEC 22989:2022 Information technology - Artificial intelligence - Artificial intelligence concepts and terminology, artificial intelligence (AI) is\n\n- <discipline> research and development of mechanisms and applications of AI systems.\n\nand\n\nartificial intelligence system (AI system) is\n\n- engineered system that generates outputs such as content, forecasts, recommendations or decisions for a given set of human-defined objectives.",
+      "undefined" : "Level of AI automation"
+    },
+    "individuals" : [ {
+      "iri" : "http://purl.org/ai4se/ontology#AI-assisted_options",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "comment" : {
+        "en" : "Represents the case in which choices, recommendations, or decision-support outputs for the target SE processes or activities are generated or enhanced by an AI system, while retaining human control over the final choice, recommendation or decision, which may differ from the AI outputs."
+      },
+      "labels" : {
+        "IRI-based" : "AI-assisted_options",
+        "undefined" : "AI-assisted options"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#AI-assisted_selection",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "comment" : {
+        "en" : "Represents the case in which choices, recommendations, or decision-support outputs for the target SE processes or activities are generated or enhanced by an AI system, where the final choices, recommendations or decisions require human confirmation and do not differ from the AI outputs."
+      },
+      "labels" : {
+        "IRI-based" : "AI-assisted_selection",
+        "undefined" : "AI-assisted selection"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#AI-driven_partial_automation",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "comment" : {
+        "en" : "Represents the case in which AI is used to automate specific tasks or decision-making components within the target SE processes or activities, while other parts of the process remain under human control or require human intervention."
+      },
+      "labels" : {
+        "IRI-based" : "AI-driven_partial_automation",
+        "undefined" : "AI-driven partial automation"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#No_AI_support",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "comment" : {
+        "en" : "Represents the case in which the target SE processes or activities are performed without the assistance of AI."
+      },
+      "labels" : {
+        "IRI-based" : "No_AI_support",
+        "undefined" : "No AI-supported automation"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#AI-driven_full_automation",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "comment" : {
+        "en" : "Represents the case in which AI is used to automate all tasks or decision-making components within the target SE processes or activities, without requiring human intervention."
+      },
+      "labels" : {
+        "IRI-based" : "AI-driven_full_automation",
+        "undefined" : "AI-driven full automation"
+      }
+    } ],
+    "id" : "77",
+    "superClasses" : [ "75" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#SituationType",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SituationType",
+      "en" : "SituationType"
+    },
+    "comment" : {
+      "en" : "A gufo:Type whose instances are situations.\n\nInstances of gufo:SituationType are subclasses of gufo:Situation.\n\nExamples include \"HazardousSituation\", \"PersonHasFever\",  \"PersonIsStudent\"."
+    },
+    "attributes" : [ "external" ],
+    "id" : "118",
+    "superClasses" : [ "119" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#Category",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Category",
+      "en" : "Category"
+    },
+    "comment" : {
+      "en" : "A gufo:EndurantType that is both non-sortal and rigid. It captures essential properties that apply to instances of different kinds.\n\nFor example, \"PhysicalObject\" may be considered a gufo:Category, encompassing objects such as cars, planets, trees. \"Agent\" may be a gufo:Category that classifies both people and organizations."
+    },
+    "attributes" : [ "external" ],
+    "id" : "109",
+    "superClasses" : [ "69", "61" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#Phase",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Phase",
+      "en" : "Phase"
+    },
+    "comment" : {
+      "en" : "A gufo:EndurantType that is both sortal and anti-rigid. It is defined by instrinsic but contingent instantiation conditions. Phases are relationally independent types that capturec instrinsic properties shared by instances of a given kind.\n\nFor example, \"Child\" may be considered a gufo:Phase as a subclass of the gufo:Kind \"Person\", instantiated by persons younger than 12. Another example is the type \"IllPerson\", which may be considered a gufo:Phase that is instantiated whenever an instance of \"Disease\" (a gufo:IntrinsicMode) inheres in a person."
+    },
+    "attributes" : [ "external" ],
+    "id" : "2",
+    "superClasses" : [ "0", "6" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#SemiRigidType",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SemiRigidType",
+      "en" : "SemiRigidType"
+    },
+    "subClasses" : [ "58" ],
+    "comment" : {
+      "en" : "A gufo:NonRigidType that applies necessarily to some of its instances and contingently to some others (see Guizzardi, 2005, chapter 4)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "59",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#FixedCollection",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#isSubCollectionOf",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#isCollectionMemberOf",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FixedCollection",
+      "en" : "FixedCollection"
+    },
+    "comment" : {
+      "en" : "A gufo:Collection for which no change in membership is possible.\n\nSuch a collection obeys an extensional principle of identity, i.e., two fixed collections are the same if, and only if, they have the same members.\n\nConsider, for example, a group of people understood as a gufo:FixedCollection. In this case, any change in the membership of the group (e.g., the addition of one person) would in fact create a different group of people. In this case, the gufo:FixedCollection may be contrasted with the complexes they constitute. For instance, The Beatles (the band conceived as a gufo:FunctionalComplex) was in a certain circumstance constituted by the collection {John, Paul, George, Pete} and in another one constituted by the collection {John, Paul, George, Ringo}. The replacement of Pete Best by Ringo Star does not alter the identity of the band, but creates a  different group of people."
+    },
+    "attributes" : [ "external" ],
+    "id" : "117",
+    "superClasses" : [ "94" ]
+  }, {
+    "iri" : "http://purl.org/ai4se/ontology#ResearchPaper",
+    "baseIri" : "http://purl.org/ai4se/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ResearchPaper",
+      "undefined" : "ResearchPaper"
+    },
+    "individuals" : [ {
+      "iri" : "http://purl.org/ai4se/ontology#eramo_architecture_2024",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://linkinghub.elsevier.com/retrieve/pii/S0164121224002255",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@article{eramo_architecture_2024,\n author = {Eramo, Romina and Said, Bilal and Oriol, Marc and Bruneliere, Hugo and Morales, Sergio},\n doi = {10.1016/j.jss.2024.112180},\n issn = {01641212},\n journal = {Journal of Systems and Software},\n language = {en},\n month = {November},\n pages = {112180},\n title = {An architecture for model-based and intelligent automation in {DevOps}},\n url = {https://linkinghub.elsevier.com/retrieve/pii/S0164121224002255},\n urldate = {2025-06-02},\n volume = {217},\n year = {2024}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "eramo_architecture_2024",
+        "undefined" : "eramo_architecture_2024"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#ceran_prediction_2023",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://doi.org/10.1016/j.matpr.2022.11.229",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@article{ceran_prediction_2023,\n author = {Ceran, A Ayberk and Ar, Yilmaz and Tanrıöver, Ö Özgür and Ceran, Sinem Seyrek},\n doi = {10.1016/j.matpr.2022.11.229},\n journal = {Materials Today: Proceedings},\n note = {Publisher: Elsevier},\n pages = {18--25},\n title = {Prediction of software quality with {Machine} {Learning}-{Based} ensemble methods},\n volume = {81},\n year = {2023}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "ceran_prediction_2023",
+        "undefined" : "ceran_prediction_2023"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#baki_multi-step_2016",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://doi.org/10.1145/2904904",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@article{baki_multi-step_2016,\n author = {Baki, Islem and Sahraoui, Houari},\n doi = {10.1145/2904904},\n journal = {ACM Transactions on Software Engineering and Methodology (TOSEM)},\n note = {Publisher: ACM New York, NY, USA},\n number = {3},\n pages = {1--37},\n title = {Multi-step learning and adaptive search for learning complex model transformations from examples},\n volume = {25},\n year = {2016}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "baki_multi-step_2016",
+        "undefined" : "baki_multi-step_2016"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#hartmann_next_2017",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://doi.org/10.1109/MODELS.2017.32",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@inproceedings{hartmann_next_2017,\n address = {Austin, Texas},\n author = {Hartmann, Thomas and Moawad, Assaad and Fouquet, Francois and Traon, Yves Le},\n booktitle = {Proceedings of the {ACM}/{IEEE} 20th {International} {Conference} on {Model} {Driven} {Engineering} {Languages} and {Systems}},\n doi = {10.1109/MODELS.2017.32},\n file = {Submitted Version:C\\:\\\\Users\\\\inasc.DESKTOP-DH4LT2D\\\\Zotero\\\\storage\\\\KW7CIHNX\\\\Hartmann et al. - 2017 - The next evolution of MDE a seamless integration of machine learning into domain modeling.pdf:application/pdf},\n isbn = {978-1-5386-3492-9},\n month = {September},\n pages = {180},\n publisher = {IEEE Press},\n series = {{MODELS} '17},\n shorttitle = {The next evolution of {MDE}},\n title = {The next evolution of {MDE}: a seamless integration of machine learning into domain modeling},\n url = {https://doi.org/10.1109/MODELS.2017.32},\n urldate = {2025-07-06},\n year = {2017}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "hartmann_next_2017",
+        "undefined" : "hartmann_next_2017"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#mangaroliya_classification_2020",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://doi.org/10.48550/arXiv.2011.07313",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@article{mangaroliya_classification_2020,\n author = {Mangaroliya, Kaushil and Patel, Het},\n doi = {10.48550/arXiv.2011.07313},\n journal = {arXiv preprint arXiv:2011.07313},\n title = {Classification of reverse-engineered class diagram and forward-engineered class diagram using machine learning},\n year = {2020}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "mangaroliya_classification_2020",
+        "undefined" : "mangaroliya_classification_2020"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#guo_graphcodebert_2020",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://doi.org/10.48550/arXiv.2009.08366",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@article{guo_graphcodebert_2020,\n author = {Guo, Daya and Ren, Shuo and Lu, Shuai and Feng, Zhangyin and Tang, Duyu and Liu, Shujie and Zhou, Long and Duan, Nan and Svyatkovskiy, Alexey and Fu, Shengyu and {others}},\n doi = {10.48550/arXiv.2009.08366},\n journal = {arXiv preprint arXiv:2009.08366},\n title = {Graphcodebert: {Pre}-training code representations with data flow},\n year = {2020}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "guo_graphcodebert_2020",
+        "undefined" : "guo_graphcodebert_2020"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#acher_generative_2023",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://doi.org/10.1145/3579028.3609016",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@inproceedings{acher_generative_2023,\n address = {New York, NY, USA},\n author = {Acher, Mathieu and Martinez, Jabier},\n booktitle = {Proceedings of the 27th {ACM} {International} {Systems} and {Software} {Product} {Line} {Conference} - {Volume} {B}},\n doi = {10.1145/3579028.3609016},\n isbn = {979-8-4007-0092-7},\n month = {August},\n pages = {57--66},\n publisher = {Association for Computing Machinery},\n series = {{SPLC} '23},\n shorttitle = {Generative {AI} for {Reengineering} {Variants} into {Software} {Product} {Lines}},\n title = {Generative {AI} for {Reengineering} {Variants} into {Software} {Product} {Lines}: {An} {Experience} {Report}},\n url = {https://doi.org/10.1145/3579028.3609016},\n urldate = {2025-07-06},\n volume = {B},\n year = {2023}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "acher_generative_2023",
+        "undefined" : "acher_generative_2023"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#tatineni_integrating_2024",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "comment" : {
+        "undefined" : "@book{tatineni_integrating_2024,\n author = {Tatineni, Sumanth},\n publisher = {Libertatem Media Private Limited},\n title = {Integrating {Artificial} {Intelligence} with {DevOps}: {Advanced} {Techniques}, {Predictive} {Analytics}, and {Automation} for {Real}-{Time} {Optimization} and {Security} in {Modern} {Software} {Development}},\n year = {2024}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "tatineni_integrating_2024",
+        "undefined" : "tatineni_integrating_2024"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#yoo_deep_2022",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://link.springer.com/10.1007/s00158-022-03290-1",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@article{yoo_deep_2022,\n author = {Yoo, Yeongmin and Park, Chang-Kyu and Lee, Jongsoo},\n doi = {10.1007/s00158-022-03290-1},\n issn = {1615-147X, 1615-1488},\n journal = {Structural and Multidisciplinary Optimization},\n language = {en},\n month = {July},\n number = {7},\n pages = {189},\n shorttitle = {Deep learning-based efficient metamodeling via domain knowledge-integrated designable data augmentation with transfer learning},\n title = {Deep learning-based efficient metamodeling via domain knowledge-integrated designable data augmentation with transfer learning: application to vehicle crash safety},\n url = {https://link.springer.com/10.1007/s00158-022-03290-1},\n urldate = {2025-06-03},\n volume = {65},\n year = {2022}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "yoo_deep_2022",
+        "undefined" : "yoo_deep_2022"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#zhao_clustering-bayesian_2015",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://doi.org/10.1109/COMPSAC.2015.154",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@inproceedings{zhao_clustering-bayesian_2015,\n author = {Zhao, Xiaobin and Wang, Zan and Fan, Xiangyu and Wang, Zhenhua},\n booktitle = {2015 {IEEE} 39th {Annual} {Computer} {Software} and {Applications} {Conference}},\n doi = {10.1109/COMPSAC.2015.154},\n pages = {542--547},\n publisher = {IEEE},\n title = {A clustering-{Bayesian} network based approach for test case prioritization},\n volume = {3},\n year = {2015}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "zhao_clustering-bayesian_2015",
+        "undefined" : "zhao_clustering-bayesian_2015"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#samplePaper",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "labels" : {
+        "IRI-based" : "samplePaper"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#xue_automating_2023",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://ieeexplore.ieee.org/document/10172526/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@inproceedings{xue_automating_2023,\n address = {Melbourne, Australia},\n author = {Xue, Qiaomu},\n booktitle = {2023 {IEEE}/{ACM} 45th {International} {Conference} on {Software} {Engineering}: {Companion} {Proceedings} ({ICSE}-{Companion})},\n copyright = {https://doi.org/10.15223/policy-029},\n doi = {10.1109/ICSE-Companion58688.2023.00060},\n isbn = {979-8-3503-2263-7},\n month = {May},\n pages = {221--223},\n publisher = {IEEE},\n title = {Automating {Code} {Generation} for {MDE} using {Machine} {Learning}},\n url = {https://ieeexplore.ieee.org/document/10172526/},\n urldate = {2025-06-03},\n year = {2023}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "xue_automating_2023",
+        "undefined" : "xue_automating_2023"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#lin_soen-101_2024",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://arxiv.org/abs/2403.15852",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@misc{lin_soen-101_2024,\n annote = {Other\nICSE 2025},\n author = {Lin, Feng and Kim, Dong Jae and Tse-Husn and {Chen}},\n copyright = {Creative Commons Attribution 4.0 International},\n doi = {10.48550/ARXIV.2403.15852},\n keywords = {FOS: Computer and information sciences, Software Engineering (cs.SE), Artificial Intelligence (cs.AI)},\n note = {Version Number: 2},\n publisher = {arXiv},\n shorttitle = {{SOEN}-101},\n title = {{SOEN}-101: {Code} {Generation} by {Emulating} {Software} {Process} {Models} {Using} {Large} {Language} {Model} {Agents}},\n url = {https://arxiv.org/abs/2403.15852},\n urldate = {2025-06-02},\n year = {2024}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "lin_soen-101_2024",
+        "undefined" : "lin_soen-101_2024"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#bouzenia_repairagent_2024",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://doi.org/10.48550/arXiv.2403.17134",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@article{bouzenia_repairagent_2024,\n author = {Bouzenia, Islem and Devanbu, Premkumar and Pradel, Michael},\n doi = {10.48550/arXiv.2403.17134},\n journal = {arXiv preprint arXiv:2403.17134},\n title = {Repairagent: {An} autonomous, llm-based agent for program repair},\n year = {2024}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "bouzenia_repairagent_2024",
+        "undefined" : "bouzenia_repairagent_2024"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#tamizharasi_novel_2024",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://doi.org/10.1007/s10836-024-06121-x",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@article{tamizharasi_novel_2024,\n author = {Tamizharasi, A and Ezhumalai, P},\n doi = {10.1007/s10836-024-06121-x},\n journal = {Journal of Electronic Testing},\n note = {Publisher: Springer},\n pages = {1--24},\n title = {A {Novel} {Framework} {For} {Optimal} {Test} {Case} {Generation} and {Prioritization} {Using} {Ent}-{LSOA} {And} {IMTRNN} {Techniques}},\n year = {2024}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "tamizharasi_novel_2024",
+        "undefined" : "tamizharasi_novel_2024"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#bhat_adex_2019",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://doi.org/10.1109/ICSA-C.2019.00035",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@inproceedings{bhat_adex_2019,\n author = {Bhat, Manoj and Tinnes, Christof and Shumaiev, Klym and Biesdorf, Andreas and Hohenstein, Uwe and Matthes, Florian},\n booktitle = {2019 {IEEE} {International} {Conference} on {Software} {Architecture} {Companion} ({ICSA}-{C})},\n doi = {10.1109/ICSA-C.2019.00035},\n pages = {158--161},\n publisher = {IEEE},\n title = {Adex: {A} tool for automatic curation of design decision knowledge for architectural decision recommendations},\n year = {2019}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "bhat_adex_2019",
+        "undefined" : "bhat_adex_2019"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#perini_machine_2012",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://doi.org/10.1109/TSE.2012.52",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@article{perini_machine_2012,\n author = {Perini, Anna and Susi, Angelo and Avesani, Paolo},\n doi = {10.1109/TSE.2012.52},\n journal = {IEEE Transactions on Software Engineering},\n note = {Publisher: IEEE},\n number = {4},\n pages = {445--461},\n title = {A machine learning approach to software requirements prioritization},\n volume = {39},\n year = {2012}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "perini_machine_2012",
+        "undefined" : "perini_machine_2012"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#chen_incorporating_2023",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://doi.org/null",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@article{chen_incorporating_2023,\n author = {{Chen}},\n doi = {null},\n journal = {Journal of Information Systems Education},\n title = {Incorporating {AI} and {LLMs} into {Software} {Engineering} {Capstone} {Projects}: {A} {Comprehensive} {Analysis}},\n year = {2023}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "chen_incorporating_2023",
+        "undefined" : "chen_incorporating_2023"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#gupta_intelligent_2018",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://www.kdd.org/kdd2018/files/deep-learning-day/DLDay18_paper_40.pdf",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@inproceedings{gupta_intelligent_2018,\n author = {Gupta, Anshul and Sundaresan, Neel},\n booktitle = {Proceedings of the 24th {ACM} {SIGKDD} {International} {Conference} on {Knowledge} {Discovery} and {Data} {Mining} ({KDD}’18) {Deep} {Learning} {Day}},\n title = {Intelligent code reviews using deep learning},\n year = {2018},\n url = {https://www.kdd.org/kdd2018/files/deep-learning-day/DLDay18_paper_40.pdf}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "gupta_intelligent_2018",
+        "undefined" : "gupta_intelligent_2018"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#bader_getafix_2019",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://doi.org/10.1145/3360585",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@article{bader_getafix_2019,\n author = {Bader, Johannes and Scott, Andrew and Pradel, Michael and Chandra, Satish},\n doi = {10.1145/3360585},\n journal = {Proceedings of the ACM on Programming Languages},\n note = {Publisher: ACM New York, NY, USA},\n number = {OOPSLA},\n pages = {1--27},\n title = {Getafix: {Learning} to fix bugs automatically},\n volume = {3},\n year = {2019}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "bader_getafix_2019",
+        "undefined" : "bader_getafix_2019"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#kulkarni_toward_2023",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://ieeexplore.ieee.org/document/10343767/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@inproceedings{kulkarni_toward_2023,\n address = {Västerås, Sweden},\n author = {Kulkarni, Vinay and Reddy, Sreedhar and Barat, Souvik and Dutta, Jaya},\n booktitle = {2023 {ACM}/{IEEE} 26th {International} {Conference} on {Model} {Driven} {Engineering} {Languages} and {Systems} ({MODELS})},\n copyright = {https://doi.org/10.15223/policy-029},\n doi = {10.1109/MODELS58315.2023.00039},\n isbn = {979-8-3503-2480-8},\n month = {October},\n pages = {184--193},\n publisher = {IEEE},\n title = {Toward a {Symbiotic} {Approach} {Leveraging} {Generative} {AI} for {Model} {Driven} {Engineering}},\n url = {https://ieeexplore.ieee.org/document/10343767/},\n urldate = {2025-06-02},\n year = {2023}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "kulkarni_toward_2023",
+        "undefined" : "kulkarni_toward_2023"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#bird_taking_2023",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://dl.acm.org/doi/10.1145/3589996",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@article{bird_taking_2023,\n author = {Bird, Christian and Ford, Denae and Zimmermann, Thomas and Forsgren, Nicole and Kalliamvakou, Eirini and Lowdermilk, Travis and Gazit, Idan},\n doi = {10.1145/3589996},\n issn = {0001-0782, 1557-7317},\n journal = {Communications of the ACM},\n language = {en},\n month = {June},\n number = {6},\n pages = {56--62},\n title = {Taking {Flight} with {Copilot}},\n url = {https://dl.acm.org/doi/10.1145/3589996},\n urldate = {2025-05-31},\n volume = {66},\n year = {2023}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "bird_taking_2023",
+        "undefined" : "bird_taking_2023"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#khalilipour_machine_2022",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://link.springer.com/10.1007/978-3-031-15743-1_39",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@incollection{khalilipour_machine_2022,\n address = {Cham},\n author = {Khalilipour, Alireza and Bozyigit, Fatma and Utku, Can and Challenger, Moharram},\n booktitle = {New {Trends} in {Database} and {Information} {Systems}},\n doi = {10.1007/978-3-031-15743-1_39},\n editor = {Chiusano, Silvia and Cerquitelli, Tania and Wrembel, Robert and Nørvåg, Kjetil and Catania, Barbara and Vargas-Solar, Genoveva and Zumpano, Ester},\n isbn = {978-3-031-15742-4 978-3-031-15743-1},\n language = {en},\n note = {Series Title: Communications in Computer and Information Science},\n pages = {425--436},\n publisher = {Springer International Publishing},\n title = {Machine {Learning}-{Based} {Model} {Categorization} {Using} {Textual} and {Structural} {Features}},\n url = {https://link.springer.com/10.1007/978-3-031-15743-1_39},\n urldate = {2025-06-03},\n volume = {1652},\n year = {2022}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "khalilipour_machine_2022",
+        "undefined" : "khalilipour_machine_2022"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#babur_models_2018",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://doi.org/10.1007/978-3-319-74730-9_10",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@inproceedings{babur_models_2018,\n address = {Cham},\n author = {Babur, Önder and Cleophas, Loek and van den Brand, Mark and Tekinerdogan, Bedir and Aksit, Mehmet},\n booktitle = {Software {Technologies}: {Applications} and {Foundations}},\n doi = {10.1007/978-3-319-74730-9_10},\n editor = {Seidl, Martina and Zschaler, Steffen},\n isbn = {978-3-319-74730-9},\n keywords = {Data mining, Machine learning, Model analytics, Model-Driven Engineering, Scalability},\n language = {en},\n pages = {129--135},\n publisher = {Springer International Publishing},\n title = {Models, {More} {Models}, and {Then} a {Lot} {More}},\n year = {2018}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "babur_models_2018",
+        "undefined" : "babur_models_2018"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#babur_statistical_2016",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://doi.org/10.1145/2970276.2975938",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@inproceedings{babur_statistical_2016,\n author = {Babur, Önder},\n booktitle = {Proceedings of the 31st {IEEE}/{ACM} {International} {Conference} on {Automated} {Software} {Engineering}},\n doi = {10.1145/2970276.2975938},\n pages = {888--891},\n title = {Statistical analysis of large sets of models},\n year = {2016}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "babur_statistical_2016",
+        "undefined" : "babur_statistical_2016"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#drain_generating_2021",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://doi.org/10.1145/3460945.3464951",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@inproceedings{drain_generating_2021,\n author = {Drain, Dawn and Wu, Chen and Svyatkovskiy, Alexey and Sundaresan, Neel},\n booktitle = {Proceedings of the 5th {ACM} {SIGPLAN} {International} {Symposium} on {Machine} {Programming}},\n doi = {10.1145/3460945.3464951},\n pages = {1--8},\n title = {Generating bug-fixes using pretrained transformers},\n year = {2021}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "drain_generating_2021",
+        "undefined" : "drain_generating_2021"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#adhikari_simima_2024",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://doi.org/10.1007/s10270-023-01093-6",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@article{adhikari_simima_2024,\n author = {Adhikari, Bhisma and Rapos, Eric J. and Stephan, Matthew},\n doi = {10.1007/s10270-023-01093-6},\n issn = {1619-1374},\n journal = {Software and Systems Modeling},\n keywords = {Model Building and Simulation, Model Theory, Computer Modelling, Model Invertebrates, Model plants, Symbolic AI},\n language = {en},\n month = {February},\n number = {1},\n pages = {29--56},\n shorttitle = {{SimIMA}},\n title = {{SimIMA}: a virtual {Simulink} intelligent modeling assistant},\n url = {https://doi.org/10.1007/s10270-023-01093-6},\n urldate = {2025-06-03},\n volume = {23},\n year = {2024}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "adhikari_simima_2024",
+        "undefined" : "adhikari_simima_2024"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#spieker_reinforcement_2017",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://doi.org/10.1145/3092703.3092709",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@inproceedings{spieker_reinforcement_2017,\n author = {Spieker, Helge and Gotlieb, Arnaud and Marijan, Dusica and Mossige, Morten},\n booktitle = {Proceedings of the 26th {ACM} {SIGSOFT} international symposium on software testing and analysis},\n doi = {10.1145/3092703.3092709},\n pages = {12--22},\n title = {Reinforcement learning for automatic test case prioritization and selection in continuous integration},\n year = {2017}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "spieker_reinforcement_2017",
+        "undefined" : "spieker_reinforcement_2017"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#tufano_generating_2022",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://dl.acm.org/doi/10.1145/3524481.3527220",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@inproceedings{tufano_generating_2022,\n address = {Pittsburgh Pennsylvania},\n author = {Tufano, Michele and Drain, Dawn and Svyatkovskiy, Alexey and Sundaresan, Neel},\n booktitle = {Proceedings of the 3rd {ACM}/{IEEE} {International} {Conference} on {Automation} of {Software} {Test}},\n doi = {10.1145/3524481.3527220},\n  isbn = {978-1-4503-9286-0},\n language = {en},\n month = {May},\n pages = {54--64},\n publisher = {ACM},\n title = {Generating accurate assert statements for unit test cases using pretrained transformers},\n url = {https://dl.acm.org/doi/10.1145/3524481.3527220},\n urldate = {2025-06-03},\n year = {2022}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "tufano_generating_2022",
+        "undefined" : "tufano_generating_2022"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#saini_automated_2022",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://link.springer.com/10.1007/s10270-021-00942-6",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@article{saini_automated_2022,\n author = {Saini, Rijul and Mussbacher, Gunter and Guo, Jin L. C. and Kienzle, Jörg},\n doi = {10.1007/s10270-021-00942-6},\n issn = {1619-1366, 1619-1374},\n journal = {Software and Systems Modeling},\n language = {en},\n month = {June},\n number = {3},\n pages = {1015--1045},\n title = {Automated, interactive, and traceable domain modelling empowered by artificial intelligence},\n url = {https://link.springer.com/10.1007/s10270-021-00942-6},\n urldate = {2025-06-03},\n volume = {21},\n year = {2022}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "saini_automated_2022",
+        "undefined" : "saini_automated_2022"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#korner_transferring_2014",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://doi.org/10.1109/AIRE.2014.6894851",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@inproceedings{korner_transferring_2014,\n author = {Körner, Sven J and Landhäußer, Mathias and Tichy, Walter F},\n booktitle = {2014 {IEEE} 1st {International} {Workshop} on {Artificial} {Intelligence} for {Requirements} {Engineering} ({AIRE})},\n doi = {10.1109/AIRE.2014.6894851},\n pages = {13--18},\n publisher = {IEEE},\n title = {Transferring research into the real world: {How} to improve {RE} with {AI} in the automotive industry},\n year = {2014}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "korner_transferring_2014",
+        "undefined" : "korner_transferring_2014"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#lenz_linking_2013",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://doi.org/10.1016/j.engappai.2013.01.008",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@article{lenz_linking_2013,\n author = {Lenz, Alexandre Rafael and Pozo, Aurora and Vergilio, Silvia Regina},\n doi = {10.1016/j.engappai.2013.01.008},\n journal = {Engineering Applications of Artificial Intelligence},\n note = {Publisher: Elsevier},\n number = {5-6},\n pages = {1631--1640},\n title = {Linking software testing results with a machine learning approach},\n volume = {26},\n year = {2013}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "lenz_linking_2013",
+        "undefined" : "lenz_linking_2013"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#lin_traceability_2021",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://doi.org/10.1109/ICSE43902.2021.00040",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@inproceedings{lin_traceability_2021,\n author = {Lin, Jinfeng and Liu, Yalin and Zeng, Qingkai and Jiang, Meng and Cleland-Huang, Jane},\n booktitle = {2021 {IEEE}/{ACM} 43rd {International} {Conference} on {Software} {Engineering} ({ICSE})},\n doi = {10.1109/ICSE43902.2021.00040},\n pages = {324--335},\n publisher = {IEEE},\n title = {Traceability transformed: {Generating} more accurate links with pre-trained bert models},\n year = {2021}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "lin_traceability_2021",
+        "undefined" : "lin_traceability_2021"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#svyatkovskiy_intellicode_2020",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://doi.org/10.1145/3368089.3417058",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "@inproceedings{svyatkovskiy_intellicode_2020,\n author = {Svyatkovskiy, Alexey and Deng, Shao Kun and Fu, Shengyu and Sundaresan, Neel},\n booktitle = {Proceedings of the 28th {ACM} joint meeting on {European} software engineering conference and symposium on the foundations of software engineering},\n doi = {10.1145/3368089.3417058},\n pages = {1433--1443},\n title = {Intellicode compose: {Code} generation using transformer},\n year = {2020}\n}\n"
+      },
+      "labels" : {
+        "IRI-based" : "svyatkovskiy_intellicode_2020",
+        "undefined" : "svyatkovskiy_intellicode_2020"
+      }
+    } ],
+    "comment" : {
+      "en" : "Represents an artifact documenting research findings like new insights, methods, techniques, etc."
+    },
+    "id" : "48",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#Kind",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Kind",
+      "en" : "Kind"
+    },
+    "comment" : {
+      "en" : "A gufo:EndurantType that is both sortal and rigid. It provides a uniform principle of identity for its instances. Every gufo:Endurant instantiates one and only one gufo:Kind. \n\nExamples include kinds of ordinary objects of everyday experience, such as: \"Person\", \"House\", \"Car\"; kinds of relators, such as \"Marriage\", \"RentalContract\"; kinds of existentially-dependent aspects of objects, such as \"Weight\", \"Belief\", \"Vulnerability\"."
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "0", "61" ]
+  }, {
+    "iri" : "http://purl.org/ai4se/ontology#Target",
+    "baseIri" : "http://purl.org/ai4se/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Target",
+      "undefined" : "Solution target"
+    },
+    "individuals" : [ {
+      "iri" : "http://purl.org/ai4se/ontology#Testing",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "comment" : {
+        "en" : "Represents software testing activities and processes.\n\nSoftware testing encompasses the processes and activities used to evaluate the quality of a software or a component and of related artefacts.\n\nAccording to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, software testing is\n\n1. activity in which a system or component is executed under specified conditions, the results are observed or recorded, and an evaluation is made of some aspect of the system or component\n\n2. dynamic verification that a program provides expected behaviors on a finite set of test cases, suitably selected from the usually infinite executions domain."
+      },
+      "labels" : {
+        "IRI-based" : "Testing",
+        "undefined" : "Software testing"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#Operation",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "comment" : {
+        "en" : "Represents software operation activities and processes.\n\nSoftware operation refers to\n\n1. The use and execution of software in its production environment to perform its intended functions.\n\n2. Running a software to deliver services or perform tasks for users or other systems."
+      },
+      "labels" : {
+        "IRI-based" : "Operation",
+        "undefined" : "Software operation"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#Process",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "labels" : {
+        "IRI-based" : "Process",
+        "en" : "Represents processes for software engineering along the software lifecycle of software development and operation.",
+        "undefined" : "Software Engineering Processes"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#Deployment",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "comment" : {
+        "en" : "Represents software deployment activities and processes.\n\nSoftware deployment encompasses the processes and activities for placing a software or component into an operational environment.\n\nAccording to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, deployment is \n\n1. a phase of a project in which a system is put into operation and cutover issues are resolved."
+      },
+      "labels" : {
+        "IRI-based" : "Deployment",
+        "undefined" : "Software deployment"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#Requirements",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "comment" : {
+        "en" : "Represents requirements engineering activities and processes. \n\nA software requirement is a condition or capability that must be met by a software or component.\n\nAccording to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, software requirement is\n\n1. software capability needed by a user to solve a problem or to achieve an objective\n\n2. software capability that must be met or possessed by a system or system component to satisfy a contract, standard, specification, or other formally imposed document\n\nAccording to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, software requirements engineering is\n\n1. science and discipline concerned with analyzing and documenting software requirements \n\n2. software requirements elicitation, analysis, specification, verification, and management"
+      },
+      "labels" : {
+        "IRI-based" : "Requirements",
+        "undefined" : "Requirements engineering"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#Operate",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "comment" : {
+        "en" : "Represents software operation activities and processs."
+      },
+      "labels" : {
+        "IRI-based" : "Operate",
+        "undefined" : "Operate"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#Software_Engineering",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "labels" : {
+        "IRI-based" : "Software_Engineering"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#Improvement",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "labels" : {
+        "IRI-based" : "Improvement"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#Architecture_and_Design",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "comment" : {
+        "en" : "Represents software architecture and design activities and processes. \n\nA software architecture defines its fundamental organization, its components, their relationships, and the principles guiding its design and evolution. \n \nAccording to ISO/IEC/IEEE 42010:2022: Software, systems and enterprise - Architecture description), a software architecture consists of the fundamental concepts or properties of an entity in its environment and governing principles for the realization and evolution of this entity and its related life cycle processes.\n\nSoftware design is the process of defining the architecture, components, interfaces, and other characteristics of a software or a component.\n\nAccording to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, software design is  \n\n1. the use of scientific principles, technical information, and imagination in the definition of a software system to perform pre-specified functions with maximum economy and efficiency."
+      },
+      "labels" : {
+        "IRI-based" : "Architecture_and_Design",
+        "undefined" : "Software architecture and design"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#Develop",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "labels" : {
+        "IRI-based" : "Develop",
+        "en" : "Represents software development activities and processes.\n\nSoftware development is the set of activities that result in software products, including requirements analysis, design, coding, testing, and maintenance. It encompasses all the activities and processes involved in creating, implementing, and modifying software (artefacts), as well as ensuring that it satisfies stakeholder requirements throughout the software development life cycle.",
+        "undefined" : "Develop"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#Monitoring",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "comment" : {
+        "en" : "Represents software monitoring activities and processes.\n\nSoftware monitoring is systematically observing, checking, or keeping track of the operations or performance of a software or component."
+      },
+      "labels" : {
+        "IRI-based" : "Monitoring",
+        "undefined" : "Software monitoring"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#Management",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "labels" : {
+        "IRI-based" : "Management"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#Maintenance",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "comment" : {
+        "en" : "Represents software maintenance activities and processes. \n\nSoftware maintenance is the process of modifying a software or component after delivery to correct faults, improve performance or other attributes, or adapt to a changed environment.\n\nAccording to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, software maintenance is \n\n1. totality of activities required to provide cost-effective support to a software system \n\n2. entitlement of additional rights (such as additional\nfunctionality, upgrade or support) for a previously granted software entitlement"
+      },
+      "labels" : {
+        "IRI-based" : "Maintenance",
+        "undefined" : "Software maintenance"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#Coding",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "comment" : {
+        "en" : "Represents coding activities and processes. \n\nCoding (also known as programming) is the process of transforming the design of a software or a component into an executable computer program.\n\nAccording to ISO/IEC/IEEE 24765: Systems and software engineering - Vocabulary, coding is\n\n1. in software engineering, the process of expressing a computer program in a programming language\n\n2. transforming of logic and data from design specifications (design descriptions) into a programming language."
+      },
+      "labels" : {
+        "IRI-based" : "Coding",
+        "undefined" : "Software coding"
+      }
+    } ],
+    "comment" : {
+      "en" : "Represents the primary concept, issue, component, software, or process in a software engineering process or activitiy being addressed."
+    },
+    "id" : "66",
+    "superClasses" : [ "75" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#ExtrinsicMode",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#inheresIn",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#externallyDependsOn",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ExtrinsicMode",
+      "en" : "ExtrinsicMode"
+    },
+    "comment" : {
+      "en" : "A gufo:ExtrinsicAspect that inheres in a concrete individual and depends on others for its existence.\n\nA gufo:ExtrinsicMode can be understood as a reified one-sided relationship, such as John's admiration for Mary.\n\nCorresponds to \"Extrinsic Moment\" in Fonseca et al (2019). Encompasses what \"Externally Dependent Mode\", \"Qua Individual\" and \"Relator\" in Guizzardi (2005)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "92",
+    "superClasses" : [ "90" ]
+  }, {
+    "iri" : "http://purl.org/ai4se/ontology#CSO:Topic",
+    "baseIri" : "http://purl.org/ai4se/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://cso.kmi.open.ac.uk/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CSO:Topic",
+      "en" : "Represents the research topics in Computer Science as defined by the Computer Science Ontology CSO.",
+      "undefined" : "CSO:Topic"
+    },
+    "individuals" : [ {
+      "iri" : "http://purl.org/ai4se/ontology#CSO:Software_traceability",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "labels" : {
+        "IRI-based" : "CSO:Software_traceability"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#CSO:Testing_and_debugging",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "labels" : {
+        "IRI-based" : "CSO:Testing_and_debugging"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#CSO:DevOps",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "labels" : {
+        "IRI-based" : "CSO:DevOps"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#CSO:Software_engineering",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "labels" : {
+        "IRI-based" : "CSO:Software_engineering"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#CSO:Requirements_engineering",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "labels" : {
+        "IRI-based" : "CSO:Requirements_engineering"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#CSO:Deep_learning",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "labels" : {
+        "IRI-based" : "CSO:Deep_learning"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#CSO:Model_driven_engineering",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "labels" : {
+        "IRI-based" : "CSO:Model_driven_engineering"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#CSO:Traceability_management",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "labels" : {
+        "IRI-based" : "CSO:Traceability_management"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#CSO:Static_analysis",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "labels" : {
+        "IRI-based" : "CSO:Static_analysis"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#CSO:Coding_technique",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "labels" : {
+        "IRI-based" : "CSO:Coding_technique"
+      }
+    }, {
+      "iri" : "http://purl.org/ai4se/ontology#CSO:Software_quality",
+      "baseIri" : "http://purl.org/ai4se/ontology",
+      "labels" : {
+        "IRI-based" : "CSO:Software_quality"
+      }
+    } ],
+    "id" : "79",
+    "superClasses" : [ "75" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#Participation",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#participatedIn",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Participation",
+      "en" : "Participation"
+    },
+    "comment" : {
+      "en" : "A gufo:Event that depends on a single object. \n\nParticipations can be used to partition an event into portions, each of which depend exclusively on a single object. Consider a business meeting with multiple participants, including John and Mary. John's participation in the meeting encompasses all events that are part of the meeting and that depend solely on him. Likewise, Mary's participation encompasses all events that are part of the meeting and that depend solely on her. Similarly, in Brutus’ stabbing of Caesar, we may identify the participations of Brutus, of Caesar, and of the dagger."
+    },
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#EventType",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EventType",
+      "en" : "EventType"
+    },
+    "comment" : {
+      "en" : "A gufo:Type whose instances are events.\n\nInstances of gufo:EventType are subclasses of gufo:Event.\n\nExamples include \"Business Meeting\", \"Birth\", \"Musical Performance\"."
+    },
+    "attributes" : [ "external" ],
+    "id" : "128",
+    "superClasses" : [ "119" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#ConcreteIndividual",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "disjointUnion" : [ "18", "9", "8" ],
+    "label" : {
+      "IRI-based" : "ConcreteIndividual",
+      "en" : "ConcreteIndividual"
+    },
+    "subClasses" : [ "18", "9", "8" ],
+    "comment" : {
+      "en" : "A gufo:Individual that exists in space-time. \n\nConcrete individuals comprise not only object-like entities (a car, a mountain, a person, a marriage, a belief), but also events (a business meeting, a soccer match) and situations (the situation in which a person weighs 80 kilograms, the situation in which a bank account is overdrawn)."
+    },
+    "attributes" : [ "external", "disjointUnion" ],
+    "id" : "10",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#Quantity",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#isSubQuantityOf",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Quantity",
+      "en" : "Quantity"
+    },
+    "comment" : {
+      "en" : "A complex gufo:Object that is a maximally-connected portion of stuff. A gufo:Quantity has a fixed constitution, and thus, removing or adding a sub-quantity would result in a different quantity.\n\nExamples include the portion of wine in a wine tank, a lump of clay, the gold that constitutes a wedding ring.\n\nAlso termed \"quantity of matter\", \"objectified portion of matter\", \"piece\" in the philosophical literature."
+    },
+    "attributes" : [ "external" ],
+    "id" : "102",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#RelationshipType",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RelationshipType",
+      "en" : "RelationshipType"
+    },
+    "subClasses" : [ "114", "82" ],
+    "comment" : {
+      "en" : "A gufo:Type whose instances are ordered pairs of related entities. Instances of gufo:RelationshipType are object properties in UFO-based ontologies.\n\nThe object properties \"marriedWith\" and \"enrolledIn\" are examples of material relationship types. The object properties \"heavierThan\", \"olderThan\" are examples of comparative relationship types.\n\nThe use of gufo:RelationshipType and its subclasses requires OWL 2 punning.\n\nCorresponds to \"Relation\" in Guizzardi (2005) and Fonseca et al. (2019)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "83",
+    "superClasses" : [ "76" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#VariableCollection",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VariableCollection",
+      "en" : "VariableCollection"
+    },
+    "comment" : {
+      "en" : "A gufo:Collection for which change in membership is possible.\n\nSuch a collection obeys an intensional principle of identity, i.e., change in membership does not necessarily create a different collection.\n\nFor example, KLM's fleet of airplanes could be understood as a gufo:VariableCollection. In this case, when the company acquires (or retires) an airplane, the fleet changes. Note that, in this case, the airplanes are conceptualized as playing the role of \"member of a fleet\". If various roles for the parts of a fleet were envisioned (such as \"cargo airplane\", \"passenger airplane\"), then a fleet would be best understood as a gufo:FunctionalComplex.\n\nSee gufo:TemporaryParthoodSituation for the pattern to represent the relation of a variable collection to its temporary parts.",
+      "undefined" : "http://purl.org/nemo/gufo#TemporaryParthoodSituation"
+    },
+    "attributes" : [ "external" ],
+    "id" : "116",
+    "superClasses" : [ "94" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#EndurantType",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "disjointUnion" : [ "0", "69", "61", "31" ],
+    "label" : {
+      "IRI-based" : "EndurantType",
+      "en" : "EndurantType"
+    },
+    "subClasses" : [ "0", "69", "61", "31" ],
+    "comment" : {
+      "en" : "A gufo:Type whose instances are endurants. \n\nInstances of gufo:EndurantType are subclasses of gufo:Endurant.\n\nExamples include the object kind \"Person\", the phase \"Child\", the relator kind \"Marriage\".\n\nSee Guizzardi et al. (2018) for details concerning the taxonomy of endurant types included here."
+    },
+    "attributes" : [ "external", "disjointUnion" ],
+    "id" : "1",
+    "superClasses" : [ "119" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#Type",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Type",
+      "en" : "Type"
+    },
+    "subClasses" : [ "75", "119", "83" ],
+    "comment" : {
+      "en" : "An entity that may be instantiated by (or predicated over) other entities. Types encompass what we often call \"sorts\", \"kinds\", \"categories\", etc. \n\nExamples include the kind \"Person\", the event type \"Earthquake\", and the abstract individual type \"NaturalNumber\". Relations, such as \"marriedTo\" and \"olderThan\", are also considered as types.\n\nInstances of gufo:Type are classes, and should specialize the taxonomy of individuals of gUFO. For example, \"Person\" is a gufo:Type (more specifically a gufo:Kind), specializing gufo:Object. The mechanism that allows for this is called punning in OWL 2.\n\nEncompasses the notion of \"Universal\" in Guizzardi (2005)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#TemporaryConstitutionSituation",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TemporaryConstitutionSituation",
+      "en" : "TemporaryConstitutionSituation"
+    },
+    "comment" : {
+      "en" : "A gufo:Situation in which a gufo:Endurant temporarly constitutes another gufo:Endurant.\n\nWhen constitution of an object may change in time, it may be qualified by the period in time in which the relation applies. \n\nExamples include: the situation in which the Beatles is constituted by the group composed of {John,Paul,Ringo,George}; and the situation in which the statue of Venus de Milo was constituted by its original quantity of marble (including its arms).\n\nThis is a reification of constitution (in a solution that is similar to the qualified relation pattern  http://patterns.dataincubator.org/book/qualified-relation.html)"
+    },
+    "attributes" : [ "external" ],
+    "id" : "64",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "106",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "74",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "120",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "21",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#IntrinsicMode",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IntrinsicMode",
+      "en" : "IntrinsicMode"
+    },
+    "comment" : {
+      "en" : "A gufo:IntrinsicAspect that is not measurable.\n\nFor example, Bob's belief that the Eiffel Tower is in Paris, his math skills, his headache.\n\nCorresponds to \"Mode\" in Guizzardi (2005)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "39",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "141",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "52",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "104",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "72",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "166",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#ConcreteIndividualType",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConcreteIndividualType",
+      "en" : "ConcreteIndividualType"
+    },
+    "subClasses" : [ "128", "1", "118" ],
+    "comment" : {
+      "en" : "A gufo:Type whose instances are concrete individuals.\n\nInstances of gufo:ConcreteIndividualType are subclasses of gufo:ConcreteIndividual.\n\nExamples include the gufo:Kind \"Person\", the gufo:Category \"Physical Object\", the gufo:EventType \"Business Meeting\"."
+    },
+    "attributes" : [ "external" ],
+    "id" : "119",
+    "superClasses" : [ "76" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "114", "82" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "152"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#Mixin",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Mixin",
+      "en" : "Mixin"
+    },
+    "subClasses" : [ "48", "53" ],
+    "comment" : {
+      "en" : "A gufo:EndurantType that is both non-sortal and semi-rigid. As a semi-rigid type, it applies necessarily to some of its instances and contingently to some others. As a non-sortal, it captures properties shared by instances of different kinds.\n\nFor example, the type \"FemaleAnimal\" may be considered a gufo:Mixin as it applies necessarily to animals of certain species, e.g., lions and sharks, while it applies contingently to animals of other species such as clownfish and mushroom corals (which may change sex given certain conditions)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "58",
+    "superClasses" : [ "59", "69" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#QualityValueAttributionSituation",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#concernsReifiedQualityValue",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#concernsQualityValue",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "QualityValueAttributionSituation",
+      "en" : "QualityValueAttributionSituation"
+    },
+    "comment" : {
+      "en" : "A gufo:Situation in which a quality value is temporarily attributed to a gufo:Endurant.\n\nA gufo:QualityValueAttributionSituation should be used only for mutable qualities, i.e. those whose value can vary in time.\n\nExamples include: the situation in which the value of a bitcoin in Euros is 6.526,12, which lasted from 10/12/2019 to 11/12/2019; the situation in which the weight of Mike Tyson was 100 kg; and the situation in which the color of Einstein' hair was grey.\n\nThis is a reification of the quality value attribution (in a solution that is similar to the qualified relation pattern  http://patterns.dataincubator.org/book/qualified-relation.html )"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://purl.org/ai4se/ontology#Model",
+    "baseIri" : "http://purl.org/ai4se/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Model",
+      "undefined" : "Model"
+    },
+    "comment" : {
+      "en" : "Represents artifacts defining (semi-)formally (1) properties of one or more artefacts used by software engineering activities or processes or (2) properties of software engineering activities or processes.\n\nAccording to ISO/IEC 22989:2022 Information technology - Artificial intelligence - Artificial intelligence concepts and terminology, model is\n\n- physical, mathematical or otherwise logical representation of a system, entity, phenomenon, process or data.\n\nNote: For the AI4SE ontology, only mathematical or logical representations are relevant."
+    },
+    "id" : "53",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#RigidType",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RigidType",
+      "en" : "RigidType"
+    },
+    "subClasses" : [ "109", "4", "5" ],
+    "comment" : {
+      "en" : "A gufo:EndurantType which applies necessarily to its instances (see Guizzardi, 2005, chapter 4).\n\nExamples include the types \"Agent\", \"Person\", \"Animal\", \"PhysicalObject\", \"Car\", and \"Tree\"."
+    },
+    "attributes" : [ "external" ],
+    "id" : "61",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#FunctionalComplex",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#TemporaryParthoodSituation",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FunctionalComplex",
+      "en" : "FunctionalComplex"
+    },
+    "comment" : {
+      "en" : "A complex gufo:Object whose parts (components) play different roles in its composition. \n\nFor example, a person could be considered a gufo:FunctionalComplex with the various organs (heart, brain, lungs, etc.) playing different roles. Another example is a scrum team, which is composed by people playing the roles of scrum master, product owner, developer, etc.\n\nTo explicitly capture temporary components, use gufo:TemporaryParthoodSituation.",
+      "undefined" : "http://purl.org/nemo/gufo#isComponentOf"
+    },
+    "attributes" : [ "external" ],
+    "id" : "101",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#TemporaryParthoodSituation",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TemporaryParthoodSituation",
+      "en" : "TemporaryParthoodSituation"
+    },
+    "comment" : {
+      "undefined" : "A gufo:Situation in which a gufo:Endurant is temporarily a part of another gufo:Endurant.\n\nA gufo:TemporaryParthoodSituation should only be used for mutable parts. It may be qualified by the period in time in which the relation applies. \n\nExamples include: the situation in which the United Kingdom is a member of the European Union; the situation in which Messi is a a member of the Barcelona FC squad; the situation in which an engine is part of a car; and the situation in which a transplanted heart is part of a person.\n\nNote that, since every instance of gufo:Quantity or gufo:FixedCollection only has essential parts, the gufo:TemporaryParthoodSituation should not be used to represent these parthood relations.\n \nThis solution is inspired in the qualified relation pattern (http://patterns.dataincubator.org/book/qualified-relation.html)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "34",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#Situation",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Situation",
+      "en" : "Situation"
+    },
+    "subClasses" : [ "16", "64", "29", "7", "34" ],
+    "comment" : {
+      "en" : "A gufo:ConcreteIndividual that is a particular configuration of a part of reality which can be understood as a whole and in which entities stand in relations. A situation may be counterfactual or actual. An actual situation (or in other words, a \"fact\") \"obtains\" in a certain time instant or during a time interval.\n\nNote that, in Guizzardi et al. (2013), situations were considered to obtain at a specific point in time. Here, instead, they obtain in a time interval when begin and end points differ.\n\nThe various subclasses of Situation in this implementation are used to capture \"mutable\" facts which obtain during some time and fail to obtain at other times. This includes the contingent instantiation of non-rigid types (e.g., as someone is a child at one point in time and a teenager later), the attribution of value to mutable qualities (such as a person's weight) and temporary participation in part-whole relations for replaceable parts (such as a car's tires). Other subclasses may be created to capture domain-specific notions such as \"HazardousSituation\", \"PersonHasFever\"."
+    },
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#IntrinsicAspect",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#inheresIn",
+        "type" : "iri"
+      } ]
+    },
+    "disjointUnion" : [ "36", "39" ],
+    "label" : {
+      "IRI-based" : "IntrinsicAspect",
+      "en" : "IntrinsicAspect"
+    },
+    "subClasses" : [ "36", "39" ],
+    "comment" : {
+      "en" : "A gufo:Aspect that depends on a single concrete individual in which it inheres. \n\nExamples include intrinsic physical aspects, such as the Moon's mass, Lassie's fur color; the fragility of John Lennon's glasses; mental dispositions, such as Bob's math skills, his belief that the number one is odd.\n\nA gufo:IntrinsicAspect is classified as a gufo:Quality (e.g., an apple's weight, the height of the Statue of Liberty) if it is measurable by a certain value space, or as a gufo:IntrinsicMode (e.g. Bob's belief that the Eiffel Tower is in Paris) otherwise.\n\nCorresponds to \"Instrinsic Moment\" in Guizzardi (2005). Different from Guizzardi (2005), here we consider that aspects can inhere in concrete individuals in general, and not only in endurants."
+    },
+    "attributes" : [ "external", "disjointUnion" ],
+    "id" : "37",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#Quality",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Quality",
+      "en" : "Quality"
+    },
+    "comment" : {
+      "en" : "A gufo:IntrinsicAspect that is measurable by some value spaces. A quality may be used to compare individuals, on the basis of the value it takes in a certain quality space (for instance, a position within the RGB spectrum).\n\nExamples include the weight of a person, the name of organization, the color of a car, and the duration of a concert."
+    },
+    "attributes" : [ "external" ],
+    "id" : "36",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#AntiRigidType",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AntiRigidType",
+      "en" : "AntiRigidType"
+    },
+    "subClasses" : [ "2", "42", "3", "45" ],
+    "comment" : {
+      "en" : "A gufo:NonRigidType that applies contingently to all its instances (see Guizzardi, 2005, chapter 4).\n\nExamples include the gufo:Phase \"Child\", the gufo:PhaseMixin \"InfantAnimal\", the gufo:Role \"Student\", and the gufo:RoleMixin \"Customer\"."
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.w3.org/2006/time#Instant",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Instant",
+      "en" : "Instant"
+    },
+    "comment" : {
+      "en" : "An gufo:AbstractIndividual that reifies time instants. It is used as a target of the gufo:hasBeginPoint and gufo:hasEndPoint object properties."
+    },
+    "attributes" : [ "external" ],
+    "id" : "88",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#Individual",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "instances" : 0,
+    "disjointUnion" : [ "10", "27" ],
+    "label" : {
+      "IRI-based" : "Individual",
+      "en" : "Individual"
+    },
+    "subClasses" : [ "10", "27" ],
+    "comment" : {
+      "en" : "An entity that (unlike a gufo:Type) cannot be instantiated.\n\nIndividuals may be either concrete (e.g., the Earth, Mick Jagger, Brazil, the 1985 Mexico City Earthquake) or abstract (e.g., the number two, the proposition that 'three is a prime number').\n\nAlso known as \"particular\" in the philosophical literature."
+    },
+    "attributes" : [ "external", "disjointUnion" ],
+    "id" : "25"
+  } ],
+  "property" : [ {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "124",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "125",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "127",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "121",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "129",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "130",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "131",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "132",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "111",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "134",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "135",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "136",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "137",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "138",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "139",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "140",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "142",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "143",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "144",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "145",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "146",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "147",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "148",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "149",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "150",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "151",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "153",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "154",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "157",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "160",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "133",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "162",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "163",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "164",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "165",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "167",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "168",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "169",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "170",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "171",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "172",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "177",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "159",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "179",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "180",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "183",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "184",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "185",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "186",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "187",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "188",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "123",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "189",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "190",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "191",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "192",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "193",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "194",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "195",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "196",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "197",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "198",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "199",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "200",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "201",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "202",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "203",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "204",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "205",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "206",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "207",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "208",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "209",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "210",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "211",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "212",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "213",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "85",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "214",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "215",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "216",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "217",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "218",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "219",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "220",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "221",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "222",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "223",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "224",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "225",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "226",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "227",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "228",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "229",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "230",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "231",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://purl.org/nemo/gufo#isAspectProperPartOf",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "isAspectProperPartOf",
+      "en" : "isAspectProperPartOf"
+    },
+    "superproperty" : [ "14" ],
+    "domain" : "13",
+    "comment" : {
+      "en" : "Identifies a gufo:Aspect of which the aspect is a proper part.\n\nFor example, John's obligations towards Mary in the scope of their marriage is an aspect proper part of their marriage  (and same can be said of Mary's extrinsic aspects in the scope of their marriage.)\n\nThis property can be used to represent the composition of a relator from extrisinc aspects, but also to represent complex extrisinc aspects.\n\ngufo:isAspectProperPartOf is transitive."
+    },
+    "attributes" : [ "transitive", "external", "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#concernsQualityValue",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "17",
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#concernsReifiedQualityValue",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "concernsQualityValue",
+      "en" : "concernsQualityValue"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Determines a quality value associated with the gufo:ConcreteIndividual that stands in the gufo:QualityValueAttributionSituation.\n\nUse gufo:concernsReifiedQualityValue instead when quality values are refied.\n\nIt is recommended that subproperties of gufo:concernsQualityValue are created, possibly identifying the datatype to be used. For example, \"concernsTemperatureValue\" could be defined as a sub-property of gufo:concernsQualityValue with range xsd:double."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#partitions",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "partitions",
+      "en" : "partitions"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "21",
+    "comment" : {
+      "en" : "Identifies a gufo:Type whose instances are classified by exactly one instance of the partitioning higher-order type.\n\nFor example, \"AnimalSpecies\" gufo:partitions \"Animal\". Instances of \"AnimalSpecies\" such as \"Lion\", \"Hiena\" must be disjoint subclasses of \"Animal\". OWL 2 punning should be used to capture the two facets of \"Lion\" and \"Hiena\" in this example: (i) as instances of \"AnimalSpecies\", and (ii) as  subclasses of \"Animal\".\n\nNote that the partitioned type (in the example \"Animal\") may or may not be declared to be a disjoint union of the explicitly enumerated subclasses (such as \"Lion\", \"Hiena\"). This is because other instances of the higher-order type (\"AnimalSpecies\") may exist that are not explicitly enumerated in the ontology.\n\nThe partitioned type is termed the \"base type\" in the \"powertype pattern\" see Carvalho et al (2017), the higher-order type is often called the \"powertype\".  \n\nFor further details and formalization of \"partitioning\", see Carvalho et al (2017) which combines UFO with MLT (a multi-level modeling theory).  \n\nV. A. Carvalho, J. P. A. Almeida, C. M. Fonseca, and G. Guizzardi, “Multi-level ontology-based conceptual modeling,” Data & Knowledge Engineering, vol. 109, p. 3–24, 2017. <http://dx.doi.org/10.1016/j.datak.2017.03.002>"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#concernsRelatedEndurant",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "concernsRelatedEndurant",
+      "en" : "concernsRelatedEndurant"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Identifies the related gufo:Endurant in the gufo:TemporaryRelationshipSituation."
+    },
+    "attributes" : [ "functional", "external", "object" ],
+    "id" : "23"
+  }, {
+    "range" : "25",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "24"
+  }, {
+    "range" : "25",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "26"
+  }, {
+    "range" : "8",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#concernsNonRigidType",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "concernsNonRigidType",
+      "en" : "concernsNonRigidType"
+    },
+    "domain" : "29",
+    "comment" : {
+      "en" : "Identifies the gufo:NonRigidType that is instantiated by the endurant that stands in a gufo:TemporaryInstantiationSituation."
+    },
+    "attributes" : [ "functional", "external", "object" ],
+    "id" : "30"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "32"
+  }, {
+    "range" : "8",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "range" : "37",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "range" : "37",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  }, {
+    "range" : "6",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "40"
+  }, {
+    "range" : "6",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "range" : "6",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "43"
+  }, {
+    "range" : "6",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://purl.org/ai4se/ontology#purposeAdressedBy",
+    "baseIri" : "http://purl.org/ai4se/ontology",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "purposeAdressedBy"
+    },
+    "superproperty" : [ "49" ],
+    "domain" : "47",
+    "attributes" : [ "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#manifestedIn",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "manifestedIn",
+      "en" : "manifestedIn"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Identifies a gufo:Event in which the gufo:Aspect is manifested.\n\nFor example, the passing of an electrical current in a conductor is an event that encompasses the manifestation of an aspect inhering in a copper wire (the wire's  electrical conductivity)."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://purl.org/ai4se/ontology#isSEActivityWithModels",
+    "baseIri" : "http://purl.org/ai4se/ontology",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "isSEActivityWithModels"
+    },
+    "superproperty" : [ "54" ],
+    "domain" : "52",
+    "attributes" : [ "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#hasBeginPointInXSDDateTimeStamp",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "56",
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#hasBeginPointInXSDDate",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#hasBeginPoint",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasBeginPointInXSDDateTimeStamp",
+      "en" : "hasBeginPointInXSDDateTimeStamp"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Determines the begin point for a gufo:ConcreteIndividual, using a xsd:dateTimeStamp literal.\n\nIn the case of endurants, gufo:hasBeginPointInXSDDateTimeStamp determines the time point when the endurant comes into existence. In the case of events, this data property determines the time point when the event starts to take place. In the case of situation, it determines the time point when the situation begins to hold.\n\nUse gufo:hasBeginPoint instead when temporal entities are reified."
+    },
+    "attributes" : [ "functional", "datatype", "external" ],
+    "id" : "55"
+  }, {
+    "range" : "59",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "range" : "61",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "range" : "8",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "62"
+  }, {
+    "range" : "8",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://purl.org/ai4se/ontology#targetFocussedBy",
+    "baseIri" : "http://purl.org/ai4se/ontology",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "targetFocussedBy"
+    },
+    "superproperty" : [ "49" ],
+    "domain" : "66",
+    "attributes" : [ "object" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://purl.org/ai4se/ontology#hasPurpose",
+    "inverse" : "46",
+    "baseIri" : "http://purl.org/ai4se/ontology",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "hasPurpose"
+    },
+    "superproperty" : [ "68" ],
+    "domain" : "48",
+    "attributes" : [ "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#hasEndPointInXSDDate",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "72",
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#hasEndPointInXSDDateTimeStamp",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#hasEndPoint",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasEndPointInXSDDate",
+      "en" : "hasEndPointInXSDDate"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Determines the end point for a gufo:ConcreteIndividual using a xsd:date literal.\n \nIn the case of endurants, gufo:hasEndPointInXSDDate determines the time point when the endurant ceases to exist. In the case of events, this data property determines the time point when the event ends. In the case of situation, it determines the time point when the situation ceases to hold.\n\nUse gufo:hasEndPoint instead when temporal entities are reified."
+    },
+    "attributes" : [ "functional", "datatype", "external" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#hasValueComponent",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "74",
+    "label" : {
+      "IRI-based" : "hasValueComponent",
+      "en" : "hasValueComponent"
+    },
+    "domain" : "70",
+    "comment" : {
+      "en" : "This property is used for quality values that are defined in terms of a multidimensional quality structure (such as color conceived in terms of hue, saturation and brightness). Each value component of a quality value (a particular value for hue, a particular value for saturation, a particular value for brightness) is determined with this property. \n\nIt is recommended that subproperties of gufo:hasValueComponent are created to indicate values for particular dimensions, possibly identifying the datatype to be used. For example \"hasHueComponent\", \"hasSaturationComponent\" and \"hasBrightnessComponent\" could be used as data properties specializing gufo:hasValueComponent with the xsd:double datatype."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#standsInQualifiedParthood",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "34",
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#TemporaryParthoodSituation",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "standsInQualifiedParthood",
+      "en" : "standsInQualifiedParthood"
+    },
+    "superproperty" : [ "81" ],
+    "domain" : "18",
+    "comment" : {
+      "en" : "Identifies a gufo:TemporaryParthoodSituation in which the endurant stands (as a temporary part). The identified gufo:TemporaryParthoodSituation is further related with an endurant (the whole) through the gufo:concernsTemporaryWhole object property. This forms a pattern to represent temporary parthood, in which the relationships between parts and wholes vary in different situations. In particular, this pattern is useful in case parts may be separated from their wholes, attached to other wholes, replaced."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#concernsTemporaryWhole",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "concernsTemporaryWhole",
+      "en" : "concernsTemporaryWhole"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "Identifies the whole (a gufo:Endurant) of which the endurant that stands in the gufo:TemporaryParthoodSituation is part."
+    },
+    "attributes" : [ "functional", "external", "object" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#isProperPartOf",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "isProperPartOf",
+      "en" : "isProperPartOf"
+    },
+    "domain" : "21",
+    "subproperty" : [ "12", "85", "86", "87" ],
+    "comment" : {
+      "en" : "Identifies a whole of which the entity is a proper part.\n\ngufo:isProperPartOf is the most generic parthood relation in this implementation. Use the various sub-properties provided in order to represent specific types of parthood.\n\nProper parthood (and each of its sub-properties) is asymmetric and irreflexive. Nevertheless, these characteristics are not declared in this implementation since that would violate rules of OWL 2 DL that guarantee decidability of reasoning. Instead, we have focused only on declaring transitivity where applicable.\n\nNote that gufo:isProperPartOf (as the most general notion of parthood) is transitive, although the various sub-properties may not be transitive."
+    },
+    "attributes" : [ "transitive", "external", "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#constitutes",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "10",
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#standsInQualifiedConstitution",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "constitutes",
+      "en" : "constitutes"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Identifies a gufo:ConcreteIndividual that is constituted (partially) by the constituent individual.\n\nFor example, the gufo:Collection of persons whose members are John, Paul, George, Ringo constituted the beatles, the gufo:Quantity of marble that constitutes the statue of Venus de Milo, and the gufo:Event of Paul raising his arm in a meeting that constitutes his voting (also a gufo:Event).\n\nIn case constitution changes in time, see gufo:standsInQualifiedConstitution."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#isCollectionMemberOf",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "94",
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#standsInQualifiedParthood",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isCollectionMemberOf",
+      "en" : "isCollectionMemberOf"
+    },
+    "superproperty" : [ "85" ],
+    "domain" : "19",
+    "comment" : {
+      "en" : "Identifies a gufo:Collection of which the object is a member. \n\nThis is the relation between John and a group of persons, and between a cow and its herd.\n\ngufo:isCollectionMemberOf is intransitive (Guizzardi, 2005, p. 185).\n\nFor membership in a gufo:VariableCollection, see gufo:standsInQualifiedParthood."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#wasCreatedIn",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "wasCreatedIn",
+      "en" : "wasCreatedIn"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Identifies the gufo:Event which brought the gufo:Endurant into existence. \n\nFor example, a musical piece is created in an act of composition (or in an event that is part of it), a piece of legislation is created in a complex legislative process.\n\nBenevides et al. (2019) only discussed creation of objects; gufo:wasCreatedIn is extended to endurants in general. Further, in that work \"createdBy\" required the event to \"bring about\" a situation in which the created object is present. We relax this requirement here, such that the object may be created and terminated in the scope of the identified gufo:Event.\n\nA. B. Benevides, J. R. Bourguet, G. Guizzardi, R. Penãloza, and J. P. A. Almeida, “Representing a reference foundational ontology of events in SROIQ,” Applied ontology, vol. 14, iss. 3, p. 293–334, 2019. <http://dx.doi.org/10.3233/AO-190214>"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://purl.org/ai4se/ontology#hasType",
+    "inverse" : "97",
+    "baseIri" : "http://purl.org/ai4se/ontology",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "hasType"
+    },
+    "superproperty" : [ "68" ],
+    "domain" : "48",
+    "attributes" : [ "object" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://purl.org/ai4se/ontology#implementedIn",
+    "baseIri" : "http://purl.org/ai4se/ontology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "implementedIn"
+    },
+    "domain" : "75",
+    "subproperty" : [ "65", "46", "98", "99", "97" ],
+    "attributes" : [ "object" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#isComponentOf",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "101",
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#standsInQualifiedParthood",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isComponentOf",
+      "en" : "isComponentOf"
+    },
+    "superproperty" : [ "85" ],
+    "domain" : "19",
+    "comment" : {
+      "en" : "Identifies a gufo:FunctionalComplex of which the object is a component.\n\nFor example, the habitation module is a component of the International Space Station, and so are each of the solar panels; Obama's brain is a component of his body, and so is his heart; the engine is a component of the HMS Queen Elizabeth (R08).\n\ngufo:isComponentOf is not transitive in the general case. Particular sub-properties may be transitive (Guizzardi, 2005, p. 183).\n\nWhen a component may change its relation to be whole, see gufo:standsInQualifiedParthood."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#hasEndPointInXSDDateTimeStamp",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "104",
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#hasEndPointInXSDDate",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#hasEndPoint",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasEndPointInXSDDateTimeStamp",
+      "en" : "hasEndPointInXSDDateTimeStamp"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Determines the end point for a gufo:ConcreteIndividual using a xsd:dateTimeStamp literal.\n \nIn the case of endurants, gufo:hasEndPointInXSDDateTimeStamp determines the time point when the endurant ceases to exist. In the case of events, this data property determines the time point when the event ends. In the case of situation, it determines the time point when the situation ceases to hold.\n\nUse gufo:hasEndPoint instead when temporal entities are reified."
+    },
+    "attributes" : [ "functional", "datatype", "external" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#hasQualityValue",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "106",
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#hasReifiedQualityValue",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasQualityValue",
+      "en" : "hasQualityValue"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Determines a quality value associated with the concrete individual.\n\nUse gufo:hasReifiedQualityValue instead when quality values are reified.\n\nIt is recommended that subproperties of gufo:hasQualityValue are created, possibly identifying the datatype to be used. For example, \"hasTemperatureValue\" could be defined as a sub-property of gufo:hasQualityValue whose domain is \"Temperature\" (specializing gufo:Quality) and whose range is xsd:double."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#participatedIn",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "participatedIn",
+      "en" : "participatedIn"
+    },
+    "domain" : "19",
+    "comment" : {
+      "en" : "Identifies a gufo:Event in which the gufo:Object participated.\n\nExamples include the participation of Freddy Mercury in Queen's Live Aid Concert and the participation of an airplane in a flight."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#concernsRelationshipType",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "83",
+    "label" : {
+      "IRI-based" : "concernsRelationshipType",
+      "en" : "concernsRelationshipType"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Identifies the gufo:RelationshipType instantiated in the gufo:TemporaryRelationshipSituation."
+    },
+    "attributes" : [ "functional", "external", "object" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://purl.org/ai4se/ontology#belongsToSEActivity",
+    "baseIri" : "http://purl.org/ai4se/ontology",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "belongsToSEActivity"
+    },
+    "superproperty" : [ "111" ],
+    "domain" : "66",
+    "attributes" : [ "object" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#hasEndPoint",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "88",
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#hasEndPointInXSDDateTimeStamp",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#hasEndPointInXSDDate",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasEndPoint",
+      "en" : "hasEndPoint"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Identifies the end point for a gufo:ConcreteIndividual, in the case in which time instants are reified.\n\nIn the case of endurants, this identifies the time point when the endurant ceases to exist. In the case of events, this identifies the time point when the event ends. In the case of situation, this identifies the time point when the situation ceases to hold."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#isEventProperPartOf",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "isEventProperPartOf",
+      "en" : "isEventProperPartOf"
+    },
+    "superproperty" : [ "14" ],
+    "domain" : "9",
+    "subproperty" : [ "113" ],
+    "comment" : {
+      "en" : "Identifies a gufo:Event of which the event is part. \n\nFor example, Cristiano Ronaldo's penalty kick is an event proper part of the 2016 FIFA Club World Cup Final, having ocurred in the 60th minute of that match. That match is itself an event proper part of the 2016 FIFA Club World Cup.\n\nThe match can be decomposed in different ways. For example, we can identify the participation of each player in the match (instances of gufo:Participation that are proper parts of the match) or decomposed the match using some temporal segmentation (each minute of the match, each of which is a proper part of the match).\n\ngufo:isEventProperPartOf is transitive."
+    },
+    "attributes" : [ "transitive", "external", "object" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#broughtAbout",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "broughtAbout",
+      "en" : "broughtAbout"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Identifies a gufo:Situation that is brought about by the gufo:Event.\n\nGuizzardi et al. (2013) included a notion of \"brings-about\" that related events to a single (\"maximal\") situation, embodying all the effects of the event at the time it ends. This implementation of gufo:broughtAbout diverges from \"brings-about\" in that work because gufo:broughtAbout can be used to relate events to more than one gufo:Situation. Each gufo:Situation identified through gufo:broughtAbout should be understood as an (improper) part of the maximal situation."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://purl.org/ai4se/ontology#levelEnabledBy",
+    "baseIri" : "http://purl.org/ai4se/ontology",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "levelEnabledBy"
+    },
+    "superproperty" : [ "49" ],
+    "domain" : "77",
+    "attributes" : [ "object" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#standsIn",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "standsIn",
+      "en" : "standsIn"
+    },
+    "domain" : "120",
+    "subproperty" : [ "121", "122", "80", "123", "124" ],
+    "comment" : {
+      "en" : "Identifies a gufo:Situation in which the entity stands. \n\nThis implementation includes sub-properties of gufo:standsIn to identify situations concerning the attribution of (mutable) values to qualities, variable relationships, the instantiation of non-contingent types, temporary parthood and temporary constitution."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#standsInQualifiedRelationship",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "7",
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#TemporaryRelationshipSituation",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#Relator",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "standsInQualifiedRelationship",
+      "en" : "standsInQualifiedRelationship"
+    },
+    "superproperty" : [ "81" ],
+    "domain" : "18",
+    "comment" : {
+      "en" : "Identifies a gufo:TemporaryRelationshipSituation in which the endurant stands. The identified gufo:TemporaryRelationshipSituation is then used with the gufo:concernsRelatedEndurant and the gufo:concernsRelationshipType object properties to indicate the related element and the type of relationship that applies. This forms a pattern to represent that relationships that may change in different situations. For example, \"heavierThan\" may change when the objects involved gain or lose weight.\n\nFor material relations, prefer the use of gufo:Relator."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "124"
+  }, {
+    "iri" : "http://purl.org/ai4se/ontology#topicAddressedBy",
+    "baseIri" : "http://purl.org/ai4se/ontology",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "topicAddressedBy"
+    },
+    "superproperty" : [ "49" ],
+    "domain" : "79",
+    "attributes" : [ "object" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#concernsConstitutedEndurant",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "concernsConstitutedEndurant",
+      "en" : "concernsConstitutedEndurant"
+    },
+    "domain" : "64",
+    "comment" : {
+      "en" : "Identifies the constituted gufo:Endurant in the gufo:TemporaryConstitutionSituation."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#wasTerminatedIn",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "wasTerminatedIn",
+      "en" : "wasTerminatedIn"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Identifies the gufo:Event in which the gufo:Endurant was brought to an end. \n\nFor example, the Space Shuttle Challenger (OV-099) (a gufo:FunctionalComplex) was destroyed during the launch of its tenth flight (a gufo:Event). \n\nBenevides et al. (2019) only discussed termination of objects; gufo:wasCreatedIn is extended to endurants in general. This means that a gufo:Relator (such as a marriage) can be declared terminated. Further, in that work \"terminatedBy\" required the event to be \"triggered\" by a situation in which the terminated object is present. We relax this requirement here, such that the object may be created and terminated in the scope of the identified gufo:Event.\n\nA. B. Benevides, J. R. Bourguet, G. Guizzardi, R. Penãloza, and J. P. A. Almeida, “Representing a reference foundational ontology of events in SROIQ,” Applied ontology, vol. 14, iss. 3, p. 293–334, 2019. <http://dx.doi.org/10.3233/AO-190214>"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "126"
+  }, {
+    "range" : "64",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "127"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#standsInQualifiedInstantiation",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "29",
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#TemporaryInstantiationSituation",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "standsInQualifiedInstantiation",
+      "en" : "standsInQualifiedInstantiation"
+    },
+    "superproperty" : [ "81" ],
+    "domain" : "18",
+    "comment" : {
+      "en" : "Identifies a gufo:TemporaryInstantiationSituation in which the endurant stands. The identified gufo:TemporaryInstantiationSituation is further related with a gufo:NonRigidType through the gufo:concernsNonRigidType object property. This forms a pattern to represent the contigent instantiation of a non-rigid type by the endurant, in which case instantiation may vary in different situations."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "121"
+  }, {
+    "range" : "34",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "129"
+  }, {
+    "range" : "7",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "130"
+  }, {
+    "range" : "3",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "131"
+  }, {
+    "range" : "0",
+    "domain" : "69",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://purl.org/ai4se/ontology#belongsTo",
+    "baseIri" : "http://purl.org/ai4se/ontology",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "belongsTo"
+    },
+    "domain" : "75",
+    "subproperty" : [ "110", "133" ],
+    "attributes" : [ "asymmetric", "object", "irreflexive" ],
+    "id" : "111"
+  }, {
+    "range" : "29",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "134"
+  }, {
+    "range" : "45",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "135"
+  }, {
+    "range" : "36",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "136"
+  }, {
+    "range" : "76",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "137"
+  }, {
+    "range" : "61",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "138"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#isSubQuantityOf",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "102",
+    "label" : {
+      "IRI-based" : "isSubQuantityOf",
+      "en" : "isSubQuantityOf"
+    },
+    "superproperty" : [ "85" ],
+    "domain" : "102",
+    "comment" : {
+      "en" : "Identifies a gufo:Quantity of which the quantity is a part.\n\nFor example, the quantity of water in a wine glass is a sub-quantity of the wine in that glass.\n\ngufo:isSubQuantityOf is transitive (Guizzardi, 2005, p. 184).\n\nSub-quantities are always essential parts of their wholes. Thus, gufo:standsInQualifiedParthood is not applicable for sub-quantities."
+    },
+    "attributes" : [ "transitive", "external", "object" ],
+    "id" : "140"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#categorizes",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "categorizes",
+      "en" : "categorizes"
+    },
+    "domain" : "141",
+    "subproperty" : [ "20" ],
+    "comment" : {
+      "en" : "Identifies a gufo:Type whose instances may be classified by instances of the categorizing higher-order type.\n\nFor example, \"ShipType\" gufo:categorizes \"Ship\". Instances of \"ShipType\" such as \"Supercarrier\" and \"Cargoship\" should be declared subclasses of \"Ship\". OWL 2 punning should be used to capture the two facets of \"Supercarrier\" and \"Cargoship\" in this example: (i) as instances of \"ShipType\", and (ii) as subclasses of \"Ship\".\n\nThe categorized type is termed the \"base type\" in the \"powertype pattern\" see Carvalho et al (2017), the higher-order type is often called the \"powertype\".  \n\ngufo:categorizes is the general (unspecific) form of categorization. See  gufo:partitions for a more specific form, in which instances of the categorized type are classified by exactly one instance of the higher-order type. \n\nThe domain is gufo:Type excluding gufo:AbstractIndividualType as well as gufo:ConcreteIndividualTypes because those types are first-order types (their instances are individuals). Only instances of gufo:Type representing higher-order types can categorize a base type.\n\nFor further details and formalization of \"categorization\", see Carvalho et al (2017) which combines UFO with MLT (a multi-level modeling theory).  \n\nV. A. Carvalho, J. P. A. Almeida, C. M. Fonseca, and G. Guizzardi, “Multi-level ontology-based conceptual modeling,” Data & Knowledge Engineering, vol. 109, p. 3–24, 2017. <http://dx.doi.org/10.1016/j.datak.2017.03.002>"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#externallyDependsOn",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "externallyDependsOn",
+      "en" : "externallyDependsOn"
+    },
+    "domain" : "92",
+    "comment" : {
+      "en" : "Identifies a gufo:Endurant on which the gufo:ExtrinsicMode depends.\n\nFor example, John's duty to return the book he borrowed from Mary (a gufo:ExtrinsicMode) depends externally on Mary.\n\nThe identifed gufo:Endurant should  be external to the bearer of the extrinsic mode (see Guizzardi, 2005, p. 239). In other words, the identified endurant should not be a part or an intrisic aspect of the bearer of the extrinsic mode."
+    },
+    "attributes" : [ "external", "someValues", "object", "irreflexive" ],
+    "id" : "142"
+  }, {
+    "iri" : "http://purl.org/ai4se/ontology#hasLevel",
+    "inverse" : "98",
+    "baseIri" : "http://purl.org/ai4se/ontology",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "hasLevel"
+    },
+    "superproperty" : [ "68" ],
+    "domain" : "48",
+    "attributes" : [ "object" ],
+    "id" : "143"
+  }, {
+    "range" : "91",
+    "domain" : "92",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "144"
+  }, {
+    "range" : "116",
+    "domain" : "117",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "145"
+  }, {
+    "range" : "118",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "146"
+  }, {
+    "range" : "128",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "147"
+  }, {
+    "range" : "37",
+    "domain" : "90",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "148"
+  }, {
+    "range" : "118",
+    "domain" : "128",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "149"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#mediates",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "mediates",
+      "en" : "mediates"
+    },
+    "domain" : "91",
+    "subproperty" : [ "51" ],
+    "comment" : {
+      "en" : "Identifies the endurants mediated by a gufo:Relator.\n\nFor example, John and Mary's marriage mediates John and Mary."
+    },
+    "attributes" : [ "asymmetric", "external", "object", "irreflexive" ],
+    "id" : "54"
+  }, {
+    "range" : "9",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "150"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#isDerivedFrom",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isDerivedFrom",
+      "en" : "isDerivedFrom"
+    },
+    "domain" : "152",
+    "comment" : {
+      "en" : "Identifies a gufo:EndurantType from which the material or comparative relation can be derived. The identified gufo:EndurantType should be a subclass of gufo:Aspect, more specifically a subclass of gufo:ExtrinsicAspect in the case of a gufo:MaterialRelationshipType, and a subclass of gufo:IntrinsicAspect in the case of a gufo:ComparativeRelationshipType.\n\nFor example, \"marriedWith\" can be derived from \"Marriage\", \"heavierThan\" can be derived from \"Weight\".\n\nSee Fonseca et al. (2019)."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "151"
+  }, {
+    "range" : "8",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "153"
+  }, {
+    "range" : "8",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "154"
+  }, {
+    "range" : "0",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "155"
+  }, {
+    "range" : "0",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "156"
+  }, {
+    "range" : "0",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "157"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#hasAssociatedQualityValueType",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "hasAssociatedQualityValueType",
+      "en" : "hasAssociatedQualityValueType"
+    },
+    "domain" : "1",
+    "subproperty" : [ "158", "67", "143", "96", "159" ],
+    "comment" : {
+      "en" : "Identifies a quality value type to which the quality type is associated. \n\nFor example, a \"Color\" quality type may be associated with a \"ColorValueInRGB\" quality value type.\n\nIt relates a specialization of gufo:Quality (an instance of gufo:EndurantType) to a specialization of gufo:QualityValue  (an instance of gufo:AbstractIndividualType).\n\nTo be used only when quality values are reified."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#inheresIn",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "inheresIn",
+      "en" : "inheresIn"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Identifies the gufo:ConcreteIndividual in which the gufo:Aspect inheres. Inherence is a sort of existential dependence. The identified concrete individual is the \"bearer\" of the aspect.\n\nFor example, the color of an object inheres in the object and the average speed of a flight inheres in the flight."
+    },
+    "attributes" : [ "functional", "asymmetric", "external", "object", "irreflexive" ],
+    "id" : "160"
+  }, {
+    "range" : "0",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "161"
+  }, {
+    "iri" : "http://purl.org/ai4se/ontology#belongsToAIType",
+    "baseIri" : "http://purl.org/ai4se/ontology",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "belongsToAIType"
+    },
+    "superproperty" : [ "111" ],
+    "domain" : "78",
+    "attributes" : [ "object" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#contributedToTrigger",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "contributedToTrigger",
+      "en" : "contributedToTrigger"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "Identifies a gufo:Event that the gufo:Situation contributed to trigger.\n\nGuizzardi et al. (2013) defined a notion of \"triggers\" to relate the situation satisfying all the sufficient and necessary conditions with the triggered  event. This implementation differs from  \"triggers\" as defined in that work because gufo:contributedToTrigger can be used to relate more than one gufo:Situation to a gufo:Event. Each gufo:Situation identified through gufo:contributedToTrigger should be understood as an (improper) part of the situation that triggered the event."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "162"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#standsInQualifiedConstitution",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "64",
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#TemporaryConstitutionSituation",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "standsInQualifiedConstitution",
+      "en" : "standsInQualifiedConstitution"
+    },
+    "superproperty" : [ "81" ],
+    "domain" : "18",
+    "comment" : {
+      "en" : "Identifies a gufo:TemporaryConstitutionSituation in which an endurant stands temporarily (as a constituent). The identified gufo:TemporaryConstitutionSituation is further related with an endurant (the whole) through the gufo:concernsConstitutedEndurant object property. This forms a pattern to represent temporary constitution, in which the relationships between constituents and constituted endurant vary in different situations.\n\nConsider, for example, a group of people (understood as a gufo:FixedCollection) constituting a band (understood as a gufo:FunctionalComplex). In this case, any change in the membership of the group (e.g., the replacement of one person) creates a different group of people. Therefore, the band's constitution can change in time, and the pattern using gufo:TemporaryConstitutionSituation is applicable."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#concernsRelatedEndurant",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "concernsRelatedEndurant",
+      "en" : "concernsRelatedEndurant"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Identifies the related gufo:Endurant in the gufo:TemporaryRelationshipSituation."
+    },
+    "attributes" : [ "functional", "external", "someValues", "object" ],
+    "id" : "163"
+  }, {
+    "range" : "7",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "164"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#historicallyDependsOn",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "historicallyDependsOn",
+      "en" : "historicallyDependsOn"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Identifies a gufo:ConcreteIndividual on which the concrete individual depends historically. \n\nFor example, a person is historically dependent on his/her ancestors.\n\nWhen used between events, historical dependence encompasses causation (when the event is caused by the other), but also other cases where there is dependence but not causation (when the event brings about a situation that is either insufficient or more than sufficient to trigger the historically dependent event).\n\nFor example, Real Madrid's goal in the 60th minute of the 2016 FIFA Club World Cup Final is historically dependent on (and in this case caused by) a penalty kick by Cristiano Ronaldo. The penalty kick itself is historically dependent on (but not caused by) a penalty (the occurrence of the penalty is necessary but not sufficient to cause the penalty kick as authorization of the referee is required). \n\nHistorical dependence is transitive. Hence, in the example above, Real Madrid's goal is historically dependent on the penalty."
+    },
+    "attributes" : [ "transitive", "external", "object" ],
+    "id" : "165"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#externallyDependsOn",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "externallyDependsOn",
+      "en" : "externallyDependsOn"
+    },
+    "domain" : "92",
+    "comment" : {
+      "en" : "Identifies a gufo:Endurant on which the gufo:ExtrinsicMode depends.\n\nFor example, John's duty to return the book he borrowed from Mary (a gufo:ExtrinsicMode) depends externally on Mary.\n\nThe identifed gufo:Endurant should  be external to the bearer of the extrinsic mode (see Guizzardi, 2005, p. 239). In other words, the identified endurant should not be a part or an intrisic aspect of the bearer of the extrinsic mode."
+    },
+    "attributes" : [ "external", "object", "irreflexive" ],
+    "id" : "167"
+  }, {
+    "range" : "29",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "168"
+  }, {
+    "range" : "7",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "169"
+  }, {
+    "range" : "7",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "170"
+  }, {
+    "range" : "34",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "171"
+  }, {
+    "range" : "75",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "172"
+  }, {
+    "range" : "75",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "173"
+  }, {
+    "range" : "75",
+    "domain" : "66",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "174"
+  }, {
+    "range" : "75",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "175"
+  }, {
+    "range" : "75",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "176"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#hasReifiedQualityValue",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "70",
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#hasQualityValue",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasReifiedQualityValue",
+      "en" : "hasReifiedQualityValue"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Identifies an instance of gufo:QualityValue to reflect the perception or conception of a quality in a certain value space. \n\nUse this property only for quality values that are to be reified in the A-box and associated with a gufo:ConcreteIndividual. Otherwise, use the gufo:hasQualityValue data property and a literal to determine the quality value.\n\nThe full representation pattern for quality values involves first identifying a gufo:Quality that inheres in a concrete individual and then associating it with a reified quality value. For example, let us consider the color of Yves Klein's \"Blue Monochrome\" painting made in 1961 (MoMA's object with number 618.1967). In the full pattern, an instance of gufo:Quality that inheres in the physical object (the color of that painting) is associated with a gufo:QualityValue (say the triplet <0, 47, 167> for that painting) through gufo:hasReifiedQualityValue. The full pattern is recommended when different quality spaces are expected to be used for the same quality. For example, the color of that painting could also be associated with a quadruple <100, 72, 0, 35> representing the same color in a CMYK space.\n\nWhen the full pattern is not required, gufo:hasReifiedQualityValue can also be used to directly associate a concrete individual (without identifying the quality) with a quality value."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "177"
+  }, {
+    "iri" : "http://purl.org/ai4se/ontology#hasTarget",
+    "inverse" : "65",
+    "baseIri" : "http://purl.org/ai4se/ontology",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "hasTarget"
+    },
+    "superproperty" : [ "68" ],
+    "domain" : "48",
+    "attributes" : [ "object" ],
+    "id" : "159"
+  }, {
+    "range" : "31",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "178"
+  }, {
+    "range" : "31",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "179"
+  }, {
+    "range" : "76",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "180"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#isSituationProperPartOf",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isSituationProperPartOf",
+      "en" : "isSituationProperPartOf"
+    },
+    "superproperty" : [ "14" ],
+    "domain" : "8",
+    "comment" : {
+      "en" : "Identifies a gufo:Situation of which the situation is a part.\n\nExamples include: the situation in which John has influenza is part of the situation in which John has influenza and he is tired; the situation in which John is friends with Mary is part of the situation in which he is friends with Mary and Alice; the situation in which John is married to Alice is part of the situation in which John is married to Alice, while she works at the Free University of Bozen-Bolzano."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "87"
+  }, {
+    "range" : "1",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "181"
+  }, {
+    "range" : "76",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "182"
+  }, {
+    "range" : "76",
+    "domain" : "119",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "183"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "184"
+  }, {
+    "iri" : "http://purl.org/ai4se/ontology#isAboutResearchTopic",
+    "inverse" : "99",
+    "baseIri" : "http://purl.org/ai4se/ontology",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "isAboutResearchTopic",
+      "undefined" : "isAboutResearchTopic"
+    },
+    "superproperty" : [ "68" ],
+    "domain" : "48",
+    "comment" : {
+      "en" : "Represents the research topics that a research paper contributes to."
+    },
+    "attributes" : [ "object" ],
+    "id" : "158"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#hasBeginPoint",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "88",
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#hasBeginPointInXSDDateTimeStamp",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#hasBeginPointInXSDDate",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasBeginPoint",
+      "en" : "hasBeginPoint"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Identifies the begin point for a gufo:ConcreteIndividual, in the case in which time instants are reified. \n\nIn the case of endurants, this identifies the time point when the endurant comes into existence. In the case of events, this identifies the time point when the event starts to take place. In the case of situation, this identifies the time point when the situation begins to hold.\n\nIf time instants are not reified, use gufo:hasBeginPointInXSDDate or gufo:hasBeginPointInXSDDateTimeStamp."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "185"
+  }, {
+    "range" : "83",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "186"
+  }, {
+    "range" : "1",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "187"
+  }, {
+    "range" : "1",
+    "domain" : "69",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "188"
+  }, {
+    "iri" : "http://purl.org/ai4se/ontology#isProperPartOfProcess",
+    "baseIri" : "http://purl.org/ai4se/ontology",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "isProperPartOfProcess",
+      "undefined" : "isPartOfProcess"
+    },
+    "superproperty" : [ "86" ],
+    "domain" : "21",
+    "comment" : {
+      "en" : "Represents activities being part of processes."
+    },
+    "attributes" : [ "object" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#standsInQualifiedAttribution",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "16",
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#QualityValueAttributionSituation",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "standsInQualifiedAttribution",
+      "en" : "standsInQualifiedAttribution"
+    },
+    "superproperty" : [ "81" ],
+    "domain" : "18",
+    "comment" : {
+      "en" : "Identifies a gufo:QualityValueAttributionSituation in which the endurant stands. The identified gufo:QualityValueAttributionSituation is then used with the gufo:concernsQualityValue data property or the gufo:concernsReifiedQualityValue object property to indicate a quality value attributed to the gufo:Endurant standing in the situation. This forms a pattern to represent that quality values may differ in different situations."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "123"
+  }, {
+    "iri" : "http://purl.org/ai4se/ontology#typeUsedBy",
+    "baseIri" : "http://purl.org/ai4se/ontology",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "typeUsedBy"
+    },
+    "superproperty" : [ "49" ],
+    "domain" : "78",
+    "attributes" : [ "object" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#concernsQualityType",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "concernsQualityType",
+      "en" : "concernsQualityType"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Identifies the quality type (a gufo:EndurantType subclassing gufo:Quality) whose value is attributed in the gufo:QualityValueAttributionSituation."
+    },
+    "attributes" : [ "functional", "external", "object" ],
+    "id" : "189"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#isSubCollectionOf",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "94",
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#standsInQualifiedParthood",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isSubCollectionOf",
+      "en" : "isSubCollectionOf"
+    },
+    "superproperty" : [ "85" ],
+    "domain" : "94",
+    "comment" : {
+      "en" : "Identifies a gufo:Collection of which the collection is a sub-collection. All members of the sub-collection are members of the identified super-collection.\n\ngufo:isSubCollectionOf is transitive (Guizzardi, 2005, p. 186).\n\nFor parthood involving one or more varied collections, see gufo:standsInQualifiedParthood."
+    },
+    "attributes" : [ "transitive", "external", "object" ],
+    "id" : "190"
+  }, {
+    "range" : "10",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "191"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "192"
+  }, {
+    "range" : "83",
+    "domain" : "114",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "193"
+  }, {
+    "range" : "18",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "194"
+  }, {
+    "range" : "9",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "195"
+  }, {
+    "range" : "10",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "196"
+  }, {
+    "range" : "18",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "197"
+  }, {
+    "range" : "94",
+    "domain" : "117",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "198"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#hasBeginPointInXSDDate",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "166",
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#hasBeginPointInXSDDateTimeStamp",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.org/nemo/gufo#hasBeginPoint",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasBeginPointInXSDDate",
+      "en" : "hasBeginPointInXSDDate"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Determines the begin point for a gufo:ConcreteIndividual, using a xsd:date literal.\n\nIn the case of endurants, gufo:asBeginPointInXSDDate determines the time point when the endurant comes into existence. In the case of events, this data property determines the time point when the event starts to take place. In the case of situation, it determines the time point when the situation begins to hold.\n\nUse gufo:hasBeginPoint instead when temporal entities are reified."
+    },
+    "attributes" : [ "functional", "datatype", "external" ],
+    "id" : "199"
+  }, {
+    "range" : "94",
+    "domain" : "116",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "200"
+  }, {
+    "range" : "61",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "201"
+  }, {
+    "range" : "61",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "202"
+  }, {
+    "range" : "69",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "203"
+  }, {
+    "range" : "69",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "204"
+  }, {
+    "range" : "69",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "205"
+  }, {
+    "range" : "83",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "206"
+  }, {
+    "range" : "59",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "207"
+  }, {
+    "range" : "19",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "208"
+  }, {
+    "range" : "101",
+    "domain" : "94",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "209"
+  }, {
+    "range" : "102",
+    "domain" : "94",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "210"
+  }, {
+    "range" : "102",
+    "domain" : "101",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "211"
+  }, {
+    "range" : "82",
+    "domain" : "114",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "212"
+  }, {
+    "range" : "83",
+    "domain" : "119",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "213"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#isObjectProperPartOf",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "isObjectProperPartOf",
+      "en" : "isObjectProperPartOf"
+    },
+    "superproperty" : [ "14" ],
+    "domain" : "19",
+    "subproperty" : [ "190", "100", "140", "93" ],
+    "comment" : {
+      "en" : "Identifies a gufo:Object of which the object is a part.\n\nThis is a general parthood relation between objects. Use the various sub-properties provided in order to represent specific types of parthood, each of which has specialized semantics (and different formal properties in this implementation, in particular, transitivity (Guizzardi, 2005, section 5.6)."
+    },
+    "attributes" : [ "transitive", "external", "object" ],
+    "id" : "85"
+  }, {
+    "range" : "10",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "214"
+  }, {
+    "range" : "119",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "215"
+  }, {
+    "range" : "13",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "216"
+  }, {
+    "range" : "19",
+    "domain" : "102",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "217"
+  }, {
+    "range" : "69",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "218"
+  }, {
+    "range" : "13",
+    "domain" : "90",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "219"
+  }, {
+    "range" : "58",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "220"
+  }, {
+    "range" : "58",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "221"
+  }, {
+    "range" : "19",
+    "domain" : "94",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "222"
+  }, {
+    "range" : "19",
+    "domain" : "101",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "223"
+  }, {
+    "range" : "119",
+    "domain" : "118",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "224"
+  }, {
+    "range" : "119",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "225"
+  }, {
+    "iri" : "http://purl.org/nemo/gufo#concernsReifiedQualityValue",
+    "baseIri" : "http://purl.org/nemo/gufo",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "concernsReifiedQualityValue",
+      "en" : "concernsReifiedQualityValue"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Identifies the gufo:QualityValue (i.e., the reified quality value) associated with the endurant that stands in the gufo:QualityValueAttributionSituation.",
+      "undefined" : "http://purl.org/nemo/gufo#concernsQualityValue"
+    },
+    "attributes" : [ "functional", "external", "object" ],
+    "id" : "226"
+  }, {
+    "range" : "119",
+    "domain" : "128",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "227"
+  }, {
+    "range" : "27",
+    "domain" : "88",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "228"
+  }, {
+    "range" : "27",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "229"
+  }, {
+    "range" : "90",
+    "domain" : "92",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "230"
+  }, {
+    "range" : "90",
+    "domain" : "91",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "231"
+  } ]
+}
